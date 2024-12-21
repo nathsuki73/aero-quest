@@ -1,5 +1,4 @@
-﻿using aero_quest.UserControls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.Integration;
 
-namespace aero_quest
+namespace aero_quest.UserControls
 {
-    public partial class Login : Form
+    public partial class FronPageNav : UserControl
     {
-        public Login()
+        public FronPageNav()
         {
             InitializeComponent();
-            
         }
     }
 }

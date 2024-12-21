@@ -8,6 +8,7 @@ namespace aero_quest
 {
     internal static class Program
     {
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,9 @@ namespace aero_quest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            LandingPage landingPage = new LandingPage();
+            FormManager._formControls.Add(landingPage);
+            Application.Run(landingPage);
         }
     }
 }

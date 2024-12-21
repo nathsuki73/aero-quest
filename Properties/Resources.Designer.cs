@@ -73,6 +73,36 @@ namespace aero_quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flights_button {
+            get {
+                object obj = ResourceManager.GetObject("flights button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap help {
+            get {
+                object obj = ResourceManager.GetObject("help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_button {
+            get {
+                object obj = ResourceManager.GetObject("home button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap landing_page {
             get {
                 object obj = ResourceManager.GetObject("landing page", resourceCulture);
@@ -86,6 +116,16 @@ namespace aero_quest.Properties {
         internal static System.Drawing.Bitmap LandingPageMessage {
             get {
                 object obj = ResourceManager.GetObject("LandingPageMessage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loginBackground {
+            get {
+                object obj = ResourceManager.GetObject("loginBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
