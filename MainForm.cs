@@ -15,11 +15,11 @@ namespace aero_quest
 {
     public partial class MainForm : Form
     {
-        
         public MainForm()
         {
             InitializeComponent();
-            this.Controls.Add(new LandingPage());
+            UserControlManager._userControls.Add(new LandingPage());
+            this.Controls.Add(UserControlManager._userControls[0] as LandingPage);
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -27,6 +27,12 @@ namespace aero_quest
 
         }
 
+        public void ClearAllControls()
+        {
+            this.Controls.Clear();
+        }
+
+     
       
 
       
