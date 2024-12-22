@@ -25,6 +25,7 @@ namespace aero_quest.UserControls
             UserControl topControl = userControls.Peek();
             topControl.Location = new Point(125, 88);
             this.Controls.Add(topControl);
+            topControl.BringToFront();
         }
 
         public void ShowControl(UserControl newControl)
@@ -32,10 +33,9 @@ namespace aero_quest.UserControls
             if (userControls.Count > 0)
             {
                 userControls.Pop();
-            } else
-            {
-                userControls.Push(newControl);
             }
+            userControls.Push(newControl);
+           
             LoadTopControl();
 
         }

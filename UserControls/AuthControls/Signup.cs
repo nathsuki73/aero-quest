@@ -16,5 +16,11 @@ namespace aero_quest.UserControls.AuthControls
         {
             InitializeComponent();
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            LandingPage.authPage.ShowControl(new Login());
+
+        }
     }
 }

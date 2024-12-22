@@ -12,6 +12,7 @@ namespace aero_quest.UserControls
 {
     public partial class LandingPage : UserControl
     {
+        public static AuthPage authPage;
         public LandingPage()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace aero_quest.UserControls
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             MainForm mainForm = UserControlManager._userForms[0] as MainForm;
-            AuthPage authPage = new AuthPage();
+            authPage = new AuthPage();
             authPage.Name = "authPage";
             mainForm.Controls.Add(authPage);
             authPage.BringToFront();
