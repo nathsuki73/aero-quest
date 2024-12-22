@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace aero_quest.UserControls
 {
-    public partial class FronPageNav : UserControl
+    public partial class LandingPage : UserControl
     {
-        public FronPageNav()
+        public LandingPage()
         {
             InitializeComponent();
         }

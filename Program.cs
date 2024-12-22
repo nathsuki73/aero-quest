@@ -17,7 +17,7 @@ namespace aero_quest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LandingPage landingPage = new LandingPage();
+            MainForm landingPage = new MainForm();
             FormManager._formControls.Add(landingPage);
             Application.Run(landingPage);
         }
