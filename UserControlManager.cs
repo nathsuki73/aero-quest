@@ -11,10 +11,10 @@ namespace aero_quest
     public class UserControlManager
     {
         public static List<UserControl> _userControls = new List<UserControl>();
-        public static List<Form> _userForms = new List<Form>();
+        public static Stack<Form> _userForms = new Stack<Form>();
 
         public UserControlManager() { 
-            _userForms.Add(new MainForm());
+            _userForms.Push(new MainForm());
         }
 
         public static void RemoveControlByName(Control parent, string controlName)
