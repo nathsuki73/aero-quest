@@ -39,5 +39,13 @@ namespace aero_quest.UserControls
             LoadTopControl();
 
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = UserControlManager._userForms[0] as MainForm;
+
+            UserControlManager.RemoveControlByName(mainForm, "authPage");
+
+        }
     }
 }

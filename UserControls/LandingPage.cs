@@ -20,8 +20,13 @@ namespace aero_quest.UserControls
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             MainForm mainForm = UserControlManager._userForms[0] as MainForm;
-            mainForm.ClearAllControls();
-            mainForm.Controls.Add(new AuthPage());
+            AuthPage authPage = new AuthPage();
+            authPage.Name = "authPage";
+            mainForm.Controls.Add(authPage);
+            authPage.BringToFront();
         }
+
+        
+
     }
 }

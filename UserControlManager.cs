@@ -17,5 +17,19 @@ namespace aero_quest
             _userForms.Add(new MainForm());
         }
 
+        public static void RemoveControlByName(Control parent, string controlName)
+        {
+            Control controlToRemove = parent.Controls[controlName];
+            if (controlToRemove != null)
+            {
+                parent.Controls.Remove(controlToRemove);
+                controlToRemove.Dispose();
+            }
+            else
+            {
+                MessageBox.Show($"Control with name '{controlName}' not found.");
+            }
+        }
+
     }
 }
