@@ -8,18 +8,18 @@ namespace aero_quest
 {
     internal static class Program
     {
-        
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MainForm landingPage = new MainForm();
-            FormManager._formControls.Add(landingPage);
-            Application.Run(landingPage);
+            MainForm mainForm = new MainForm();
+            Application.Run(mainForm);
         }
     }
 }
