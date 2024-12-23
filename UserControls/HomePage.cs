@@ -48,5 +48,7 @@ namespace aero_quest.UserControls
             currentImageIndex = (currentImageIndex + 1) % images.Count;
             pictureBox2.Image = images[currentImageIndex];
         }
+
+
     }
 }

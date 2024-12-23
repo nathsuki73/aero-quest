@@ -117,53 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="landing page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\landing page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ACBtnLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAE8AAABNCAYAAADn/DmNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAA5JJREFUeF7tnMtx4kAQhh2CI3ARAAeffXIGdgZLBusMTAYmA3yGwzoDh+AQCIEQ
+        2P+ThmUlEE+h7hbzVXWVkEbz+OlRS6MZ3VmxWq3uZY+ykWwi+yP7kS1kS1kd9n/LSEf637LnlF3/obGy
+        dxki7BLoXMgPMR9TUf1ADcLDEAzP6QLKwTMHqQrxUOXxMjzCErp4nK5NZWXWotWhPn5FVOUGqZKemcp8
+        dWdViGtamwHg2rynqtuhSkTwtiYILDZeqIJfZZG8bRfU/zU1qRtUIN20T3TTjVXQR1le77iugCqAaNVn
+        pqmp7aKM++pxddoVUBn27Rp3iHa6sDLigfsWeUsSnIcy4D7uljlvlEYnMhrS1UiIV2j/fZLkeHTSZ3F6
+        5iNJchw6gZGRzIbjR2SU+Na7a51FkmY/Ssg7hcw2h6OvEmWv2w2DCM3BQwez1+1nnKTaRgez1+1nmaSq
+        ogOMz7lkNputhsPh6unpqdg2ZjvyaidvmtyBWA8PD/8MEY35TpKVaIfLx7C6cBjeZ0w1cOiHu0CxSzhs
+        Pp+nFKaMknT+uqxz4WAz5qcfbqJsAOGgjLraYKaSC4IIt2aAeC5uUYIJByPEG5fbdgQUDibmwSKocDBF
+        PLPpEoGFgx/EM4m0wYWDBeJ1Pt+kB8LBEvE6h0es4MIVmIjHw31dPLwxGibi4WV18SIKaHLNgx4IWFzz
+        zJ5rgwtYRFtW3ZgRWMBvxDOfGRBUwC/EY7WMOQEFHCOem1HkYAK+IJ6r9xeBBCynn2nD5HaliQACbuau
+        6Ie76WTOBfxK0hXiuZxmsUtAB+9t4VeSrhCPWaCuuu6auoAO3ttCddmVdrhdQ4aAiIbXsW3Mpsuu0c48
+        G/Q4XpJkVXTAZdd1RPMMUR00f5PmnE2gqKODbgOHAw7PS1aitzJtpkaz1/2PEuYZolWOmw0PSpwjb5XT
+        voyhE1wMVTng9CWkOimvPSvbf/raM9CJbqafGXHZ1y+Uwa1G38vW265RRrd289y8WOUclOGtLCGdpCa3
+        izLuu4CfqanXQQX0tQtfx+PqqKC+CdjuNe4QKjB/S+oSVDCvLaPeSDNybv8tPVUiUjfG27rtpodQhfBC
+        79HYh7c1ocrlb4ZeCpWVWS8IjCVaHVWe7szwVleBhXK4Bp83GuIVNYhRGj7s1Wa3JgCQH4LF9bJTobEy
+        xMQz6eKIsMtDEYj9zGIlHemZIsKfYeRhd3d/AVZWBM6pcUT8AAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="loginBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ACBtnRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAE8AAABNCAYAAADn/DmNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAA49JREFUeF7tnMtx4kAQhgnBEVAEwMFnTpuBncGSwToDk4HJAJ/hsM6AEBwCIRAC
+        +3/SsFhC4inUPdJ8VV0lpNE8fnrU0mhGAyt2u92T7Fk2lc1lf2Xfso1sKyvD/rWMdKT/I/sVsus+NFb2
+        LkOEKoFuhfwQ8zkU1Q3UIDwMwfCcNqAcPHMUqhAfqjxehkdYQhePp2tTWZm1aGWoj18RVblRqKRnFjJf
+        3VkV4prWZAB4NO+h6naoEjF4Wx0EFhsvVMGvspi8rQrq/xqa1A4qkG7aJdrpxiroIy+vczxWQBVAtOoy
+        i9DUZlHGXfW4Ms0KqAy7do07RzNdWBnxwN1H3oIEt6EMuI/rM7eN0uhERkPaGgnxCu1/CpJcjk76zE5P
+        fARJLkMnMDKSOHD5iIwS9727ltkEaU6jhLxTSBxzPvoqUfK6ahhEqA8eOpi87jSzINUxOpi87jTbIFUR
+        HWB8zozlcrkbj8e7yWSSbTvmOPJqJ2+azEC04XD43xwLuA6S5WiH+WMYXvdTPMcCFgOHfpgHitVqdSSe
+        YwGnQTr7LrsnIgEPY3764SbKRiJgHnW1wUwlV0Qi4AjxTG9R6ohAwCnizfJtfzgXcO4mWNThWMAF4rmf
+        LuFUwG/Ei+J51qGAG8SLZr6JMwG3iBcVVQLyaGdBdOLhZWXxGFSwICrxqoTD8EYLornmeRNOZNc899HW
+        oXCQRVtW3bjFqXCwRjy3MwMcCwdfiMdqGXc4Fw5miOfudWMEwsEL4rmaRhaJcJBPP9OGi9uViIQ7zF3R
+        D/OgEZFw8BWky8Qzv+6V39s6Fg5+B+ky8ZgFatp1y+9tHQsHxWVX2mE6KIpYeB8iOhfu0GX3aGeaDXoZ
+        L0GyIjoQzcCoEfUzRHXQ7Zs0JxwCRRkdNA8cjjk/L1mJ3vK0iRL1XvcTJUwzRItcNhselDhF3iLXfRlD
+        J7gcqjLg+iWkOimtPcvbf/3aM9CJ7qaftcx9X79QBn2Nvvett92jjPp281y/WOUWlGFflpDOQ5ObRRl3
+        XcDP0NTHoAK62oUf43FlVFDXBGz2GncOFZi+JXUPKpjXlrHeSDNybv8tPVUipm6Mt7XbTc+hCuGF3qOx
+        D2+rQ5VL3wy9Fyors17jEZdoZVR5ujPDW20FFsrhGnzbaIhX1CBGafiwV5PdmgBAfggWr5ddC42VISae
+        SRdHhCoPRSD2M4uVdKRnigh/hpGHDQb/ANIoBM5yLBxFAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAQSecond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAQSecond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LandingPageMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LandingPageMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAQFirst" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAQFirst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flights button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flights button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A321 bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A321 bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A320.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ACHomeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAKxJREFUSEtjGAWjgHLg2mDA4FplAOXRCHhUN4AxTQHZlng0KEBZhAFZlgAtYHSv
+        fU9sOAPVrmdwr/OHcokAIAs8au8zeNQmQEXwA4j6/8T7nFQLgADsC49aIoOKVAscGgQgFtQsgIoQAFAL
+        GN1rzsMjEQ9m8qidD3EQkE80AGYmUEQzeoJchmkoJq5KAPkEqpsEALLIo+4+7XPu8LWI6LRPLiArYkfB
+        KGBgYAAAtiNZpPouITMAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

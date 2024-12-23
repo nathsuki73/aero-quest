@@ -40,7 +40,7 @@
       <HintPath>packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\Downloads\guna\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+      <HintPath>..\..\..\Downloads\PcWonderland.com_Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
@@ -107,6 +107,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Objects\User.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sql\SqlQueries.cs" />
     <Compile Include="UserControlManager.cs" />
     <Compile Include="MainForm.cs">
@@ -117,10 +122,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="UserControls\AircraftsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AircraftsPage.Designer.cs">
+      <DependentUpon>AircraftsPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\AuthControls\Login.cs">
       <SubType>UserControl</SubType>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="UserControls\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FAQPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FAQPage.Designer.cs">
+      <DependentUpon>FAQPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HomePage.cs">
       <SubType>UserControl</SubType>
@@ -160,6 +172,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AircraftsPage.resx">
+      <DependentUpon>AircraftsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AuthControls\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FAQPage.resx">
+      <DependentUpon>FAQPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -218,6 +236,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAQFirst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAQSecond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A321 bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A330.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
