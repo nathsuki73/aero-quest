@@ -49,8 +49,44 @@ namespace aero_quest.Sql
             }
 
             return true;
-
-
         }
+
+        public static int? VerifyUser(User user)
+        {
+            string query = "SELECT id FROM users WHERE email = @email AND password = @password";
+
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                try
+                {
+                    conn.Open();
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@email", user.Email);
+                        cmd.Parameters.AddWithValue("@password", user.Password);
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToInt32(result); // Return user ID if found
+                        }
+                        else
+                        {
+                            return null; // No user found
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                    return null;
+                }
+            }
+        }
+
+
+
     }
 }
