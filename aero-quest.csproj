@@ -152,11 +152,11 @@
     <Compile Include="UserControls\Dropdown\ExploreDropDown.Designer.cs">
       <DependentUpon>ExploreDropDown.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Dropdown\HlpDropDown.cs">
+    <Compile Include="UserControls\Dropdown\HelpDropDown.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\Dropdown\HlpDropDown.Designer.cs">
-      <DependentUpon>HlpDropDown.cs</DependentUpon>
+    <Compile Include="UserControls\Dropdown\HelpDropDown.Designer.cs">
+      <DependentUpon>HelpDropDown.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Dropdown\ManageDropDown.cs">
       <SubType>UserControl</SubType>
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="UserControls\Dropdown\ExploreDropDown.resx">
       <DependentUpon>ExploreDropDown.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Dropdown\HlpDropDown.resx">
-      <DependentUpon>HlpDropDown.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Dropdown\HelpDropDown.resx">
+      <DependentUpon>HelpDropDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Dropdown\ManageDropDown.resx">
       <DependentUpon>ManageDropDown.cs</DependentUpon>

@@ -26,10 +26,6 @@ namespace aero_quest
                 parent.Controls.Remove(controlToRemove);
                 controlToRemove.Dispose();
             }
-            else
-            {
-                MessageBox.Show($"Control with name '{controlName}' not found.");
-            }
         }
 
     }

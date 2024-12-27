@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace aero_quest.UserControls.Dropdown
 {
-    public partial class HlpDropDown : UserControl
+    public partial class HelpDropDown : UserControl
     {
-        public HlpDropDown()
+        public HelpDropDown()
         {
             InitializeComponent();
         }
