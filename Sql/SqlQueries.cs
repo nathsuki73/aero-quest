@@ -22,7 +22,7 @@ namespace aero_quest.Sql
 
         public static bool AddNewUser(User user)
         {
-            string query = "INSERT INTO users (username, email, password) VALUES (@username, @email, @password)";
+            string query = "INSERT INTO users (username, email, password) VALUES (@username, @email, @password);  SELECT LAST_INSERT_ID();";
 
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
@@ -36,7 +36,11 @@ namespace aero_quest.Sql
                         cmd.Parameters.AddWithValue("@email", user.Email);
                         cmd.Parameters.AddWithValue("@password", user.Password);
 
-                        cmd.ExecuteNonQuery();
+                        object result = cmd.ExecuteScalar();
+                        int newUserId = Convert.ToInt32(result);
+
+                        CreateProfile(newUserId);
+
                     }
                 }
                 catch (Exception ex)
@@ -48,7 +52,42 @@ namespace aero_quest.Sql
 
             }
 
+
             return true;
+        }
+
+        private static void CreateProfile(int userId)
+        {
+            string query = "INSERT INTO profiles (userId, name, birth, age, gender, email, phone, profile) VALUES (@userId, @name, @birth, @age, @gender, @email, @phone, @profile)";
+
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                try
+                {
+                    conn.Open();
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", userId);
+                        cmd.Parameters.AddWithValue("@name", null);
+                        cmd.Parameters.AddWithValue("@birth", null);
+                        cmd.Parameters.AddWithValue("@age", null);
+                        cmd.Parameters.AddWithValue("@gender", null);
+                        cmd.Parameters.AddWithValue("@email", null);
+                        cmd.Parameters.AddWithValue("@phone", null);
+                        cmd.Parameters.AddWithValue("@profile", null);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+
+            }
+
         }
 
         public static int? VerifyUser(User user)
