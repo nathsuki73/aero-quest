@@ -176,6 +176,12 @@
     <Compile Include="UserControls\HomePage3.Designer.cs">
       <DependentUpon>HomePage3.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\HomePage4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomePage4.Designer.cs">
+      <DependentUpon>HomePage4.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomePage4.resx">
+      <DependentUpon>HomePage4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
