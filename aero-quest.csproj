@@ -146,6 +146,30 @@
     <Compile Include="UserControls\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Dropdown\ExploreDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\ExploreDropDown.Designer.cs">
+      <DependentUpon>ExploreDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\HlpDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\HlpDropDown.Designer.cs">
+      <DependentUpon>HlpDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\ManageDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\ManageDropDown.Designer.cs">
+      <DependentUpon>ManageDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\TravelInfoDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dropdown\TravelInfoDropDown.Designer.cs">
+      <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FAQPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +213,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dropdown\ExploreDropDown.resx">
+      <DependentUpon>ExploreDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dropdown\HlpDropDown.resx">
+      <DependentUpon>HlpDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dropdown\ManageDropDown.resx">
+      <DependentUpon>ManageDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Dropdown\TravelInfoDropDown.resx">
+      <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FAQPage.resx">
       <DependentUpon>FAQPage.cs</DependentUpon>
