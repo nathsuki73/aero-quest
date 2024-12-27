@@ -1,5 +1,6 @@
 ﻿using aero_quest.Objects;
 using aero_quest.UserControls.AuthControls;
+using aero_quest.UserControls.Dropdown;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,5 +81,84 @@ namespace aero_quest.UserControls
             mainForm.Controls.Add(new LandingPage());
             UserControlManager.isInHome = false;
         }
+
+
+
+        private void mngeBtn_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            ManageDropDown manageDropDown = new ManageDropDown();
+            manageDropDown.Location = new Point(770, 0);
+            manageDropDown.Name = "dropdown";
+            mainForm.Controls.Add(manageDropDown);
+            manageDropDown.BringToFront();
+            manageDropDown.Parent = pictureBox2;
+
+        }
+
+
+        private void trvlinfoBtn_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            TravelInfoDropDown manageDropDown = new TravelInfoDropDown();
+            manageDropDown.Location = new Point(890, 0);
+            manageDropDown.Name = "dropdown";
+            mainForm.Controls.Add(manageDropDown);
+            manageDropDown.BringToFront();
+            manageDropDown.Parent = pictureBox2;
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            ExploreDropDown manageDropDown = new ExploreDropDown();
+            manageDropDown.Location = new Point(1020, 0);
+            manageDropDown.Name = "dropdown";
+            mainForm.Controls.Add(manageDropDown);
+            manageDropDown.BringToFront();
+            manageDropDown.Parent = pictureBox2;
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            HelpDropDown manageDropDown = new HelpDropDown();
+            manageDropDown.Location = new Point(1090, 0);
+            manageDropDown.Name = "dropdown";
+            mainForm.Controls.Add(manageDropDown);
+            manageDropDown.BringToFront();
+            manageDropDown.Parent = pictureBox2;
+        }
+
+        private void HomePage_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void HomePage_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+        }
+
+        private void guna2Panel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
+        }
+
+        
     }
 }

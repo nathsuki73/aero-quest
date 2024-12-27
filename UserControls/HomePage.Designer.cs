@@ -61,6 +61,7 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1350, 90);
             this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.guna2Panel1_MouseClick);
             // 
             // guna2ImageButton3
             // 
@@ -86,6 +87,7 @@
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(60, 25);
             this.guna2ImageButton2.TabIndex = 6;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // guna2ImageButton1
             // 
@@ -98,6 +100,7 @@
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(75, 23);
             this.guna2ImageButton1.TabIndex = 5;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // trvlinfoBtn
             // 
@@ -110,6 +113,7 @@
             this.trvlinfoBtn.PressedState.Parent = this.trvlinfoBtn;
             this.trvlinfoBtn.Size = new System.Drawing.Size(100, 30);
             this.trvlinfoBtn.TabIndex = 4;
+            this.trvlinfoBtn.Click += new System.EventHandler(this.trvlinfoBtn_Click);
             // 
             // mngeBtn
             // 
@@ -122,6 +126,7 @@
             this.mngeBtn.PressedState.Parent = this.mngeBtn;
             this.mngeBtn.Size = new System.Drawing.Size(90, 25);
             this.mngeBtn.TabIndex = 3;
+            this.mngeBtn.Click += new System.EventHandler(this.mngeBtn_Click);
             // 
             // guna2PictureBox1
             // 
@@ -143,6 +148,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(1350, 349);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
             // 
             // pictureBox1
             // 
@@ -153,6 +159,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1350, 290);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // HomePage
             // 
@@ -163,6 +170,8 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "HomePage";
             this.Size = new System.Drawing.Size(1350, 729);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.HomePage_MouseClick);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HomePage_MouseDown);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
