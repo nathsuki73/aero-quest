@@ -1,4 +1,5 @@
-﻿using System;
+﻿using aero_quest.Objects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,6 @@ namespace aero_quest.UserControls
         public HomePage3()
         {
             InitializeComponent();
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)

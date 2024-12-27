@@ -70,7 +70,6 @@
             this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "HomePage3";
             this.Size = new System.Drawing.Size(1350, 729);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
 
         }
