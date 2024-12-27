@@ -146,11 +146,41 @@
     <Compile Include="UserControls\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\BaggageSuppPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BaggageSuppPage.Designer.cs">
+      <DependentUpon>BaggageSuppPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BrowseFlightsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BrowseFlightsPage.Designer.cs">
+      <DependentUpon>BrowseFlightsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ContactPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactPage.Designer.cs">
+      <DependentUpon>ContactPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExplorePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ExplorePage.Designer.cs">
+      <DependentUpon>ExplorePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FAQPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\FAQPage.Designer.cs">
       <DependentUpon>FAQPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FlightRequirementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FlightRequirementPage.Designer.cs">
+      <DependentUpon>FlightRequirementPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HomePage.cs">
       <SubType>UserControl</SubType>
@@ -164,11 +194,23 @@
     <Compile Include="UserControls\LandingPage.Designer.cs">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\LuzonExplorePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LuzonExplorePage.Designer.cs">
+      <DependentUpon>LuzonExplorePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProfilePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ProfilePage.Designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VisayasExplorePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VisayasExplorePage.Designer.cs">
+      <DependentUpon>VisayasExplorePage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -190,8 +232,23 @@
     <EmbeddedResource Include="UserControls\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BaggageSuppPage.resx">
+      <DependentUpon>BaggageSuppPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BrowseFlightsPage.resx">
+      <DependentUpon>BrowseFlightsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ContactPage.resx">
+      <DependentUpon>ContactPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ExplorePage.resx">
+      <DependentUpon>ExplorePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FAQPage.resx">
       <DependentUpon>FAQPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FlightRequirementPage.resx">
+      <DependentUpon>FlightRequirementPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -199,8 +256,14 @@
     <EmbeddedResource Include="UserControls\LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LuzonExplorePage.resx">
+      <DependentUpon>LuzonExplorePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\VisayasExplorePage.resx">
+      <DependentUpon>VisayasExplorePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -266,6 +329,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Frame %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllowanceBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lostAndFoundBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visayas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visayas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visayas3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

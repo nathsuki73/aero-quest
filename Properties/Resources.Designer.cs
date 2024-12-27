@@ -103,6 +103,16 @@ namespace aero_quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AllowanceBg {
+            get {
+                object obj = ResourceManager.GetObject("AllowanceBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button {
             get {
                 object obj = ResourceManager.GetObject("Button", resourceCulture);
@@ -226,6 +236,46 @@ namespace aero_quest.Properties {
         internal static System.Drawing.Bitmap loginBackground {
             get {
                 object obj = ResourceManager.GetObject("loginBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lostAndFoundBg {
+            get {
+                object obj = ResourceManager.GetObject("lostAndFoundBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visayas1 {
+            get {
+                object obj = ResourceManager.GetObject("Visayas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visayas2 {
+            get {
+                object obj = ResourceManager.GetObject("Visayas2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Visayas3 {
+            get {
+                object obj = ResourceManager.GetObject("Visayas3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

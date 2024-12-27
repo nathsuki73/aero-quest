@@ -41,6 +41,11 @@ namespace aero_quest.UserControls
                 ACBtnRight.Visible = false;
                 ACBtnLeft.Visible = true;
             }
+            else if (clickCount > 0 && clickCount < 3)
+            {
+                ACBtnLeft.Visible = true;
+                ACBtnRight.Visible = true;
+            }
             
             this.BackgroundImage = bgImages[clickCount];
         }
@@ -51,6 +56,11 @@ namespace aero_quest.UserControls
             if (clickCount == 0)
             {
                 ACBtnLeft.Visible = false;
+                ACBtnRight.Visible = true;
+            }
+            else if (clickCount > 0 && clickCount < 3)
+            {
+                ACBtnLeft.Visible = true;
                 ACBtnRight.Visible = true;
             }
 

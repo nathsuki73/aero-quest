@@ -117,71 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lostAndFoundBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lostAndFoundBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rightBtnSupp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAJ9JREFUaEPt2EEKwyAQhWGlh4u3aC5ir+oReoR2FFOIJKsuZh78HwghZvFecDGY
+        AACAskd5PfNW37nUlux5vtbRg9v6HEuuxPz7vwJ6JUrd1wKUcEGJKCgRBSWioEQUVyVsDJm78Y2pdS3Q
+        J1gFN+HtCNV9fhIX4b0Q3gvhvRDei3T4zsKe7oWkwnfrvZBU+MECW/A2Jku58AAA4B8pfQFuDiINyaIs
+        OwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="landing page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\landing page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="leftBtnSupp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAKJJREFUaEPt2EEKgDAMRNHeVG/eI3iEOoNZSHVtE/wPCmJd/OyCDQAA/MkYY9M5
+        dLqf43UNEX93xFV+ip3jrcd1bgp9i7c9PslLkcQvoUjil1Ak8UsokvglFFk33hTqpWxWI94U681yVmfL
+        VOx+NT8wxKcUyxApKJYhUlAsQ6SgWIZIQbFvQ9T5L2QKnoeo8V/oTtEewhusl8A6WysAAHho7QQwybUw
+        YKR29gAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="AllowanceBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AllowanceBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loginBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAQSecond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAQSecond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LandingPageMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LandingPageMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAQFirst" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAQFirst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flights button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flights button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Frame (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Frame (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A321 bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A321 bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A320.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visayas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visayas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visayas2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visayas2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Visayas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visayas3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guna2ImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACsAAAAqCAYAAAAqAaJlAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAeJJREFUWEftWMtxwjAUFK6AElICJfhCJG7pIHQQziAZdwAdkA4ogRJSgktICclK
+        VhhsPQkbECaDdmYv1kpv7fesH3tuiFUOlmy6nNgnj4lMyPVIqJ8/ZqJY26YHQl6OYe5wavTImdozUb5Y
+        5cBA2mGqckw2WQ1eFhkvPghjXg5TFjrtXO0pQ0zIg/navPii2jOhdvcri2k5QVAy7Wwmt1ZVA7MCpQOr
+        6IZN2rn6doLjmZmyKLzKN23O6QMyrhZWdUMg7Tp9VMARl19nvxLaoSUNm7LIF2OrvBKBQE7azyFmWYTT
+        ruZW1g/o5x3zorLQaefrjTOgGbRD2s8hVBZcbbqXhR4IhqiBTNrxIlZ5PbjcUnHADmVhjPpStIrw5wJI
+        vTdmcNWj3zT+nOgpC9T3zioICPnZEGOVumnaQyBWxX5mL/3jL4VYzlvxn9Gs3iNQP0aY4a1iLLO+XVUH
+        HuwQLqKZ9UzqHVjZIVwkswDaG2a9c3E9hx51YDKbzILJbDILJrPJLJjM/juzpW1xgPabm21fRofN6pPm
+        iVizvvVblW22N97mmE7onEOoPrUSugz9GzqQieLdOiNQH9r67v5jscvdgWrUzVAMf9VTBK4po1OXCeJb
+        Jz2gOxH1FZH53e4p4oKxX7BmwLe7S01AAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>
