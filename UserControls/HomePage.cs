@@ -1,4 +1,6 @@
-﻿using System;
+﻿using aero_quest.Objects;
+using aero_quest.UserControls.AuthControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,8 @@ namespace aero_quest.UserControls
 {
     public partial class HomePage : UserControl
     {
+        public static AuthPage authPage;
+
         private Timer timer;
         private List<Image> images;
         private int currentImageIndex = 0;
@@ -49,6 +53,20 @@ namespace aero_quest.UserControls
             pictureBox2.Image = images[currentImageIndex];
         }
 
-
+        private void guna2ImageButton3_Click(object sender, EventArgs e)
+        {
+            if (!User.isLoggedIn)
+            {
+                MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+                authPage = new AuthPage();
+                authPage.Name = "authPage";
+                mainForm.Controls.Add(authPage);
+                authPage.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("aaaaaaaaaaaaa");
+            }
+        }
     }
 }

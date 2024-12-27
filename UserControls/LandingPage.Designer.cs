@@ -91,6 +91,7 @@
             this.btnHome.Size = new System.Drawing.Size(90, 24);
             this.btnHome.TabIndex = 0;
             this.btnHome.UseTransparentBackground = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // guna2ImageButton1
             // 

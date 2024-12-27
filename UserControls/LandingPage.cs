@@ -27,7 +27,16 @@ namespace aero_quest.UserControls
             authPage.BringToFront();
         }
 
-        
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            mainForm.Controls.Clear();
+            HomePage homePage = new HomePage();
+            homePage.Name = "homePage";
+            mainForm.Controls.Add(homePage);
 
+            UserControlManager.isInHome = true;
+            homePage.BringToFront();
+        }
     }
 }

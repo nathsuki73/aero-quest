@@ -8,6 +8,7 @@ namespace aero_quest.Objects
 {
     internal class User
     {
+        public static bool isLoggedIn = false;
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }

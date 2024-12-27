@@ -21,7 +21,18 @@ namespace aero_quest.UserControls.AuthControls
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-            LandingPage.authPage.ShowControl(new Login());
+            if (UserControlManager.isInHome)
+            {
+                if (!User.isLoggedIn)
+                {
+                    HomePage.authPage.ShowControl(new Login());
+                }
+                
+            }
+            else
+            {
+                LandingPage.authPage.ShowControl(new Login());
+            }
 
         }
 

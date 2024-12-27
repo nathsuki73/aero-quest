@@ -13,6 +13,7 @@ namespace aero_quest
         public static List<UserControl> _userControls = new List<UserControl>();
         public static Stack<Form> _userForms = new Stack<Form>();
 
+        public static bool isInHome = false;
         public UserControlManager() { 
             _userForms.Push(new MainForm());
         }
