@@ -46,13 +46,24 @@ namespace aero_quest.UserControls.AuthControls
             if (userIsAdded)
             {
                 //TODO: Show MessageBox Success here
-            LandingPage.authPage.ShowControl(new Login());
+                if (UserControlManager.isInHome)
+                {
+                    if (!User.isLoggedIn)
+                    {
+                        HomePage.authPage.ShowControl(new Login());
+                    }
+
+                }
+                else
+                {
+                    LandingPage.authPage.ShowControl(new Login());
+                }
 
             }
             /*TODO: Pachck ng bug, eevrytime kasi na pinipindot ko register, nagugulo resolution sakin,
              * nagbabago windows form size
             unless gawin kong 100% yung resolution sa mismong pc instead na 125%(recommended)*/
-           
+
 
         }
     }
