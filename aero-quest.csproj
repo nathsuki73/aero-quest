@@ -170,6 +170,12 @@
     <Compile Include="UserControls\ProfilePage.Designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\HomePage3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomePage3.Designer.cs">
+      <DependentUpon>HomePage3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomePage3.resx">
+      <DependentUpon>HomePage3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
