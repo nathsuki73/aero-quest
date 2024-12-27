@@ -68,5 +68,13 @@ namespace aero_quest.UserControls
                 MessageBox.Show("aaaaaaaaaaaaa");
             }
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            mainForm.Controls.Clear();
+            mainForm.Controls.Add(new LandingPage());
+            UserControlManager.isInHome = false;
+        }
     }
 }
