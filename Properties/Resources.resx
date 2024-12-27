@@ -121,6 +121,9 @@
   <data name="landing page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\landing page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="loginBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loginBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,20 +139,20 @@
   <data name="FAQFirst" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FAQFirst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Image3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flights button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flights button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A321 bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A321 bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,13 +160,13 @@
   <data name="A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A320.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Frame (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Frame (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

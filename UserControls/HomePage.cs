@@ -65,7 +65,11 @@ namespace aero_quest.UserControls
             }
             else
             {
-                MessageBox.Show("aaaaaaaaaaaaa");
+                MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+                ProfilePage profilePage = new ProfilePage();
+                profilePage.Name = "profilePage";
+                mainForm.Controls.Add(profilePage);
+                profilePage.BringToFront();
             }
         }
 
