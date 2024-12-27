@@ -1,4 +1,5 @@
 ﻿using aero_quest.Objects;
+using aero_quest.Sql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +51,35 @@ namespace aero_quest.UserControls.AuthControls
             }
             else
             {
+                User.currentLoggedInId = user.Id;
+                User.profile = SqlQueries.GetProfile(User.currentLoggedInId);
+                if (User.profile != null)
+                {
+                    Console.WriteLine("Profile Information:");
+                    Console.WriteLine($"User ID: {User.profile.Id}");
+                    Console.WriteLine($"Name: {User.profile.Name ?? "N/A"}");
+                    Console.WriteLine($"Birthdate: {User.profile.Birth.ToString("yyyy-MM-dd") ?? "N/A"}");
+                    Console.WriteLine($"Age: {User.profile.Age.ToString() ?? "N/A"}");
+                    Console.WriteLine($"Gender: {User.profile.Gender ?? "N/A"}");
+                    Console.WriteLine($"Email: {User.profile.Email ?? "N/A"}");
+                    Console.WriteLine($"Phone: {User.profile.Phone ?? "N/A"}");
+
+                    if (User.profile.ProfileImage != null && User.profile.ProfileImage.Length > 0)
+                    {
+                        Console.WriteLine("Profile Picture: [BLOB data exists]");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Profile Picture: Not available");
+                    }
+
+                    
+                }
+                else
+                {
+                    Console.WriteLine("No profile data found.");
+                }
+
                 //TODO: message box successful log in
                 MessageBox.Show("sucesssssssssssss");
                 User.isLoggedIn = true;

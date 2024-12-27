@@ -18,13 +18,15 @@ namespace aero_quest.Objects
         public string Email { get; set; }
         public string Phone { get; set; }
 
-        public string ProfileImage { get; set; }
+        public byte[] ProfileImage { get; set; }
 
         public Profile() { }
     }
+
     internal class User
     {
         public static Profile profile;
+        public static int? currentLoggedInId = null;
         public static bool isLoggedIn = false;
         public int Id { get; set; }
         public string Name { get; set; }
