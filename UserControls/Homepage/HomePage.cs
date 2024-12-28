@@ -159,6 +159,9 @@ namespace aero_quest.UserControls
             UserControlManager.RemoveControlByName(pictureBox2, "dropdown");
         }
 
-        
+        private void guna2ImageButton1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            UserControlManager.AddControl(new ExplorePage(), "explorePage");
+        }
     }
 }

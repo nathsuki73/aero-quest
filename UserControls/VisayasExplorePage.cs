@@ -95,5 +95,16 @@ namespace aero_quest.UserControls
                 exploreBtnRight.Visible = false;
             }
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("explorePage");
+            UserControlManager.RemoveControlByName("visayasExplorePage");
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("visayasExplorePage");
+        }
     }
 }

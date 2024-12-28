@@ -47,6 +47,7 @@
             this.exploreBtnLuzon.PressedState.Parent = this.exploreBtnLuzon;
             this.exploreBtnLuzon.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnLuzon.TabIndex = 0;
+            this.exploreBtnLuzon.Click += new System.EventHandler(this.exploreBtnLuzon_Click);
             // 
             // exploreBtnVisayas
             // 
@@ -60,6 +61,7 @@
             this.exploreBtnVisayas.PressedState.Parent = this.exploreBtnVisayas;
             this.exploreBtnVisayas.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnVisayas.TabIndex = 1;
+            this.exploreBtnVisayas.Click += new System.EventHandler(this.exploreBtnVisayas_Click);
             // 
             // exploreBtnMindanao
             // 
@@ -73,6 +75,7 @@
             this.exploreBtnMindanao.PressedState.Parent = this.exploreBtnMindanao;
             this.exploreBtnMindanao.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnMindanao.TabIndex = 2;
+            this.exploreBtnMindanao.Click += new System.EventHandler(this.exploreBtnMindanao_Click);
             // 
             // guna2ImageButton1
             // 
@@ -86,6 +89,7 @@
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.TabIndex = 3;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // ExplorePage
             // 

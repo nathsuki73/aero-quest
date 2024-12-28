@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace aero_quest.UserControls
 {
-    public partial class LuzonExplorePage : UserControl
+    public partial class MindanaoExplorePage : UserControl
     {
-        public LuzonExplorePage()
+        public MindanaoExplorePage()
         {
             InitializeComponent();
         }
@@ -20,12 +20,12 @@ namespace aero_quest.UserControls
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
             UserControlManager.RemoveControlByName("explorePage");
-            UserControlManager.RemoveControlByName("luzonExplorePage");
+            UserControlManager.RemoveControlByName("mindanaoExplorePage");
         }
 
         private void guna2ImageButton5_Click(object sender, EventArgs e)
         {
-            UserControlManager.RemoveControlByName("luzonExplorePage");
+            UserControlManager.RemoveControlByName("mindanaoExplorePage");
         }
     }
 }

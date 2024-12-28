@@ -21,5 +21,28 @@ namespace aero_quest.UserControls
         {
 
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("explorePage");
+        }
+
+        private void exploreBtnLuzon_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new LuzonExplorePage(), "luzonExplorePage");
+
+        }
+
+        private void exploreBtnVisayas_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new VisayasExplorePage(), "visayasExplorePage");
+
+        }
+
+        private void exploreBtnMindanao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new MindanaoExplorePage(), "mindanaoExplorePage");
+
+        }
     }
 }

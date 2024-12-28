@@ -45,6 +45,7 @@
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(128, 20);
             this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2ImageButton2
             // 
@@ -57,6 +58,7 @@
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(128, 20);
             this.guna2ImageButton2.TabIndex = 0;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // guna2ImageButton3
             // 
@@ -69,6 +71,7 @@
             this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Size = new System.Drawing.Size(128, 20);
             this.guna2ImageButton3.TabIndex = 0;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // ExploreDropDown
             // 

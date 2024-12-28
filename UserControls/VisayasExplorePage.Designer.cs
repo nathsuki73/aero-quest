@@ -173,6 +173,7 @@
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(48, 48);
             this.guna2ImageButton1.TabIndex = 9;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2ImageButton2
             // 
@@ -186,6 +187,7 @@
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(25, 23);
             this.guna2ImageButton2.TabIndex = 10;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // VisayasExplorePage
             // 

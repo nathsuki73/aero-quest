@@ -27,6 +27,7 @@ namespace aero_quest
                 parent.Controls.Remove(controlToRemove);
                 controlToRemove.Dispose();
             }
+            //TODO: MagstardewValley na kayooo nakasale pa hanggang Jan :)  <3
         }
 
         public static void RemoveControlByName(string controlName)

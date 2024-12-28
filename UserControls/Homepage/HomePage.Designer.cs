@@ -101,6 +101,7 @@
             this.guna2ImageButton1.Size = new System.Drawing.Size(75, 23);
             this.guna2ImageButton1.TabIndex = 5;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.guna2ImageButton1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.guna2ImageButton1_MouseDoubleClick);
             // 
             // trvlinfoBtn
             // 

@@ -87,6 +87,7 @@
             this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton4.TabIndex = 3;
+            this.guna2ImageButton4.Click += new System.EventHandler(this.guna2ImageButton4_Click);
             // 
             // guna2ImageButton5
             // 
@@ -100,6 +101,7 @@
             this.guna2ImageButton5.PressedState.Parent = this.guna2ImageButton5;
             this.guna2ImageButton5.Size = new System.Drawing.Size(25, 23);
             this.guna2ImageButton5.TabIndex = 4;
+            this.guna2ImageButton5.Click += new System.EventHandler(this.guna2ImageButton5_Click);
             // 
             // LuzonExplorePage
             // 
