@@ -10,7 +10,7 @@ namespace aero_quest
 {
     public class UserControlManager
     {
-        public static List<UserControl> _userControls = new List<UserControl>();
+        public static List<Control> _userControls = new List<Control>();
         public static Stack<Form> _userForms = new Stack<Form>();
 
         public static bool isInHome = false;
@@ -26,6 +26,15 @@ namespace aero_quest
                 parent.Controls.Remove(controlToRemove);
                 controlToRemove.Dispose();
             }
+        }
+
+        public static void AddControl(Control control, String Name)
+        {
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            control.Name = Name;
+            mainForm.Controls.Add(control);
+            _userControls.Add(control);
+            control.BringToFront();
         }
 
     }

@@ -206,10 +206,10 @@
     <Compile Include="UserControls\FlightRequirementPage.Designer.cs">
       <DependentUpon>FlightRequirementPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HomePage.cs">
+    <Compile Include="UserControls\Homepage\HomePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\HomePage.Designer.cs">
+    <Compile Include="UserControls\Homepage\HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LandingPage.cs">
@@ -230,22 +230,22 @@
     <Compile Include="UserControls\ProfilePage.Designer.cs">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HomePage3.cs">
+    <Compile Include="UserControls\Homepage\HomePage3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\HomePage3.Designer.cs">
+    <Compile Include="UserControls\Homepage\HomePage3.Designer.cs">
       <DependentUpon>HomePage3.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HomePage4.cs">
+    <Compile Include="UserControls\Homepage\HomePage4.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\HomePage4.Designer.cs">
+    <Compile Include="UserControls\Homepage\HomePage4.Designer.cs">
       <DependentUpon>HomePage4.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HomePage2.cs">
+    <Compile Include="UserControls\Homepage\HomePage2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\HomePage2.Designer.cs">
+    <Compile Include="UserControls\Homepage\HomePage2.Designer.cs">
       <DependentUpon>HomePage2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\VisayasExplorePage.cs">
@@ -304,13 +304,13 @@
     <EmbeddedResource Include="UserControls\FlightRequirementPage.resx">
       <DependentUpon>FlightRequirementPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\HomePage.resx">
+    <EmbeddedResource Include="UserControls\Homepage\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\HomePage2.resx">
+    <EmbeddedResource Include="UserControls\Homepage\HomePage2.resx">
       <DependentUpon>HomePage2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\HomePage4.resx">
+    <EmbeddedResource Include="UserControls\Homepage\HomePage4.resx">
       <DependentUpon>HomePage4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LandingPage.resx">
@@ -322,7 +322,7 @@
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\HomePage3.resx">
+    <EmbeddedResource Include="UserControls\Homepage\HomePage3.resx">
       <DependentUpon>HomePage3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\VisayasExplorePage.resx">

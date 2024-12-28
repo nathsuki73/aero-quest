@@ -29,14 +29,14 @@ namespace aero_quest.UserControls
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
-            mainForm.Controls.Clear();
-            HomePage homePage = new HomePage();
-            homePage.Name = "homePage";
-            mainForm.Controls.Add(homePage);
 
+            UserControlManager.AddControl(new HomePage(), "homePage");
             UserControlManager.isInHome = true;
-            homePage.BringToFront();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new ContactPage(), "contactPage");
         }
     }
 }

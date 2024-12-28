@@ -168,6 +168,7 @@
             this.guna2ImageButton2.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton2.TabIndex = 8;
             this.guna2ImageButton2.UseTransparentBackground = true;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // ContactPage
             // 

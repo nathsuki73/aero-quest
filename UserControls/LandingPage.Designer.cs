@@ -77,6 +77,7 @@
             this.btnHelp.Size = new System.Drawing.Size(90, 24);
             this.btnHelp.TabIndex = 0;
             this.btnHelp.UseTransparentBackground = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnHome
             // 
