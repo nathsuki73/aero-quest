@@ -38,11 +38,15 @@
             // 
             this.ACBtnLeft.BackColor = System.Drawing.Color.Transparent;
             this.ACBtnLeft.CheckedState.Parent = this.ACBtnLeft;
+            this.ACBtnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnLeft.HoverState.Image")));
+            this.ACBtnLeft.HoverState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnLeft.HoverState.Parent = this.ACBtnLeft;
             this.ACBtnLeft.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnLeft.Image")));
             this.ACBtnLeft.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnLeft.Location = new System.Drawing.Point(28, 341);
             this.ACBtnLeft.Name = "ACBtnLeft";
+            this.ACBtnLeft.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnLeft.PressedState.Image")));
+            this.ACBtnLeft.PressedState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnLeft.PressedState.Parent = this.ACBtnLeft;
             this.ACBtnLeft.Size = new System.Drawing.Size(79, 77);
             this.ACBtnLeft.TabIndex = 0;
@@ -52,11 +56,15 @@
             // 
             this.ACBtnRight.BackColor = System.Drawing.Color.Transparent;
             this.ACBtnRight.CheckedState.Parent = this.ACBtnRight;
+            this.ACBtnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnRight.HoverState.Image")));
+            this.ACBtnRight.HoverState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnRight.HoverState.Parent = this.ACBtnRight;
             this.ACBtnRight.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnRight.Image")));
             this.ACBtnRight.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnRight.Location = new System.Drawing.Point(1242, 349);
             this.ACBtnRight.Name = "ACBtnRight";
+            this.ACBtnRight.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnRight.PressedState.Image")));
+            this.ACBtnRight.PressedState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnRight.PressedState.Parent = this.ACBtnRight;
             this.ACBtnRight.Size = new System.Drawing.Size(79, 77);
             this.ACBtnRight.TabIndex = 1;

@@ -122,6 +122,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\AboutUsPagecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AboutUsPagecs.Designer.cs">
+      <DependentUpon>AboutUsPagecs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\AircraftsPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -230,6 +236,18 @@
     <Compile Include="UserControls\Explore\MindanaoExplorePage.Designer.cs">
       <DependentUpon>MindanaoExplorePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Notice Forms\LoginFailedPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Notice Forms\LoginFailedPage.Designer.cs">
+      <DependentUpon>LoginFailedPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Notice Forms\LoginSuccessPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Notice Forms\LoginSuccessPage.Designer.cs">
+      <DependentUpon>LoginSuccessPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProfilePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -267,6 +285,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AboutUsPagecs.resx">
+      <DependentUpon>AboutUsPagecs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AircraftsPage.resx">
       <DependentUpon>AircraftsPage.cs</DependentUpon>
@@ -327,6 +348,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Explore\MindanaoExplorePage.resx">
       <DependentUpon>MindanaoExplorePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Notice Forms\LoginFailedPage.resx">
+      <DependentUpon>LoginFailedPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Notice Forms\LoginSuccessPage.resx">
+      <DependentUpon>LoginSuccessPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>

@@ -96,7 +96,7 @@
             this.departPicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.departPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.departPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.departPicker.Location = new System.Drawing.Point(411, 457);
+            this.departPicker.Location = new System.Drawing.Point(415, 457);
             this.departPicker.Name = "departPicker";
             this.departPicker.Size = new System.Drawing.Size(208, 31);
             this.departPicker.TabIndex = 2;
@@ -108,7 +108,7 @@
             this.arrivePicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
             this.arrivePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.arrivePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.arrivePicker.Location = new System.Drawing.Point(721, 457);
+            this.arrivePicker.Location = new System.Drawing.Point(727, 456);
             this.arrivePicker.Name = "arrivePicker";
             this.arrivePicker.Size = new System.Drawing.Size(208, 31);
             this.arrivePicker.TabIndex = 3;
@@ -117,11 +117,15 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.Location = new System.Drawing.Point(567, 566);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.TabIndex = 4;

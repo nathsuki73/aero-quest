@@ -39,11 +39,15 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(135, 20);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(135, 20);
             this.guna2ImageButton2.Location = new System.Drawing.Point(738, 398);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(135, 20);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(135, 20);
             this.guna2ImageButton2.TabIndex = 4;
@@ -53,11 +57,15 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.CheckedState.Parent = this.btnLogin;
+            this.btnLogin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.HoverState.Image")));
+            this.btnLogin.HoverState.ImageSize = new System.Drawing.Size(337, 48);
             this.btnLogin.HoverState.Parent = this.btnLogin;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.ImageSize = new System.Drawing.Size(337, 48);
             this.btnLogin.Location = new System.Drawing.Point(639, 342);
             this.btnLogin.Name = "btnLogin";
+            this.btnLogin.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.PressedState.Image")));
+            this.btnLogin.PressedState.ImageSize = new System.Drawing.Size(337, 48);
             this.btnLogin.PressedState.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(337, 48);
             this.btnLogin.TabIndex = 5;
@@ -67,8 +75,10 @@
             // txtPasswordd
             // 
             this.txtPasswordd.Animated = true;
-            this.txtPasswordd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPasswordd.BorderThickness = 0;
+            this.txtPasswordd.BackColor = System.Drawing.Color.Transparent;
+            this.txtPasswordd.BorderColor = System.Drawing.Color.Gray;
+            this.txtPasswordd.BorderRadius = 15;
+            this.txtPasswordd.BorderThickness = 2;
             this.txtPasswordd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPasswordd.DefaultText = "";
             this.txtPasswordd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -93,8 +103,10 @@
             // txtEmail
             // 
             this.txtEmail.Animated = true;
-            this.txtEmail.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtEmail.BorderThickness = 0;
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmail.BorderRadius = 15;
+            this.txtEmail.BorderThickness = 2;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

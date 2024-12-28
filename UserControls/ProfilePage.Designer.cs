@@ -45,21 +45,27 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(48, 48);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1278, 16);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(43, 42);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1273, 23);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(48, 48);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtName.BackColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderColor = System.Drawing.Color.Gray;
             this.txtName.BorderRadius = 15;
+            this.txtName.BorderThickness = 2;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.DefaultText = "";
             this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -83,8 +89,10 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
             this.txtEmail.BorderRadius = 15;
+            this.txtEmail.BorderThickness = 2;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -108,8 +116,10 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtPhone.BackColor = System.Drawing.Color.Transparent;
+            this.txtPhone.BorderColor = System.Drawing.Color.Gray;
             this.txtPhone.BorderRadius = 15;
+            this.txtPhone.BorderThickness = 2;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -133,8 +143,10 @@
             // 
             // txtAge
             // 
-            this.txtAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtAge.BackColor = System.Drawing.Color.Transparent;
+            this.txtAge.BorderColor = System.Drawing.Color.Gray;
             this.txtAge.BorderRadius = 15;
+            this.txtAge.BorderThickness = 2;
             this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAge.DefaultText = "";
             this.txtAge.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -158,6 +170,10 @@
             // 
             // birthDate
             // 
+            this.birthDate.BackColor = System.Drawing.Color.Transparent;
+            this.birthDate.BorderColor = System.Drawing.Color.Gray;
+            this.birthDate.BorderRadius = 15;
+            this.birthDate.BorderThickness = 2;
             this.birthDate.CheckedState.Parent = this.birthDate;
             this.birthDate.FillColor = System.Drawing.Color.LightCyan;
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -175,6 +191,9 @@
             // txtGender
             // 
             this.txtGender.BackColor = System.Drawing.Color.Transparent;
+            this.txtGender.BorderColor = System.Drawing.Color.Gray;
+            this.txtGender.BorderRadius = 15;
+            this.txtGender.BorderThickness = 2;
             this.txtGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtGender.FocusedColor = System.Drawing.Color.Empty;
@@ -195,6 +214,7 @@
             // 
             this.profileImage.AutoRoundedCorners = true;
             this.profileImage.BackColor = System.Drawing.Color.Transparent;
+            this.profileImage.BorderRadius = 149;
             this.profileImage.Image = global::aero_quest.Properties.Resources.Frame__1_;
             this.profileImage.InitialImage = global::aero_quest.Properties.Resources.Frame__1_;
             this.profileImage.Location = new System.Drawing.Point(856, 178);
@@ -211,11 +231,15 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(296, 48);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(296, 48);
             this.guna2ImageButton2.Location = new System.Drawing.Point(912, 569);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(296, 48);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(296, 48);
             this.guna2ImageButton2.TabIndex = 0;

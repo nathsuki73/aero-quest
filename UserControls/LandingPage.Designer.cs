@@ -39,12 +39,18 @@
             // btnAbout
             // 
             this.btnAbout.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbout.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.CheckedState.Image")));
+            this.btnAbout.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.CheckedState.Parent = this.btnAbout;
+            this.btnAbout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.HoverState.Image")));
+            this.btnAbout.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.HoverState.Parent = this.btnAbout;
             this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
             this.btnAbout.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.Location = new System.Drawing.Point(1202, 30);
             this.btnAbout.Name = "btnAbout";
+            this.btnAbout.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.PressedState.Image")));
+            this.btnAbout.PressedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.PressedState.Parent = this.btnAbout;
             this.btnAbout.Size = new System.Drawing.Size(90, 24);
             this.btnAbout.TabIndex = 0;
@@ -53,12 +59,18 @@
             // btnFlights
             // 
             this.btnFlights.BackColor = System.Drawing.Color.Transparent;
+            this.btnFlights.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnFlights.CheckedState.Image")));
+            this.btnFlights.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.CheckedState.Parent = this.btnFlights;
+            this.btnFlights.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnFlights.HoverState.Image")));
+            this.btnFlights.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.HoverState.Parent = this.btnFlights;
             this.btnFlights.Image = global::aero_quest.Properties.Resources.flights_button;
             this.btnFlights.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.Location = new System.Drawing.Point(1106, 30);
             this.btnFlights.Name = "btnFlights";
+            this.btnFlights.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnFlights.PressedState.Image")));
+            this.btnFlights.PressedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.PressedState.Parent = this.btnFlights;
             this.btnFlights.Size = new System.Drawing.Size(90, 24);
             this.btnFlights.TabIndex = 0;
@@ -67,12 +79,18 @@
             // btnHelp
             // 
             this.btnHelp.BackColor = System.Drawing.Color.Transparent;
+            this.btnHelp.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.CheckedState.Image")));
+            this.btnHelp.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.CheckedState.Parent = this.btnHelp;
+            this.btnHelp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.HoverState.Image")));
+            this.btnHelp.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.HoverState.Parent = this.btnHelp;
             this.btnHelp.Image = global::aero_quest.Properties.Resources.help;
             this.btnHelp.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.Location = new System.Drawing.Point(1010, 30);
             this.btnHelp.Name = "btnHelp";
+            this.btnHelp.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.PressedState.Image")));
+            this.btnHelp.PressedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.PressedState.Parent = this.btnHelp;
             this.btnHelp.Size = new System.Drawing.Size(90, 24);
             this.btnHelp.TabIndex = 0;
@@ -82,12 +100,18 @@
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.CheckedState.Image")));
+            this.btnHome.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.CheckedState.Parent = this.btnHome;
+            this.btnHome.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.HoverState.Image")));
+            this.btnHome.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.HoverState.Parent = this.btnHome;
             this.btnHome.Image = global::aero_quest.Properties.Resources.home_button;
             this.btnHome.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.Location = new System.Drawing.Point(914, 30);
             this.btnHome.Name = "btnHome";
+            this.btnHome.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.PressedState.Image")));
+            this.btnHome.PressedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.PressedState.Parent = this.btnHome;
             this.btnHome.Size = new System.Drawing.Size(90, 24);
             this.btnHome.TabIndex = 0;
@@ -98,13 +122,17 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(200, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(576, 530);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(154, 51);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(584, 526);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(200, 40);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);

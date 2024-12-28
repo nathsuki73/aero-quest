@@ -37,37 +37,49 @@
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(143, 20);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(10, 16);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1, 16);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(143, 20);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(161, 20);
             this.guna2ImageButton1.TabIndex = 0;
             // 
             // guna2ImageButton2
             // 
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(143, 20);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(10, 42);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1, 48);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(143, 20);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(161, 20);
             this.guna2ImageButton2.TabIndex = 0;
             // 
             // guna2ImageButton3
             // 
             this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.HoverState.Image")));
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(143, 20);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(10, 68);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(1, 80);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.PressedState.Image")));
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(163, 20);
             this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Size = new System.Drawing.Size(143, 20);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(161, 20);
             this.guna2ImageButton3.TabIndex = 0;
             this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 

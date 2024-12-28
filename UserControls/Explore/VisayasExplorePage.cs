@@ -86,6 +86,7 @@ namespace aero_quest.UserControls
                 bookBacolod.Visible = true;
                 bookBoracay.Visible = true;
                 this.BackgroundImage = bgImages[count];
+                exploreBtnRight.Visible = true;
             }
             else if (count == 2)
             {

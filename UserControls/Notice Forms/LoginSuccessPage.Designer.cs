@@ -1,13 +1,13 @@
-﻿namespace aero_quest.UserControls
+﻿namespace aero_quest.UserControls.Notice_Forms
 {
-    partial class AuthPage
+    partial class LoginSuccessPage
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,15 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthPage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginSuccessPage));
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
@@ -37,28 +37,27 @@
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(26, 23);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(26, 23);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(28, 33);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(204, 48);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(331, 391);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(26, 23);
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(26, 23);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.TabIndex = 0;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // AuthPage
+            // LoginSuccessPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.ControlBox = false;
             this.Controls.Add(this.guna2ImageButton1);
-            this.Name = "AuthPage";
-            this.Size = new System.Drawing.Size(1350, 729);
+            this.Name = "LoginSuccessPage";
             this.ResumeLayout(false);
 
         }

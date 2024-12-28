@@ -40,13 +40,17 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(43, 43);
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.Location = new System.Drawing.Point(1275, 25);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(43, 43);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.TabIndex = 0;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
@@ -65,11 +69,15 @@
             // 
             this.BtnRight.BackColor = System.Drawing.Color.Transparent;
             this.BtnRight.CheckedState.Parent = this.BtnRight;
+            this.BtnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("BtnRight.HoverState.Image")));
+            this.BtnRight.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnRight.HoverState.Parent = this.BtnRight;
             this.BtnRight.Image = ((System.Drawing.Image)(resources.GetObject("BtnRight.Image")));
             this.BtnRight.ImageSize = new System.Drawing.Size(48, 48);
-            this.BtnRight.Location = new System.Drawing.Point(698, 677);
+            this.BtnRight.Location = new System.Drawing.Point(673, 677);
             this.BtnRight.Name = "BtnRight";
+            this.BtnRight.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("BtnRight.PressedState.Image")));
+            this.BtnRight.PressedState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnRight.PressedState.Parent = this.BtnRight;
             this.BtnRight.Size = new System.Drawing.Size(48, 48);
             this.BtnRight.TabIndex = 2;
@@ -79,11 +87,15 @@
             // 
             this.BtnLeft.BackColor = System.Drawing.Color.Transparent;
             this.BtnLeft.CheckedState.Parent = this.BtnLeft;
+            this.BtnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeft.HoverState.Image")));
+            this.BtnLeft.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnLeft.HoverState.Parent = this.BtnLeft;
             this.BtnLeft.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeft.Image")));
             this.BtnLeft.ImageSize = new System.Drawing.Size(48, 48);
-            this.BtnLeft.Location = new System.Drawing.Point(648, 677);
+            this.BtnLeft.Location = new System.Drawing.Point(623, 677);
             this.BtnLeft.Name = "BtnLeft";
+            this.BtnLeft.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeft.PressedState.Image")));
+            this.BtnLeft.PressedState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnLeft.PressedState.Parent = this.BtnLeft;
             this.BtnLeft.Size = new System.Drawing.Size(48, 48);
             this.BtnLeft.TabIndex = 3;

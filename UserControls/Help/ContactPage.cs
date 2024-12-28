@@ -25,9 +25,9 @@ namespace aero_quest.UserControls
 
         private void fixDesign()
         {
-            nameTxtBx.Parent = contactBg;
-            emailTxtBx.Parent = contactBg;
-            messageTxtBx.Parent = contactBg;
+            //nameTxtBx.Parent = contactBg;
+            //emailTxtBx.Parent = contactBg;
+            //messageTxtBx.Parent = contactBg;
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)

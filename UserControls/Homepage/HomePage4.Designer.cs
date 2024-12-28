@@ -54,9 +54,14 @@
             // 
             this.guna2ImageButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.BackgroundImage")));
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(321, 84);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(321, 84);
             this.guna2ImageButton2.Location = new System.Drawing.Point(522, 368);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(321, 84);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(321, 84);
             this.guna2ImageButton2.TabIndex = 1;
