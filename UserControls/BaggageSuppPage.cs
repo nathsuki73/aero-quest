@@ -35,5 +35,10 @@ namespace aero_quest.UserControls
             rightBtnSupp.Visible = true;
             BackgroundImage = Properties.Resources.lostAndFoundBg;
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("baggageSuppPage");
+        }
     }
 }

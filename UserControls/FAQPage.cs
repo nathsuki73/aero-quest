@@ -32,5 +32,10 @@ namespace aero_quest.UserControls
 
             FAQ.Image = Properties.Resources.FAQFirst;
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("faqPage");
+        }
     }
 }

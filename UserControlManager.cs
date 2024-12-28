@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace aero_quest
 {
@@ -27,6 +28,18 @@ namespace aero_quest
                 controlToRemove.Dispose();
             }
         }
+
+        public static void RemoveControlByName(string controlName)
+        {
+            MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
+            Control controlToRemove = mainForm.Controls[controlName];
+            if (controlToRemove != null)
+            {
+                mainForm.Controls.Remove(controlToRemove);
+                controlToRemove.Dispose();
+            }
+        }
+
 
         public static void AddControl(Control control, String Name)
         {

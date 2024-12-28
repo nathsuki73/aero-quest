@@ -16,5 +16,10 @@ namespace aero_quest.UserControls.Dropdown
         {
             InitializeComponent();
         }
+
+        private void guna2ImageButton3_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new AircraftsPage(), "aircraftsPage");
+        }
     }
 }

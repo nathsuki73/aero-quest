@@ -66,5 +66,10 @@ namespace aero_quest.UserControls
 
             this.BackgroundImage = bgImages[clickCount];
         }
+
+        private void ACHomeBtn_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("aircraftsPage");
+        }
     }
 }

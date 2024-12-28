@@ -74,6 +74,7 @@
             this.ACHomeBtn.PressedState.Parent = this.ACHomeBtn;
             this.ACHomeBtn.Size = new System.Drawing.Size(25, 25);
             this.ACHomeBtn.TabIndex = 2;
+            this.ACHomeBtn.Click += new System.EventHandler(this.ACHomeBtn_Click);
             // 
             // AircraftsPage
             // 

@@ -121,7 +121,7 @@
   <data name="ACBtnLeft.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAE8AAABNCAYAAADn/DmNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAA5JJREFUeF7tnMtx4kAQhh2CI3ARAAeffXIGdgZLBusMTAYmA3yGwzoDh+AQCIEQ
+        EQAACxEBf2RfkQAAA5JJREFUeF7tnMtx4kAQhh2CI3ARAAeffXIGdgZLBusMTAYmA3yGwzoDh+AQCIEQ
         2P+ThmUlEE+h7hbzVXWVkEbz+OlRS6MZ3VmxWq3uZY+ykWwi+yP7kS1kS1kd9n/LSEf637LnlF3/obGy
         dxki7BLoXMgPMR9TUf1ADcLDEAzP6QLKwTMHqQrxUOXxMjzCErp4nK5NZWXWotWhPn5FVOUGqZKemcp8
         dWdViGtamwHg2rynqtuhSkTwtiYILDZeqIJfZZG8bRfU/zU1qRtUIN20T3TTjVXQR1le77iugCqAaNVn
@@ -142,7 +142,7 @@
   <data name="ACBtnRight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAE8AAABNCAYAAADn/DmNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAA49JREFUeF7tnMtx4kAQhgnBEVAEwMFnTpuBncGSwToDk4HJAJ/hsM6AEBwCIRAC
+        EQAACxEBf2RfkQAAA49JREFUeF7tnMtx4kAQhgnBEVAEwMFnTpuBncGSwToDk4HJAJ/hsM6AEBwCIRAC
         +3/SsFhC4inUPdJ8VV0lpNE8fnrU0mhGAyt2u92T7Fk2lc1lf2Xfso1sKyvD/rWMdKT/I/sVsus+NFb2
         LkOEKoFuhfwQ8zkU1Q3UIDwMwfCcNqAcPHMUqhAfqjxehkdYQhePp2tTWZm1aGWoj18RVblRqKRnFjJf
         3VkV4prWZAB4NO+h6naoEjF4Wx0EFhsvVMGvspi8rQrq/xqa1A4qkG7aJdrpxiroIy+vczxWQBVAtOoy
@@ -163,7 +163,7 @@
   <data name="ACHomeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAKxJREFUSEtjGAWjgHLg2mDA4FplAOXRCHhUN4AxTQHZlng0KEBZhAFZlgAtYHSv
+        EQAACxEBf2RfkQAAAKxJREFUSEtjGAWjgHLg2mDA4FplAOXRCHhUN4AxTQHZlng0KEBZhAFZlgAtYHSv
         fU9sOAPVrmdwr/OHcokAIAs8au8zeNQmQEXwA4j6/8T7nFQLgADsC49aIoOKVAscGgQgFtQsgIoQAFAL
         GN1rzsMjEQ9m8qidD3EQkE80AGYmUEQzeoJchmkoJq5KAPkEqpsEALLIo+4+7XPu8LWI6LRPLiArYkfB
         KGBgYAAAtiNZpPouITMAAAAASUVORK5CYII=
