@@ -1,5 +1,6 @@
 ﻿using aero_quest.Objects;
 using aero_quest.Sql;
+using aero_quest.UserControls.Notice_Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,8 +47,7 @@ namespace aero_quest.UserControls.AuthControls
             if (user.Id == -1)
             {
                 //TODO: message box of failed log in
-                     MessageBox.Show("not sucesssssssssssss");
-
+                ShowNotice(new LoginFailedPage());
             }
             else
             {
@@ -90,6 +90,11 @@ namespace aero_quest.UserControls.AuthControls
                 mainForm.Controls.Add(homePage);
                 homePage.BringToFront();
             }
+        }
+
+        public static void ShowNotice(Form control)
+        {
+            control.ShowDialog();
         }
     }
 }

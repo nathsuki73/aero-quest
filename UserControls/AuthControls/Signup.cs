@@ -60,9 +60,6 @@ namespace aero_quest.UserControls.AuthControls
                 }
 
             }
-            /*TODO: Pachck ng bug, eevrytime kasi na pinipindot ko register, nagugulo resolution sakin,
-             * nagbabago windows form size
-            unless gawin kong 100% yung resolution sa mismong pc instead na 125%(recommended)*/
 
 
         }

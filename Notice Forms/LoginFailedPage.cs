@@ -16,5 +16,13 @@ namespace aero_quest.UserControls.Notice_Forms
         {
             InitializeComponent();
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+
+            // Close the form after setting the DialogResult
+            this.Close();
+        }
     }
 }
