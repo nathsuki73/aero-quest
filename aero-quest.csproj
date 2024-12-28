@@ -140,10 +140,10 @@
     <Compile Include="UserControls\AuthControls\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\AuthPage.cs">
+    <Compile Include="UserControls\AuthControls\AuthPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\AuthPage.Designer.cs">
+    <Compile Include="UserControls\AuthControls\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Dropdown\ExploreDropDown.cs">
@@ -170,10 +170,10 @@
     <Compile Include="UserControls\Dropdown\TravelInfoDropDown.Designer.cs">
       <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\BaggageSuppPage.cs">
+    <Compile Include="UserControls\Help\BaggageSuppPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\BaggageSuppPage.Designer.cs">
+    <Compile Include="UserControls\Help\BaggageSuppPage.Designer.cs">
       <DependentUpon>BaggageSuppPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\BrowseFlightsPage.cs">
@@ -182,22 +182,22 @@
     <Compile Include="UserControls\BrowseFlightsPage.Designer.cs">
       <DependentUpon>BrowseFlightsPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ContactPage.cs">
+    <Compile Include="UserControls\Help\ContactPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ContactPage.Designer.cs">
+    <Compile Include="UserControls\Help\ContactPage.Designer.cs">
       <DependentUpon>ContactPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ExplorePage.cs">
+    <Compile Include="UserControls\Explore\ExplorePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ExplorePage.Designer.cs">
+    <Compile Include="UserControls\Explore\ExplorePage.Designer.cs">
       <DependentUpon>ExplorePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\FAQPage.cs">
+    <Compile Include="UserControls\Help\FAQPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\FAQPage.Designer.cs">
+    <Compile Include="UserControls\Help\FAQPage.Designer.cs">
       <DependentUpon>FAQPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\FlightRequirementPage.cs">
@@ -218,16 +218,16 @@
     <Compile Include="UserControls\LandingPage.Designer.cs">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LuzonExplorePage.cs">
+    <Compile Include="UserControls\Explore\LuzonExplorePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\LuzonExplorePage.Designer.cs">
+    <Compile Include="UserControls\Explore\LuzonExplorePage.Designer.cs">
       <DependentUpon>LuzonExplorePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\MindanaoExplorePage.cs">
+    <Compile Include="UserControls\Explore\MindanaoExplorePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\MindanaoExplorePage.Designer.cs">
+    <Compile Include="UserControls\Explore\MindanaoExplorePage.Designer.cs">
       <DependentUpon>MindanaoExplorePage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ProfilePage.cs">
@@ -254,10 +254,10 @@
     <Compile Include="UserControls\Homepage\HomePage2.Designer.cs">
       <DependentUpon>HomePage2.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\VisayasExplorePage.cs">
+    <Compile Include="UserControls\Explore\VisayasExplorePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\VisayasExplorePage.Designer.cs">
+    <Compile Include="UserControls\Explore\VisayasExplorePage.Designer.cs">
       <DependentUpon>VisayasExplorePage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
@@ -277,7 +277,7 @@
     <EmbeddedResource Include="UserControls\AuthControls\Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\AuthPage.resx">
+    <EmbeddedResource Include="UserControls\AuthControls\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Dropdown\ExploreDropDown.resx">
@@ -292,19 +292,19 @@
     <EmbeddedResource Include="UserControls\Dropdown\TravelInfoDropDown.resx">
       <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\BaggageSuppPage.resx">
+    <EmbeddedResource Include="UserControls\Help\BaggageSuppPage.resx">
       <DependentUpon>BaggageSuppPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\BrowseFlightsPage.resx">
       <DependentUpon>BrowseFlightsPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ContactPage.resx">
+    <EmbeddedResource Include="UserControls\Help\ContactPage.resx">
       <DependentUpon>ContactPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ExplorePage.resx">
+    <EmbeddedResource Include="UserControls\Explore\ExplorePage.resx">
       <DependentUpon>ExplorePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\FAQPage.resx">
+    <EmbeddedResource Include="UserControls\Help\FAQPage.resx">
       <DependentUpon>FAQPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\FlightRequirementPage.resx">
@@ -322,10 +322,10 @@
     <EmbeddedResource Include="UserControls\LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\LuzonExplorePage.resx">
+    <EmbeddedResource Include="UserControls\Explore\LuzonExplorePage.resx">
       <DependentUpon>LuzonExplorePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\MindanaoExplorePage.resx">
+    <EmbeddedResource Include="UserControls\Explore\MindanaoExplorePage.resx">
       <DependentUpon>MindanaoExplorePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
@@ -334,7 +334,7 @@
     <EmbeddedResource Include="UserControls\Homepage\HomePage3.resx">
       <DependentUpon>HomePage3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\VisayasExplorePage.resx">
+    <EmbeddedResource Include="UserControls\Explore\VisayasExplorePage.resx">
       <DependentUpon>VisayasExplorePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
