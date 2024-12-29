@@ -26,5 +26,11 @@ namespace aero_quest.UserControls.Dropdown
         {
             UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new FlightSchedule(), "flightSchedule");
+
+        }
     }
 }

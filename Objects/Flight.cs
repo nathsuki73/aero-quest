@@ -78,23 +78,151 @@ namespace aero_quest.Objects
 
         public static void InitializeFlights()
         {
+            // Create an aircraft object for use in all flights
             Aircraft aircraft = new Aircraft("Boeing 737", "Boeing", 180);
 
-            // Create a flight object
-            Flight flight = new Flight
+            // Flight 1
+            Flight flight1 = new Flight
             {
                 from = "New York",
                 to = "Los Angeles",
                 departureTime = "10:20 pm",
                 arrivalTime = "11:20 pm",
                 aircraft = aircraft,
-                passengerCount = 150,               
-                date = new DateTime(2024, 12, 29), 
+                passengerCount = 150,
+                date = new DateTime(2024, 12, 29),
                 terminal = "Terminal 1"
             };
 
-            // Add the flight to the flight schedule
-            Flight.AddFlight(flight);
+            // Flight 2
+            Flight flight2 = new Flight
+            {
+                from = "Los Angeles",
+                to = "Chicago",
+                departureTime = "12:00 pm",
+                arrivalTime = "3:00 pm",
+                aircraft = aircraft,
+                passengerCount = 140,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 2"
+            };
+
+            // Flight 3
+            Flight flight3 = new Flight
+            {
+                from = "Chicago",
+                to = "Dallas",
+                departureTime = "2:00 pm",
+                arrivalTime = "4:00 pm",
+                aircraft = aircraft,
+                passengerCount = 160,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 3"
+            };
+
+            // Flight 4
+            Flight flight4 = new Flight
+            {
+                from = "Dallas",
+                to = "San Francisco",
+                departureTime = "4:30 pm",
+                arrivalTime = "6:30 pm",
+                aircraft = aircraft,
+                passengerCount = 170,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 4"
+            };
+
+            // Flight 5
+            Flight flight5 = new Flight
+            {
+                from = "San Francisco",
+                to = "Miami",
+                departureTime = "6:00 pm",
+                arrivalTime = "9:00 pm",
+                aircraft = aircraft,
+                passengerCount = 150,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 1"
+            };
+
+            // Flight 6
+            Flight flight6 = new Flight
+            {
+                from = "Miami",
+                to = "Seattle",
+                departureTime = "9:30 pm",
+                arrivalTime = "12:30 am",
+                aircraft = aircraft,
+                passengerCount = 180,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 2"
+            };
+
+            // Flight 7
+            Flight flight7 = new Flight
+            {
+                from = "Seattle",
+                to = "Boston",
+                departureTime = "11:00 am",
+                arrivalTime = "2:00 pm",
+                aircraft = aircraft,
+                passengerCount = 160,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 3"
+            };
+
+            // Flight 8
+            Flight flight8 = new Flight
+            {
+                from = "Boston",
+                to = "Washington DC",
+                departureTime = "1:30 pm",
+                arrivalTime = "3:30 pm",
+                aircraft = aircraft,
+                passengerCount = 140,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 4"
+            };
+
+            // Flight 9
+            Flight flight9 = new Flight
+            {
+                from = "Washington DC",
+                to = "Atlanta",
+                departureTime = "5:00 pm",
+                arrivalTime = "7:00 pm",
+                aircraft = aircraft,
+                passengerCount = 150,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 1"
+            };
+
+            // Flight 10
+            Flight flight10 = new Flight
+            {
+                from = "Atlanta",
+                to = "Orlando",
+                departureTime = "8:00 pm",
+                arrivalTime = "10:00 pm",
+                aircraft = aircraft,
+                passengerCount = 160,
+                date = new DateTime(2024, 12, 29),
+                terminal = "Terminal 2"
+            };
+
+            // Add flights to the schedule
+            Flight.AddFlight(flight1);
+            Flight.AddFlight(flight2);
+            Flight.AddFlight(flight3);
+            Flight.AddFlight(flight4);
+            Flight.AddFlight(flight5);
+            Flight.AddFlight(flight6);
+            Flight.AddFlight(flight7);
+            Flight.AddFlight(flight8);
+            Flight.AddFlight(flight9);
+            Flight.AddFlight(flight10);
+
         }
     }
 }

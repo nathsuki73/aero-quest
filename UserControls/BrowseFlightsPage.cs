@@ -24,7 +24,8 @@ namespace aero_quest.UserControls
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            UserControlManager.AddControl(new FlightSchedule(), "flightSchedule");
+            
+            UserControlManager.AddControl(new FlightSchedule(txtFrom.Text, txtTo.Text, dtpDepart.Value, dtpArrive.Value), "flightSchedule");
         }
     }
 }
