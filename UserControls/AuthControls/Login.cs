@@ -81,7 +81,7 @@ namespace aero_quest.UserControls.AuthControls
                 }
 
                 //TODO: message box successful log in
-                MessageBox.Show("sucesssssssssssss");
+                ShowNotice(new LoginSuccessPage());
                 User.isLoggedIn = true;
                 MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
                 mainForm.Controls.Clear();
