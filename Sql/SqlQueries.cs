@@ -211,6 +211,49 @@ namespace aero_quest.Sql
         }
 
 
+        public static bool AddBookingSchedule(List<string> schedule, string bookingReference, string seatId)
+        {
+
+            try
+            {
+                // Convert the List<string> into a byte array (BLOB)
+                byte[] scheduleBytes = ConvertScheduleToBytes(schedule);
+
+                using (MySqlConnection conn = new MySqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    string query = @"INSERT INTO schedules (userId, schedule, status, reference, seatId) 
+                             VALUES (@userId, @schedule, @status, @reference, @seatId)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", User.currentLoggedInId);
+                        cmd.Parameters.AddWithValue("@schedule", scheduleBytes);
+                        cmd.Parameters.AddWithValue("@status", "Not Checked-In");
+                        cmd.Parameters.AddWithValue("@reference", bookingReference); 
+                        cmd.Parameters.AddWithValue("@seatId", seatId); 
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0; 
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        private static byte[] ConvertScheduleToBytes(List<string> schedule)
+        {
+            // Convert List<string> to a single string and then to bytes (for BLOB storage)
+            string scheduleString = string.Join(";", schedule); // You can choose any delimiter
+            return Encoding.UTF8.GetBytes(scheduleString);
+        }
 
     }
 }

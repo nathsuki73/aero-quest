@@ -1,4 +1,6 @@
-﻿using System;
+﻿using aero_quest.Objects;
+using aero_quest.Sql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace aero_quest.UserControls.Booking_Process
 {
     public partial class ConfirmPayment : UserControl
     {
-        public ConfirmPayment(List<string> schedule)
+        Flight selectedFlight;
+        List<string> schedule;
+        public ConfirmPayment(List<string> schedule, Flight selectedFlight)
         {
             InitializeComponent();
+            this.selectedFlight = selectedFlight;
+            this.schedule = schedule;
+            lblPrice.Text = selectedFlight.price.ToString();
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -25,8 +32,14 @@ namespace aero_quest.UserControls.Booking_Process
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-
-            MessageBox.Show("suceessss");
+            string seatId = selectedFlight.aircraft.GetAndUpdateAvailableSeat();
+            string bookingReference = BookingReferenceGenerator.GenerateBookingReference();
+            if (seatId != null)
+            {
+                SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
+                MessageBox.Show("{suceessss}");
+            }
+            
         }
     }
 }

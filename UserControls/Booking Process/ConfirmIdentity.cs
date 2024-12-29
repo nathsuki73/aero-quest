@@ -14,11 +14,13 @@ namespace aero_quest.UserControls.Booking_Process
     public partial class ConfirmIdentity : UserControl
     {
         List<string> schedule;
-        public ConfirmIdentity(List<string> schedule)
+        Flight selectedFlight;
+        public ConfirmIdentity(List<string> schedule, Flight selectedFlight)
         {
             InitializeComponent();
             this.schedule = schedule;
             PopulateProfile();
+            this.selectedFlight = selectedFlight;
         }
 
         private void PopulateProfile()
@@ -39,7 +41,7 @@ namespace aero_quest.UserControls.Booking_Process
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-            UserControlManager.AddControl(new ConfirmPayment(schedule), "confirmPayment");
+            UserControlManager.AddControl(new ConfirmPayment(schedule, selectedFlight), "confirmPayment");
 
         }
     }

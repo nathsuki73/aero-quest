@@ -106,6 +106,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\BookingRefernceGenerator.cs" />
     <Compile Include="Objects\Flight.cs" />
     <Compile Include="Objects\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

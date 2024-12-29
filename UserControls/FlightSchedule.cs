@@ -1,6 +1,7 @@
 ﻿using aero_quest.Objects;
 using aero_quest.UserControls.Booking_Process;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace aero_quest.UserControls
 {
     public partial class FlightSchedule : UserControl
     {
+        private static ArrayList filteredFlights;
+
         public FlightSchedule()
         {
             InitializeComponent();
@@ -38,7 +41,7 @@ namespace aero_quest.UserControls
             guna2DataGridView1.Columns["passengerCount"].HeaderText = "Passenger Count";
             guna2DataGridView1.Columns["date"].HeaderText = "Date";
             guna2DataGridView1.Columns["price"].HeaderText = "Price";
-
+            FlightSchedule.filteredFlights = Flight.flightSchedule;
         }
 
         private void LoadFLightSchedules(string from, string to, DateTime startDate, DateTime endDate)
@@ -60,6 +63,8 @@ namespace aero_quest.UserControls
             guna2DataGridView1.Columns["passengerCount"].HeaderText = "Passenger Count";
             guna2DataGridView1.Columns["date"].HeaderText = "Date";
             guna2DataGridView1.Columns["price"].HeaderText = "Price";
+
+            FlightSchedule.filteredFlights = new ArrayList(filteredFlights);
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -72,6 +77,8 @@ namespace aero_quest.UserControls
         {
             if (e.RowIndex >= 0 && User.isLoggedIn)
             {
+                Flight selectedFlight = (Flight)FlightSchedule.filteredFlights[e.RowIndex];
+
                 // Create a List<string> to store the row values
                 List<string> rowData = new List<string>();
 
@@ -81,8 +88,8 @@ namespace aero_quest.UserControls
                     // Add the cell value to the list (convert to string)
                     rowData.Add(cell.Value?.ToString() ?? string.Empty);
                 }
-
-                UserControlManager.AddControl(new ConfirmSchedule(rowData), "confirmSchedule");
+                
+                UserControlManager.AddControl(new ConfirmSchedule(rowData, selectedFlight), "confirmSchedule");
 
             }
             else

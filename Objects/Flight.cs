@@ -12,17 +12,19 @@ namespace aero_quest.Objects
 {
     public class Aircraft
     {
+        public int id {  get; set; }
         public string Model { get; set; }
         public string Manufacturer { get; set; } 
         public int TotalSeats { get; private set; }
         public HashSet<string> AvailableSeats { get; private set; } 
 
-        public Aircraft(string model, string manufacturer, int totalSeats)
+        public Aircraft(int id, string model, string manufacturer, int totalSeats)
         {
             Model = model;
             Manufacturer = manufacturer;
             TotalSeats = totalSeats;
             AvailableSeats = InitializeSeats(totalSeats);
+            this.id = id;
         }
 
         public override string ToString()
@@ -37,7 +39,7 @@ namespace aero_quest.Objects
             for (int i = 1; i <= totalSeats; i++)
             {
                 seats.Add($"{row}{i}");
-                if (i % 6 == 0) 
+                if (i % 12 == 0) 
                     row++;
             }
 
@@ -56,12 +58,34 @@ namespace aero_quest.Objects
             }
         }
 
+        // Method to get an available seat and update its availability
+        public string GetAndUpdateAvailableSeat()
+        {
+            // Find an available seat (if any)
+            if (AvailableSeats.Count > 0)
+            {
+                // Get the first available seat
+                string seatId = AvailableSeats.First();
+
+                // Update the seat to unavailable
+                UpdateSeatAvailability(seatId, false);
+
+                // Return the seat ID
+                return seatId;
+            }
+            else
+            {
+                // No available seats
+                return null;
+            }
+        }
+
 
     }
-    internal class Flight
+    public class Flight
     {
+        public static LinkedList<Aircraft> aircrafts = new LinkedList<Aircraft>();
         public static ArrayList flightSchedule = new ArrayList();
-        public static Queue<int> flightQueue = new Queue<int>();
         public string from {  get; set; }
         public string to { get; set; }
         public string departureTime { get; set; }
@@ -79,9 +103,8 @@ namespace aero_quest.Objects
 
         public static void InitializeFlights()
         {
-            // Create an aircraft object for use in all flights
-            Aircraft aircraft = new Aircraft("Boeing 737", "Boeing", 180);
-
+            // Create an aircraft object 
+            Aircraft aircraft = new Aircraft(1, "Boeing 737", "Boeing", 180);
 
             // Flight 1
             Flight flight1 = new Flight
@@ -96,134 +119,11 @@ namespace aero_quest.Objects
                 price = 6969
             };
 
-            // Flight 2
-            Flight flight2 = new Flight
-            {
-                from = "Los Angeles",
-                to = "Chicago",
-                departureTime = "12:00 pm",
-                arrivalTime = "3:00 pm",
-                aircraft = aircraft,
-                passengerCount = 140,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 3
-            Flight flight3 = new Flight
-            {
-                from = "Chicago",
-                to = "Dallas",
-                departureTime = "2:00 pm",
-                arrivalTime = "4:00 pm",
-                aircraft = aircraft,
-                passengerCount = 160,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 4
-            Flight flight4 = new Flight
-            {
-                from = "Dallas",
-                to = "San Francisco",
-                departureTime = "4:30 pm",
-                arrivalTime = "6:30 pm",
-                aircraft = aircraft,
-                passengerCount = 170,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 5
-            Flight flight5 = new Flight
-            {
-                from = "San Francisco",
-                to = "Miami",
-                departureTime = "6:00 pm",
-                arrivalTime = "9:00 pm",
-                aircraft = aircraft,
-                passengerCount = 150,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 6
-            Flight flight6 = new Flight
-            {
-                from = "Miami",
-                to = "Seattle",
-                departureTime = "9:30 pm",
-                arrivalTime = "12:30 am",
-                aircraft = aircraft,
-                passengerCount = 180,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 7
-            Flight flight7 = new Flight
-            {
-                from = "Seattle",
-                to = "Boston",
-                departureTime = "11:00 am",
-                arrivalTime = "2:00 pm",
-                aircraft = aircraft,
-                passengerCount = 160,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 8
-            Flight flight8 = new Flight
-            {
-                from = "Boston",
-                to = "Washington DC",
-                departureTime = "1:30 pm",
-                arrivalTime = "3:30 pm",
-                aircraft = aircraft,
-                passengerCount = 140,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 9
-            Flight flight9 = new Flight
-            {
-                from = "Washington DC",
-                to = "Atlanta",
-                departureTime = "5:00 pm",
-                arrivalTime = "7:00 pm",
-                aircraft = aircraft,
-                passengerCount = 150,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
-
-            // Flight 10
-            Flight flight10 = new Flight
-            {
-                from = "Atlanta",
-                to = "Orlando",
-                departureTime = "8:00 pm",
-                arrivalTime = "10:00 pm",
-                aircraft = aircraft,
-                passengerCount = 160,
-                date = new DateTime(2024, 12, 29),
-                price = 6969
-            };
 
             // Add flights to the schedule
             Flight.AddFlight(flight1);
-            Flight.AddFlight(flight2);
-            Flight.AddFlight(flight3);
-            Flight.AddFlight(flight4);
-            Flight.AddFlight(flight5);
-            Flight.AddFlight(flight6);
-            Flight.AddFlight(flight7);
-            Flight.AddFlight(flight8);
-            Flight.AddFlight(flight9);
-            Flight.AddFlight(flight10);
+            Flight.aircrafts.AddLast(aircraft);
+
 
         }
     }
