@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowseFlightsPage));
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.departPicker = new System.Windows.Forms.DateTimePicker();
-            this.arrivePicker = new System.Windows.Forms.DateTimePicker();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
             // guna2TextBox1
@@ -89,30 +89,6 @@
             this.guna2TextBox2.Size = new System.Drawing.Size(217, 36);
             this.guna2TextBox2.TabIndex = 1;
             // 
-            // departPicker
-            // 
-            this.departPicker.CalendarForeColor = System.Drawing.Color.Gray;
-            this.departPicker.CalendarMonthBackground = System.Drawing.Color.White;
-            this.departPicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.departPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.departPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.departPicker.Location = new System.Drawing.Point(415, 457);
-            this.departPicker.Name = "departPicker";
-            this.departPicker.Size = new System.Drawing.Size(208, 31);
-            this.departPicker.TabIndex = 2;
-            // 
-            // arrivePicker
-            // 
-            this.arrivePicker.CalendarForeColor = System.Drawing.Color.Gray;
-            this.arrivePicker.CalendarMonthBackground = System.Drawing.Color.White;
-            this.arrivePicker.CalendarTitleForeColor = System.Drawing.Color.Gray;
-            this.arrivePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.arrivePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.arrivePicker.Location = new System.Drawing.Point(727, 456);
-            this.arrivePicker.Name = "arrivePicker";
-            this.arrivePicker.Size = new System.Drawing.Size(208, 31);
-            this.arrivePicker.TabIndex = 3;
-            // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
@@ -142,16 +118,45 @@
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(24, 42);
             this.guna2ImageButton2.TabIndex = 5;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(417, 462);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 6;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 12, 29, 12, 57, 48, 75);
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(721, 462);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker2.TabIndex = 6;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 12, 29, 12, 57, 48, 75);
             // 
             // BrowseFlightsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.guna2DateTimePicker2);
+            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.arrivePicker);
-            this.Controls.Add(this.departPicker);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "BrowseFlightsPage";
@@ -164,9 +169,9 @@
 
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.DateTimePicker departPicker;
-        private System.Windows.Forms.DateTimePicker arrivePicker;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }
 }

@@ -15,8 +15,11 @@ namespace aero_quest.UserControls
         public BrowseFlightsPage()
         {
             InitializeComponent();
-            departPicker.CustomFormat = "MM/dd/yyyy hh:mm tt";
-            arrivePicker.CustomFormat = "MM/dd/yyyy hh:mm tt";
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("browseFlightsPage");
         }
     }
 }
