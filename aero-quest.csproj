@@ -106,6 +106,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\Flight.cs" />
     <Compile Include="Objects\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -175,6 +176,12 @@
     </Compile>
     <Compile Include="UserControls\Dropdown\TravelInfoDropDown.Designer.cs">
       <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FlightSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FlightSchedule.Designer.cs">
+      <DependentUpon>FlightSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Help\BaggageSuppPage.cs">
       <SubType>UserControl</SubType>
@@ -312,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Dropdown\TravelInfoDropDown.resx">
       <DependentUpon>TravelInfoDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FlightSchedule.resx">
+      <DependentUpon>FlightSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Help\BaggageSuppPage.resx">
       <DependentUpon>BaggageSuppPage.cs</DependentUpon>

@@ -21,5 +21,10 @@ namespace aero_quest.UserControls
         {
             UserControlManager.RemoveControlByName("browseFlightsPage");
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new FlightSchedule(), "flightSchedule");
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using aero_quest.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +19,9 @@ namespace aero_quest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Flight.InitializeFlights();
+
             UserControlManager newApp = new UserControlManager();
             MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
             Application.Run(mainForm);
