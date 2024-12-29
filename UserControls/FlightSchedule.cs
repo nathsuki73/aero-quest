@@ -1,4 +1,5 @@
 ﻿using aero_quest.Objects;
+using aero_quest.UserControls.Booking_Process;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +37,8 @@ namespace aero_quest.UserControls
             guna2DataGridView1.Columns["aircraft"].HeaderText = "Aircraft"; 
             guna2DataGridView1.Columns["passengerCount"].HeaderText = "Passenger Count";
             guna2DataGridView1.Columns["date"].HeaderText = "Date";
-            guna2DataGridView1.Columns["terminal"].HeaderText = "Terminal";
+            guna2DataGridView1.Columns["price"].HeaderText = "Price";
+
         }
 
         private void LoadFLightSchedules(string from, string to, DateTime startDate, DateTime endDate)
@@ -57,13 +59,36 @@ namespace aero_quest.UserControls
             guna2DataGridView1.Columns["aircraft"].HeaderText = "Aircraft";
             guna2DataGridView1.Columns["passengerCount"].HeaderText = "Passenger Count";
             guna2DataGridView1.Columns["date"].HeaderText = "Date";
-            guna2DataGridView1.Columns["terminal"].HeaderText = "Terminal";
+            guna2DataGridView1.Columns["price"].HeaderText = "Price";
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             UserControlManager.RemoveControlByName("flightSchedule");
 
+        }
+
+        private void guna2DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && User.isLoggedIn)
+            {
+                // Create a List<string> to store the row values
+                List<string> rowData = new List<string>();
+
+                // Loop through each cell in the selected row
+                foreach (DataGridViewCell cell in guna2DataGridView1.Rows[e.RowIndex].Cells)
+                {
+                    // Add the cell value to the list (convert to string)
+                    rowData.Add(cell.Value?.ToString() ?? string.Empty);
+                }
+
+                UserControlManager.AddControl(new ConfirmSchedule(rowData), "confirmSchedule");
+
+            }
+            else
+            {
+                MessageBox.Show("PLease login muna");
+            }
         }
     }
 }

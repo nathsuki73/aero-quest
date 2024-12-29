@@ -61,7 +61,7 @@ namespace aero_quest.Objects
     internal class Flight
     {
         public static ArrayList flightSchedule = new ArrayList();
-
+        public static Queue<int> flightQueue = new Queue<int>();
         public string from {  get; set; }
         public string to { get; set; }
         public string departureTime { get; set; }
@@ -69,7 +69,8 @@ namespace aero_quest.Objects
         public Aircraft aircraft {  get; set; }
         public int passengerCount { get; set; }
         public DateTime date { get; set; }
-        public string terminal { get; set; }
+
+        public decimal price { get; set; }
 
         public static void AddFlight(Flight flight)
         {
@@ -81,6 +82,7 @@ namespace aero_quest.Objects
             // Create an aircraft object for use in all flights
             Aircraft aircraft = new Aircraft("Boeing 737", "Boeing", 180);
 
+
             // Flight 1
             Flight flight1 = new Flight
             {
@@ -91,7 +93,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 150,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 1"
+                price = 6969
             };
 
             // Flight 2
@@ -104,7 +106,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 140,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 2"
+                price = 6969
             };
 
             // Flight 3
@@ -117,7 +119,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 160,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 3"
+                price = 6969
             };
 
             // Flight 4
@@ -130,7 +132,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 170,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 4"
+                price = 6969
             };
 
             // Flight 5
@@ -143,7 +145,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 150,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 1"
+                price = 6969
             };
 
             // Flight 6
@@ -156,7 +158,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 180,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 2"
+                price = 6969
             };
 
             // Flight 7
@@ -169,7 +171,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 160,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 3"
+                price = 6969
             };
 
             // Flight 8
@@ -182,7 +184,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 140,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 4"
+                price = 6969
             };
 
             // Flight 9
@@ -195,7 +197,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 150,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 1"
+                price = 6969
             };
 
             // Flight 10
@@ -208,7 +210,7 @@ namespace aero_quest.Objects
                 aircraft = aircraft,
                 passengerCount = 160,
                 date = new DateTime(2024, 12, 29),
-                terminal = "Terminal 2"
+                price = 6969
             };
 
             // Add flights to the schedule

@@ -153,6 +153,24 @@
     <Compile Include="UserControls\AuthControls\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmIdentity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmIdentity.Designer.cs">
+      <DependentUpon>ConfirmIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmPayment.Designer.cs">
+      <DependentUpon>ConfirmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Booking Process\ConfirmSchedule.Designer.cs">
+      <DependentUpon>ConfirmSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Dropdown\ExploreDropDown.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -308,6 +326,15 @@
     <EmbeddedResource Include="UserControls\AuthControls\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Booking Process\ConfirmIdentity.resx">
+      <DependentUpon>ConfirmIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Booking Process\ConfirmPayment.resx">
+      <DependentUpon>ConfirmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Booking Process\ConfirmSchedule.resx">
+      <DependentUpon>ConfirmSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Dropdown\ExploreDropDown.resx">
       <DependentUpon>ExploreDropDown.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,5 +481,6 @@
   <ItemGroup>
     <None Include="Resources\Visayas3.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
