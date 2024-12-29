@@ -124,7 +124,7 @@ namespace aero_quest.UserControls.AuthControls
             else if(!password.Any(char.IsLower))
             {
                 errors.AppendLine("• Password must contain at least one lowercase letter.");
-            }
+            }/*
             else if(!password.Any(char.IsDigit))
             {
                 errors.AppendLine("• Password must contain at least one number.");
@@ -132,7 +132,7 @@ namespace aero_quest.UserControls.AuthControls
             else if (!password.Any(c => specialChars.Contains(c)))
             {
                 errors.AppendLine("• Password must contain at least one special character (e.g., @, #, $, etc.).");
-            }
+            }*/
 
             return errors.ToString();
         }
