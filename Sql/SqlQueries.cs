@@ -255,5 +255,67 @@ namespace aero_quest.Sql
             return Encoding.UTF8.GetBytes(scheduleString);
         }
 
+        public static List<List<string>> GetAllBookingSchedules()
+        {
+            try
+            {
+                List<List<string>> allSchedules = new List<List<string>>();
+
+                using (MySqlConnection conn = new MySqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    string query = "SELECT * FROM schedules WHERE userId = @userId";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@userId", User.currentLoggedInId);
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                // Retrieve all columns
+                                byte[] scheduleBytes = (byte[])reader["schedule"];
+                                string status = reader.GetString(reader.GetOrdinal("status"));
+                                string reference = reader.GetString(reader.GetOrdinal("reference"));
+                                string seatId = reader.GetString(reader.GetOrdinal("seatId"));
+
+                                // Convert the byte array back to List<string>
+                                List<string> schedule = ConvertBytesToSchedule(scheduleBytes);
+
+                                // Add additional fields to the schedule
+                                schedule.Add(status);
+                                schedule.Add(reference);
+                                schedule.Add(seatId);
+
+                                // Add this schedule to the list of all schedules
+                                allSchedules.Add(schedule);
+                            }
+                        }
+                    }
+                }
+
+                return allSchedules; // Return all schedules
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+        }
+
+        private static List<string> ConvertBytesToSchedule(byte[] scheduleBytes)
+        {
+            // Convert bytes back to string
+            string scheduleString = Encoding.UTF8.GetString(scheduleBytes);
+
+            // Split the string back into a List<string> using the chosen delimiter
+            return scheduleString.Split(';').ToList();
+        }
+
+
+
     }
 }

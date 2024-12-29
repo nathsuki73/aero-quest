@@ -274,6 +274,12 @@
     <Compile Include="Notice Forms\LoginSuccessPage.Designer.cs">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Manage\ManageBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Manage\ManageBookings.Designer.cs">
+      <DependentUpon>ManageBookings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProfilePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -392,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notice Forms\LoginSuccessPage.resx">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Manage\ManageBookings.resx">
+      <DependentUpon>ManageBookings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>

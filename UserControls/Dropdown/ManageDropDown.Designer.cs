@@ -68,6 +68,7 @@
             this.guna2ImageButton2.Size = new System.Drawing.Size(192, 26);
             this.guna2ImageButton2.TabIndex = 0;
             this.guna2ImageButton2.UseTransparentBackground = true;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // ManageDropDown
             // 
