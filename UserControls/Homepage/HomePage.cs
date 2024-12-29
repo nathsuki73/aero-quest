@@ -163,5 +163,10 @@ namespace aero_quest.UserControls
         {
             UserControlManager.AddControl(new ExplorePage(), "explorePage");
         }
+
+        private void guna2ImageButton4_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new HomePage2(), "homePage2");
+        }
     }
 }

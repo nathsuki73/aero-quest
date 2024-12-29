@@ -199,11 +199,12 @@
             this.guna2ImageButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.BackgroundImage")));
             this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Location = new System.Drawing.Point(1288, 445);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(1290, 660);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.Size = new System.Drawing.Size(46, 46);
             this.guna2ImageButton4.TabIndex = 5;
+            this.guna2ImageButton4.Click += new System.EventHandler(this.guna2ImageButton4_Click);
             // 
             // HomePage
             // 
