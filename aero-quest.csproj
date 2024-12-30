@@ -280,6 +280,12 @@
     <Compile Include="UserControls\Manage\ManageBookings.Designer.cs">
       <DependentUpon>ManageBookings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Manage\OnlineCheckIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Manage\OnlineCheckIn.Designer.cs">
+      <DependentUpon>OnlineCheckIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ProfilePage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -401,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Manage\ManageBookings.resx">
       <DependentUpon>ManageBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Manage\OnlineCheckIn.resx">
+      <DependentUpon>OnlineCheckIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>

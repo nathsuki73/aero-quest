@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Xml.Linq;
 
 namespace aero_quest.Objects
@@ -50,6 +51,7 @@ namespace aero_quest.Objects
         {
             if (isAvailable)
             {
+                MessageBox.Show($"{seatId}: is now available");
                 AvailableSeats.Add(seatId);
             }
             else
@@ -119,12 +121,27 @@ namespace aero_quest.Objects
                 price = 6969
             };
 
-
             // Add flights to the schedule
             Flight.AddFlight(flight1);
             Flight.aircrafts.AddLast(aircraft);
 
 
+        }
+
+        public static Flight GetFlight(string from, string to, string departure, string arrival, string date)
+        {
+            foreach (Flight flight in flightSchedule)
+            {
+                if (flight.from == from &&
+                    flight.to == to &&
+                    flight.departureTime == departure &&
+                    flight.arrivalTime == arrival &&
+                    flight.date.ToString() == date)
+                {
+                    return flight;
+                }
+            }
+            return null; // Flight not found
         }
     }
 }

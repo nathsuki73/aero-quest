@@ -276,6 +276,7 @@ namespace aero_quest.Sql
                             while (reader.Read())
                             {
                                 // Retrieve all columns
+                                int id = reader.GetInt32(reader.GetOrdinal("id"));
                                 byte[] scheduleBytes = (byte[])reader["schedule"];
                                 string status = reader.GetString(reader.GetOrdinal("status"));
                                 string reference = reader.GetString(reader.GetOrdinal("reference"));
@@ -288,6 +289,7 @@ namespace aero_quest.Sql
                                 schedule.Add(status);
                                 schedule.Add(reference);
                                 schedule.Add(seatId);
+                                schedule.Add(id.ToString());
 
                                 // Add this schedule to the list of all schedules
                                 allSchedules.Add(schedule);
@@ -305,6 +307,73 @@ namespace aero_quest.Sql
                 return null;
             }
         }
+
+        public static bool UpdateScheduleStatus(int id, string newStatus)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    // Update query to modify the status for a specific ID
+                    string query = "UPDATE schedules SET status = @newStatus WHERE id = @id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        // Add parameters to avoid SQL injection
+                        cmd.Parameters.AddWithValue("@newStatus", newStatus);
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        // Execute the command and check if rows were affected
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        // Return true if at least one row was updated
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+
+        public static bool DeleteSchedule(int id)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connStr))
+                {
+                    conn.Open();
+
+                    // Delete query to remove the record with the specified ID
+                    string query = "DELETE FROM schedules WHERE id = @id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        // Add parameter to avoid SQL injection
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        // Execute the command and check if rows were affected
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        // Return true if at least one row was deleted
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
 
         private static List<string> ConvertBytesToSchedule(byte[] scheduleBytes)
         {

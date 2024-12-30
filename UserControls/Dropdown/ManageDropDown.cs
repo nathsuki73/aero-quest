@@ -21,5 +21,11 @@ namespace aero_quest.UserControls.Dropdown
         {
             UserControlManager.AddControl(new ManageBookings(), "manageBookings");
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new OnlineCheckIn(), "onlineCheckIn");
+
+        }
     }
 }

@@ -25,6 +25,19 @@ namespace aero_quest.UserControls
         {
             InitializeComponent();
             InitializeImageChanger();
+            HideManageIfNotLoggedIn();
+        }
+
+        private void HideManageIfNotLoggedIn()
+        {
+            if (!User.isLoggedIn)
+            {
+                mngeBtn.Visible = false;
+            }
+            else
+            {
+                mngeBtn.Visible = true;
+            }
         }
 
         private void InitializeImageChanger()
