@@ -1,5 +1,5 @@
-﻿using aero_quest.Objects;
-using aero_quest.Sql;
+﻿using aero_quest.Sql;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,20 +12,16 @@ using System.Windows.Forms;
 
 namespace aero_quest.UserControls.Manage
 {
-    public partial class ManageBookings : UserControl
+    public partial class OnlineCheckIn : UserControl
     {
-        public ManageBookings()
+        public OnlineCheckIn()
         {
             InitializeComponent();
             LoadBookings();
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void LoadBookings()
         {
-            UserControlManager.RemoveControlByName("manageBookings");
-        }
-
-        private void LoadBookings() {
             try
             {
                 // Fetch booking data from the database
@@ -36,8 +32,8 @@ namespace aero_quest.UserControls.Manage
                 {
                     // Bind the data to the DataGridView
                     guna2DataGridView1.DataSource = allSchedBooked;
-                    guna2DataGridView1.Columns["seatId"].Visible = false; // hide seat id
-                    guna2DataGridView1.Columns[0].Visible = false; // hide seat id
+                    guna2DataGridView1.Columns[0].Visible = false;
+
 
                 }
                 else
@@ -75,7 +71,7 @@ namespace aero_quest.UserControls.Manage
             guna2DataGridView1.Columns["price"].HeaderText = "Price";*/
             dataTable.Columns.Add("Status", typeof(string));
             dataTable.Columns.Add("Reference", typeof(string));
-            dataTable.Columns.Add("SeatId", typeof(string));
+            //dataTable.Columns.Add("SeatId", typeof(string));
 
             foreach (var schedule in schedules)
             {
@@ -90,7 +86,7 @@ namespace aero_quest.UserControls.Manage
                 row["Date"] = schedule[6];
                 row["Status"] = schedule[8];
                 row["Reference"] = schedule[9];
-                row["SeatId"] = schedule[10];
+                //row["SeatId"] = schedule[10];
                 row["Id"] = schedule[11];
 
                 dataTable.Rows.Add(row);
@@ -99,41 +95,34 @@ namespace aero_quest.UserControls.Manage
             return dataTable;
         }
 
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            UserControlManager.RemoveControlByName("onlineCheckIn");
+
+        }
+
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
             if (guna2DataGridView1.SelectedRows.Count == 1)
             {
                 DataGridViewRow selectedRow = guna2DataGridView1.SelectedRows[0];
 
-                DialogResult result = MessageBox.Show(
-                    "Are you sure you want to cancel this booking?",
-                    "Cancel Booking",
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Warning
-                );
-
-                if (result == DialogResult.OK)
+                string id = selectedRow.Cells["id"].Value.ToString();
+                string status = selectedRow.Cells["status"].Value.ToString();
+                if (status == "Checked in")
                 {
-                    int id = Convert.ToInt32(selectedRow.Cells["id"].Value);
-                    string from = selectedRow.Cells["from"].Value.ToString();
-                    string  to = selectedRow.Cells["to"].Value.ToString();
-                    string departure = selectedRow.Cells["departure"].Value.ToString();
-                    string arrival = selectedRow.Cells["arrival"].Value.ToString();
-                    string date = selectedRow.Cells["date"].Value.ToString();
-                    string seatId = selectedRow.Cells["seatId"].Value.ToString();
-
-                    Flight flight = Flight.GetFlight(from, to, departure, arrival, date);
-
-                    flight.aircraft.UpdateSeatAvailability(seatId, true);
-
-                    SqlQueries.DeleteSchedule(id);
-                    LoadBookings();
-                    MessageBox.Show("Booking canceled successfully.");
+                    MessageBox.Show("Already Checked In");
                 }
                 else
                 {
-                    MessageBox.Show("Cancellation aborted.");
+                    SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
+                    LoadBookings();
                 }
+
+            } else
+            {
+
             }
         }
     }

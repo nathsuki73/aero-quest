@@ -1,6 +1,6 @@
 ﻿namespace aero_quest.UserControls.Manage
 {
-    partial class ManageBookings
+    partial class OnlineCheckIn
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageBookings));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OnlineCheckIn));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -45,11 +45,11 @@
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(25, 23);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1278, 22);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1286, 27);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(25, 23);
-            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.TabIndex = 1;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
@@ -83,13 +83,13 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(117, 249);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(133, 245);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1110, 341);
-            this.guna2DataGridView1.TabIndex = 1;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1077, 341);
+            this.guna2DataGridView1.TabIndex = 2;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -119,16 +119,16 @@
             this.btnCheckIn.CheckedState.Parent = this.btnCheckIn;
             this.btnCheckIn.HoverState.Parent = this.btnCheckIn;
             this.btnCheckIn.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckIn.Image")));
-            this.btnCheckIn.ImageSize = new System.Drawing.Size(231, 48);
-            this.btnCheckIn.Location = new System.Drawing.Point(996, 596);
+            this.btnCheckIn.ImageSize = new System.Drawing.Size(204, 48);
+            this.btnCheckIn.Location = new System.Drawing.Point(1006, 610);
             this.btnCheckIn.Name = "btnCheckIn";
             this.btnCheckIn.PressedState.Parent = this.btnCheckIn;
-            this.btnCheckIn.Size = new System.Drawing.Size(231, 48);
-            this.btnCheckIn.TabIndex = 4;
+            this.btnCheckIn.Size = new System.Drawing.Size(204, 48);
+            this.btnCheckIn.TabIndex = 3;
             this.btnCheckIn.UseTransparentBackground = true;
             this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
-            // ManageBookings
+            // OnlineCheckIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,7 +136,7 @@
             this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2ImageButton1);
-            this.Name = "ManageBookings";
+            this.Name = "OnlineCheckIn";
             this.Size = new System.Drawing.Size(1350, 729);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
