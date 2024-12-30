@@ -500,6 +500,26 @@
   <ItemGroup>
     <None Include="Resources\Visayas3.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Mindanao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mindanao2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priceCDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priceDavao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pricegenSan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priceSiargao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priceZamboanga.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

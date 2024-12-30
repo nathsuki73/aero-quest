@@ -111,22 +111,31 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(24, 42);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(1284, 31);
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(48, 48);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1273, 26);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(48, 48);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(24, 42);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(48, 48);
             this.guna2ImageButton2.TabIndex = 5;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // dtpDepart
             // 
+            this.dtpDepart.BackColor = System.Drawing.Color.Transparent;
+            this.dtpDepart.BorderColor = System.Drawing.Color.Gray;
+            this.dtpDepart.BorderRadius = 15;
+            this.dtpDepart.BorderThickness = 2;
             this.dtpDepart.CheckedState.Parent = this.dtpDepart;
+            this.dtpDepart.FillColor = System.Drawing.SystemColors.Control;
             this.dtpDepart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpDepart.HoverState.Parent = this.dtpDepart;
-            this.dtpDepart.Location = new System.Drawing.Point(417, 462);
+            this.dtpDepart.Location = new System.Drawing.Point(417, 457);
             this.dtpDepart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDepart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpDepart.Name = "dtpDepart";
@@ -137,10 +146,15 @@
             // 
             // dtpArrive
             // 
+            this.dtpArrive.BackColor = System.Drawing.Color.Transparent;
+            this.dtpArrive.BorderColor = System.Drawing.Color.Gray;
+            this.dtpArrive.BorderRadius = 15;
+            this.dtpArrive.BorderThickness = 2;
             this.dtpArrive.CheckedState.Parent = this.dtpArrive;
+            this.dtpArrive.FillColor = System.Drawing.SystemColors.Control;
             this.dtpArrive.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpArrive.HoverState.Parent = this.dtpArrive;
-            this.dtpArrive.Location = new System.Drawing.Point(721, 462);
+            this.dtpArrive.Location = new System.Drawing.Point(734, 456);
             this.dtpArrive.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpArrive.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpArrive.Name = "dtpArrive";

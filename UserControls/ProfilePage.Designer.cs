@@ -203,6 +203,9 @@
             this.txtGender.FormattingEnabled = true;
             this.txtGender.HoverState.Parent = this.txtGender;
             this.txtGender.ItemHeight = 30;
+            this.txtGender.Items.AddRange(new object[] {
+            "Male ",
+            "Female"});
             this.txtGender.ItemsAppearance.Parent = this.txtGender;
             this.txtGender.Location = new System.Drawing.Point(294, 310);
             this.txtGender.Name = "txtGender";
