@@ -1,6 +1,7 @@
 ﻿using aero_quest.Objects;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -385,6 +386,119 @@ namespace aero_quest.Sql
         }
 
 
+        public static void InitializeData()
+        {
+            LinkedList<Aircraft> aircrafts = Flight.aircrafts;
+            ArrayList flightSchedule = Flight.flightSchedule;
 
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                conn.Open();
+
+                // Retrieve Aircraft data
+                string aircraftQuery = "SELECT * FROM aircrafts";
+                MySqlCommand aircraftCommand = new MySqlCommand(aircraftQuery, conn);
+                MySqlDataReader aircraftReader = aircraftCommand.ExecuteReader();
+
+                while (aircraftReader.Read())
+                {
+                    int aircraftId = aircraftReader.GetInt32("aircraft_id");
+                    string model = aircraftReader.GetString("model");
+                    string manufacturer = aircraftReader.GetString("manufacturer");
+                    int totalSeat = aircraftReader.GetInt32("totalSeat");
+                    HashSet<string> availableSeat = ConvertAvailableSeat(aircraftReader["availableSeat"] as byte[]);
+                    
+
+
+                    Aircraft aircraft = null;
+                    if (availableSeat != null)
+                    {
+                        aircraft = new Aircraft(aircraftId, model, manufacturer, totalSeat, availableSeat);
+                    }
+                    else
+                    {
+                        aircraft = new Aircraft(aircraftId, model, manufacturer, totalSeat);
+
+                    }
+                    aircrafts.AddLast(aircraft);
+                }
+                aircraftReader.Close();
+
+                // Retrieve Flight data
+                string flightQuery = "SELECT * FROM flights";
+                MySqlCommand flightCommand = new MySqlCommand(flightQuery, conn);
+                MySqlDataReader flightReader = flightCommand.ExecuteReader();
+
+                while (flightReader.Read())
+                {
+                    int flightId = flightReader.GetInt32("id");
+                    string fromLocation = flightReader.GetString("fromX");
+                    string toLocation = flightReader.GetString("toX");
+                    string departureTime = flightReader.GetString("departure");
+                    string arrivalTime = flightReader.GetString("arrival");
+                    int aircraftId = flightReader.GetInt32("aircraft_id");
+                    int passengerCount = flightReader.GetInt32("passengerCount");
+                    DateTime flightDate = flightReader.GetDateTime("date");
+                    decimal price = flightReader.GetDecimal("price");
+
+                    // Find the corresponding Aircraft for this flight
+                    Aircraft aircraft = null;
+                    foreach (var a in aircrafts)
+                    {
+                        if (a.id == aircraftId)
+                        {
+                            aircraft = a;
+                            break;
+                        }
+                    }
+
+                    // Create a Flight object
+                    Flight flight = new Flight(
+                        flightId, 
+                        fromLocation,
+                        toLocation,
+                        departureTime,
+                        arrivalTime,
+                        aircraft,
+                        passengerCount,
+                        flightDate,
+                        price
+
+                                                    );
+                    flightSchedule.Add(flight);
+                }
+                flightReader.Close();
+            }
+
+        }
+
+        public static HashSet<string> ConvertAvailableSeat(byte[] blob)
+        {
+            if (blob != null)
+            {
+                // Convert the byte array (BLOB) into a string (assumes UTF-8 encoding)
+                string seatData = Encoding.UTF8.GetString(blob);
+
+                // Split the string into seat IDs (assuming comma-separated values)
+                string[] seatArray = seatData.Split(',');
+
+                // Convert the array into a HashSet to ensure uniqueness
+                HashSet<string> availableSeats = new HashSet<string>(seatArray);
+
+                return availableSeats;
+            } else { return null; }
+            
+        }
+
+        public static byte[] ConvertAvailableSeatToBlob(HashSet<string> availableSeats)
+        {
+            // Join the HashSet into a comma-separated string
+            string seatData = string.Join(",", availableSeats);
+
+            // Convert the string into a byte array (UTF-8 encoding)
+            byte[] blob = Encoding.UTF8.GetBytes(seatData);
+
+            return blob;
+        }
     }
 }

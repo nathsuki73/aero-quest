@@ -1,4 +1,5 @@
-﻿using aero_quest.UserControls;
+﻿using aero_quest.Objects;
+using aero_quest.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,8 @@ namespace aero_quest
             InitializeComponent();
             UserControlManager._userControls.Add(new LandingPage());
             this.Controls.Add(UserControlManager._userControls[0] as LandingPage);
+            Flight.InitializeFlights();
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -32,13 +35,9 @@ namespace aero_quest
             this.Controls.Clear();
         }
 
-     
-      
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
 
-      
-
-    
-
-        
+        }
     }
 }

@@ -20,7 +20,6 @@ namespace aero_quest
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Flight.InitializeFlights();
 
             UserControlManager newApp = new UserControlManager();
             MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;

@@ -1,9 +1,11 @@
-﻿using Mysqlx.Resultset;
+﻿using aero_quest.Sql;
+using Mysqlx.Resultset;
 using Org.BouncyCastle.Asn1.Cms;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -18,14 +20,23 @@ namespace aero_quest.Objects
         public string Manufacturer { get; set; } 
         public int TotalSeats { get; private set; }
         public HashSet<string> AvailableSeats { get; private set; } 
-
+        //for uniqquenes of id seats
         public Aircraft(int id, string model, string manufacturer, int totalSeats)
         {
+            this.id = id;
             Model = model;
             Manufacturer = manufacturer;
             TotalSeats = totalSeats;
             AvailableSeats = InitializeSeats(totalSeats);
+        }
+
+        public Aircraft(int id, string model, string manufacturer,int totalSeats,  HashSet<string> seats)
+        {
             this.id = id;
+            Model = model;
+            Manufacturer = manufacturer;
+            TotalSeats = totalSeats;
+            AvailableSeats = seats;
         }
 
         public override string ToString()
@@ -88,6 +99,7 @@ namespace aero_quest.Objects
     {
         public static LinkedList<Aircraft> aircrafts = new LinkedList<Aircraft>();
         public static ArrayList flightSchedule = new ArrayList();
+        public int id {  get; set; }
         public string from {  get; set; }
         public string to { get; set; }
         public string departureTime { get; set; }
@@ -98,14 +110,24 @@ namespace aero_quest.Objects
 
         public decimal price { get; set; }
 
-        public static void AddFlight(Flight flight)
+        public Flight(int id, string from, string to, string departure, string arrival, Aircraft aircraft, int passengerCount, DateTime date, decimal price)
         {
-            flightSchedule.Add(flight);
+            this.id = id;
+            this.from = from;
+            this.to = to;
+            this.departureTime = departure;
+            this.arrivalTime = arrival;
+            this.aircraft = aircraft;
+            this.passengerCount = passengerCount;
+            this.date = date;
+            this.price = price;
+
         }
 
+        // must be run once to initialize the schedules
         public static void InitializeFlights()
         {
-            // Create an aircraft object 
+            /*// Create an aircraft object 
             Aircraft aircraft = new Aircraft(1, "Boeing 737", "Boeing", 180);
 
             // Flight 1
@@ -119,11 +141,12 @@ namespace aero_quest.Objects
                 passengerCount = 150,
                 date = new DateTime(2024, 12, 29),
                 price = 6969
-            };
+            };*/
 
-            // Add flights to the schedule
-            Flight.AddFlight(flight1);
-            Flight.aircrafts.AddLast(aircraft);
+            /* // Add flights to the schedule
+             Flight.AddFlight(flight1);
+             Flight.aircrafts.AddLast(aircraft);*/
+            SqlQueries.InitializeData();
 
 
         }
