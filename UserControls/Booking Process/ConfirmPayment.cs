@@ -36,10 +36,16 @@ namespace aero_quest.UserControls.Booking_Process
             string bookingReference = BookingReferenceGenerator.GenerateBookingReference();
             if (seatId != null)
             {
+                
                 SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
                 MessageBox.Show("{suceessss}");
+                UserControlManager.RemoveControlByName("confirmSchedule");
+                UserControlManager.RemoveControlByName("confirmPayment");
+                UserControlManager.RemoveControlByName("confirmIdentity");
+
+
             }
-            
+
         }
 
 

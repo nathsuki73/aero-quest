@@ -33,6 +33,7 @@ namespace aero_quest.UserControls.Manage
                     // Bind the data to the DataGridView
                     guna2DataGridView1.DataSource = allSchedBooked;
                     guna2DataGridView1.Columns[0].Visible = false;
+                    guna2DataGridView1.Columns[8].Visible = false;
 
 
                 }
@@ -54,7 +55,7 @@ namespace aero_quest.UserControls.Manage
             DataTable dataTable = new DataTable();
 
             // Define columns
-            dataTable.Columns.Add("Id", typeof(string));
+            // Define columns
             dataTable.Columns.Add("From", typeof(string));
             dataTable.Columns.Add("To", typeof(string));
             dataTable.Columns.Add("Departure", typeof(string));
@@ -71,7 +72,8 @@ namespace aero_quest.UserControls.Manage
             guna2DataGridView1.Columns["price"].HeaderText = "Price";*/
             dataTable.Columns.Add("Status", typeof(string));
             dataTable.Columns.Add("Reference", typeof(string));
-            //dataTable.Columns.Add("SeatId", typeof(string));
+            dataTable.Columns.Add("SeatId", typeof(string));
+            dataTable.Columns.Add("id", typeof(string));
 
             foreach (var schedule in schedules)
             {
@@ -79,15 +81,15 @@ namespace aero_quest.UserControls.Manage
 
                 DataRow row = dataTable.NewRow();
 
-                row["From"] = schedule[0];
-                row["To"] = schedule[1];
-                row["Departure"] = schedule[2];
-                row["Arrival"] = schedule[3];
-                row["Date"] = schedule[6];
-                row["Status"] = schedule[8];
-                row["Reference"] = schedule[9];
-                //row["SeatId"] = schedule[10];
-                row["Id"] = schedule[11];
+                row["From"] = schedule[1];
+                row["To"] = schedule[2];
+                row["Departure"] = schedule[3];
+                row["Arrival"] = schedule[4];
+                row["Date"] = DateTime.Parse(schedule[7].ToString()).ToString("yyyy-MM-dd");
+                row["Status"] = schedule[9];
+                row["Reference"] = schedule[10];
+                row["SeatId"] = schedule[11];
+                row["id"] = schedule[12];
 
                 dataTable.Rows.Add(row);
             }
