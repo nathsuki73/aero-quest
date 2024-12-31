@@ -77,13 +77,10 @@ namespace aero_quest.Objects
             // Find an available seat (if any)
             if (AvailableSeats.Count > 0)
             {
-                // Get the first available seat
                 string seatId = AvailableSeats.First();
 
-                // Update the seat to unavailable
                 UpdateSeatAvailability(seatId, false);
 
-                // Return the seat ID
                 return seatId;
             }
             else

@@ -38,12 +38,14 @@ namespace aero_quest.UserControls.Booking_Process
             {
                 
                 SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
-                MessageBox.Show("{suceessss}");
+                MessageBox.Show("Canceled sucessfully.");
                 UserControlManager.RemoveControlByName("confirmSchedule");
                 UserControlManager.RemoveControlByName("confirmPayment");
                 UserControlManager.RemoveControlByName("confirmIdentity");
-
-
+            }
+            else
+            {
+                MessageBox.Show("This flight is already fully booked.");
             }
 
         }
