@@ -34,6 +34,8 @@ namespace aero_quest.UserControls.Manage
                     guna2DataGridView1.DataSource = allSchedBooked;
                     guna2DataGridView1.Columns[0].Visible = false;
                     guna2DataGridView1.Columns[8].Visible = false;
+                    guna2DataGridView1.Columns[7].Visible = false;
+                    guna2DataGridView1.Columns[6].Visible = false;
 
 
                 }
