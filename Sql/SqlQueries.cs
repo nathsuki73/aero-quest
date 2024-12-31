@@ -490,6 +490,59 @@ namespace aero_quest.Sql
             
         }
 
+        public static void UploadData()
+        {
+            LinkedList<Aircraft> aircrafts = Flight.aircrafts;
+            ArrayList flightSchedule = Flight.flightSchedule;
+
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                conn.Open();
+
+                // Upload Aircraft data
+                foreach (var aircraft in aircrafts)
+                {
+                    string aircraftQuery = @"INSERT INTO aircrafts (aircraft_id, model, manufacturer, totalSeat, availableSeat) 
+                                      VALUES (@aircraftId, @model, @manufacturer, @totalSeat, @availableSeat)
+                                      ON DUPLICATE KEY UPDATE
+                                      model = @model, manufacturer = @manufacturer, totalSeat = @totalSeat, availableSeat = @availableSeat;";
+
+                    MySqlCommand aircraftCommand = new MySqlCommand(aircraftQuery, conn);
+                    aircraftCommand.Parameters.AddWithValue("@aircraftId", aircraft.id);
+                    aircraftCommand.Parameters.AddWithValue("@model", aircraft.Model);
+                    aircraftCommand.Parameters.AddWithValue("@manufacturer", aircraft.Manufacturer);
+                    aircraftCommand.Parameters.AddWithValue("@totalSeat", aircraft.TotalSeats);
+                    aircraftCommand.Parameters.AddWithValue("@availableSeat", ConvertAvailableSeatToBlob(aircraft.AvailableSeats));
+
+                    aircraftCommand.ExecuteNonQuery();
+                }
+
+                // Upload Flight data
+                foreach (Flight flight in flightSchedule)
+                {
+                    string flightQuery = @"INSERT INTO flights (id, fromX, toX, departure, arrival, aircraft_id, passengerCount, date, price) 
+                                   VALUES (@flightId, @fromX, @toX, @departure, @arrival, @aircraftId, @passengerCount, @date, @price)
+                                   ON DUPLICATE KEY UPDATE
+                                   fromX = @fromX, toX = @toX, departure = @departure, arrival = @arrival, 
+                                   aircraft_id = @aircraftId, passengerCount = @passengerCount, date = @date, price = @price;";
+
+                    MySqlCommand flightCommand = new MySqlCommand(flightQuery, conn);
+                    flightCommand.Parameters.AddWithValue("@flightId", flight.id);
+                    flightCommand.Parameters.AddWithValue("@fromX", flight.from);
+                    flightCommand.Parameters.AddWithValue("@toX", flight.to);
+                    flightCommand.Parameters.AddWithValue("@departure", flight.departureTime);
+                    flightCommand.Parameters.AddWithValue("@arrival", flight.arrivalTime);
+                    flightCommand.Parameters.AddWithValue("@aircraftId", flight.aircraft.id);
+                    flightCommand.Parameters.AddWithValue("@passengerCount", flight.passengerCount);
+                    flightCommand.Parameters.AddWithValue("@date", flight.date);
+                    flightCommand.Parameters.AddWithValue("@price", flight.price);
+
+                    flightCommand.ExecuteNonQuery();
+                }
+            }
+        }
+
+
         public static byte[] ConvertAvailableSeatToBlob(HashSet<string> availableSeats)
         {
             // Join the HashSet into a comma-separated string

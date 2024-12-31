@@ -1,4 +1,5 @@
 ﻿using aero_quest.Objects;
+using aero_quest.Sql;
 using aero_quest.UserControls;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace aero_quest
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            SqlQueries.UploadData();
         }
     }
 }
