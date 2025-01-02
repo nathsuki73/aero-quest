@@ -49,6 +49,7 @@
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2ImageButton2
             // 
@@ -67,6 +68,7 @@
             this.guna2ImageButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.guna2ImageButton2.Size = new System.Drawing.Size(25, 24);
             this.guna2ImageButton2.TabIndex = 1;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
             // AboutUsPagecs
             // 

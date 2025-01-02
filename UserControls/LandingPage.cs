@@ -38,5 +38,15 @@ namespace aero_quest.UserControls
         {
             UserControlManager.AddControl(new ContactPage(), "contactPage");
         }
+
+        private void btnFlights_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new AboutUsPagecs(), "aboutUsPagecs");
+        }
     }
 }

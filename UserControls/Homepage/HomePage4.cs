@@ -24,32 +24,32 @@ namespace aero_quest.UserControls
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
         }
 
         private void guna2ImageButton6_Click(object sender, EventArgs e)
         {
-
+            UserControlManager.AddControl(new ContactPage(), "contactPage");
         }
 
         private void guna2ImageButton7_Click(object sender, EventArgs e)
         {
-
+            UserControlManager.AddControl(new AboutUsPagecs(), "aboutUsPagecs");
         }
 
         private void guna2ImageButton3_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://www.facebook.com/pat.pajadan/");
         }
 
         private void guna2ImageButton5_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://www.instagram.com/aethr_pat/");
         }
 
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://x.com/pajadan6825"); 
         }
     }
 }

@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmIdentity));
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.birthDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtAge = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtGender = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2ImageButton2
@@ -68,29 +68,6 @@
             this.guna2ImageButton1.TabIndex = 2;
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // txtGender
-            // 
-            this.txtGender.BackColor = System.Drawing.Color.Transparent;
-            this.txtGender.BorderColor = System.Drawing.Color.Gray;
-            this.txtGender.BorderRadius = 15;
-            this.txtGender.BorderThickness = 2;
-            this.txtGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtGender.Enabled = false;
-            this.txtGender.FocusedColor = System.Drawing.Color.Empty;
-            this.txtGender.FocusedState.Parent = this.txtGender;
-            this.txtGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtGender.FormattingEnabled = true;
-            this.txtGender.HoverState.Parent = this.txtGender;
-            this.txtGender.ItemHeight = 30;
-            this.txtGender.ItemsAppearance.Parent = this.txtGender;
-            this.txtGender.Location = new System.Drawing.Point(506, 381);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.ShadowDecoration.Parent = this.txtGender;
-            this.txtGender.Size = new System.Drawing.Size(140, 36);
-            this.txtGender.TabIndex = 9;
             // 
             // birthDate
             // 
@@ -224,13 +201,41 @@
             this.txtName.Size = new System.Drawing.Size(316, 36);
             this.txtName.TabIndex = 7;
             // 
+            // txtGender
+            // 
+            this.txtGender.BackColor = System.Drawing.Color.Transparent;
+            this.txtGender.BorderColor = System.Drawing.Color.Gray;
+            this.txtGender.BorderRadius = 15;
+            this.txtGender.BorderThickness = 2;
+            this.txtGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGender.DefaultText = "";
+            this.txtGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGender.DisabledState.Parent = this.txtGender;
+            this.txtGender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGender.Enabled = false;
+            this.txtGender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.FocusedState.Parent = this.txtGender;
+            this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGender.HoverState.Parent = this.txtGender;
+            this.txtGender.Location = new System.Drawing.Point(506, 381);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.PasswordChar = '\0';
+            this.txtGender.PlaceholderText = "";
+            this.txtGender.SelectedText = "";
+            this.txtGender.ShadowDecoration.Parent = this.txtGender;
+            this.txtGender.Size = new System.Drawing.Size(182, 36);
+            this.txtGender.TabIndex = 4;
+            // 
             // ConfirmIdentity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.birthDate);
+            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtEmail);
@@ -247,11 +252,11 @@
 
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ComboBox txtGender;
         private Guna.UI2.WinForms.Guna2DateTimePicker birthDate;
         private Guna.UI2.WinForms.Guna2TextBox txtAge;
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
+        private Guna.UI2.WinForms.Guna2TextBox txtGender;
     }
 }

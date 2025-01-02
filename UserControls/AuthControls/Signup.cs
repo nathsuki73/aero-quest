@@ -10,6 +10,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using aero_quest.Notice_Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace aero_quest.UserControls.AuthControls
 {
@@ -56,8 +59,8 @@ namespace aero_quest.UserControls.AuthControls
 
             if (userIsAdded)
             {
-                MessageBox.Show("Registration successful! Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                Login.ShowNotice(new CustomMessageBox("JJJJJJJJJ"));
                 if (UserControlManager.isInHome)
                 {
                     if (!User.isLoggedIn)
@@ -98,6 +101,22 @@ namespace aero_quest.UserControls.AuthControls
                 if (!Regex.IsMatch(email, emailPattern))
                 {
                     errors.AppendLine("• Please enter a valid email address.");
+                }
+                else 
+                { try 
+                    { 
+                        var mailAddress = new MailAddress(email); 
+                        string host = mailAddress.Host; 
+                        IPHostEntry hostEntry = Dns.GetHostEntry(host); 
+                        if (hostEntry.AddressList.Length == 0) 
+                        { 
+                            errors.AppendLine("• The email domain is not valid."); 
+                        } 
+                    } 
+                    catch 
+                    { 
+                        errors.AppendLine("• The email domain is not valid."); 
+                    } 
                 }
             }
 

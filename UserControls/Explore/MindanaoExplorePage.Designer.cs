@@ -102,6 +102,7 @@
             this.bookDavao.PressedState.Parent = this.bookDavao;
             this.bookDavao.Size = new System.Drawing.Size(154, 51);
             this.bookDavao.TabIndex = 7;
+            this.bookDavao.Click += new System.EventHandler(this.bookDavao_Click);
             // 
             // bookSiargao
             // 
@@ -119,6 +120,7 @@
             this.bookSiargao.PressedState.Parent = this.bookSiargao;
             this.bookSiargao.Size = new System.Drawing.Size(154, 51);
             this.bookSiargao.TabIndex = 8;
+            this.bookSiargao.Click += new System.EventHandler(this.bookSiargao_Click);
             // 
             // bookCDO
             // 
@@ -136,6 +138,7 @@
             this.bookCDO.PressedState.Parent = this.bookCDO;
             this.bookCDO.Size = new System.Drawing.Size(154, 51);
             this.bookCDO.TabIndex = 9;
+            this.bookCDO.Click += new System.EventHandler(this.bookCDO_Click);
             // 
             // bookZamboanga
             // 
@@ -153,6 +156,7 @@
             this.bookZamboanga.PressedState.Parent = this.bookZamboanga;
             this.bookZamboanga.Size = new System.Drawing.Size(154, 51);
             this.bookZamboanga.TabIndex = 10;
+            this.bookZamboanga.Click += new System.EventHandler(this.bookZamboanga_Click);
             // 
             // bookGenSan
             // 
@@ -170,6 +174,7 @@
             this.bookGenSan.PressedState.Parent = this.bookGenSan;
             this.bookGenSan.Size = new System.Drawing.Size(154, 51);
             this.bookGenSan.TabIndex = 11;
+            this.bookGenSan.Click += new System.EventHandler(this.bookGenSan_Click);
             // 
             // priceDavao
             // 
@@ -235,14 +240,14 @@
             // 
             this.btnRight.BackColor = System.Drawing.Color.Transparent;
             this.btnRight.CheckedState.Parent = this.btnRight;
-            this.btnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.btnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.HoverState.Image")));
             this.btnRight.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnRight.HoverState.Parent = this.btnRight;
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
             this.btnRight.ImageSize = new System.Drawing.Size(46, 46);
             this.btnRight.Location = new System.Drawing.Point(717, 677);
             this.btnRight.Name = "btnRight";
-            this.btnRight.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.btnRight.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.PressedState.Image")));
             this.btnRight.PressedState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnRight.PressedState.Parent = this.btnRight;
             this.btnRight.Size = new System.Drawing.Size(46, 46);
@@ -253,14 +258,14 @@
             // 
             this.btnLeft.BackColor = System.Drawing.Color.Transparent;
             this.btnLeft.CheckedState.Parent = this.btnLeft;
-            this.btnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
+            this.btnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.HoverState.Image")));
             this.btnLeft.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnLeft.HoverState.Parent = this.btnLeft;
             this.btnLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.Image")));
             this.btnLeft.ImageSize = new System.Drawing.Size(46, 46);
             this.btnLeft.Location = new System.Drawing.Point(662, 677);
             this.btnLeft.Name = "btnLeft";
-            this.btnLeft.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
+            this.btnLeft.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.PressedState.Image")));
             this.btnLeft.PressedState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnLeft.PressedState.Parent = this.btnLeft;
             this.btnLeft.Size = new System.Drawing.Size(46, 46);

@@ -107,5 +107,40 @@ namespace aero_quest.UserControls
         {
             UserControlManager.RemoveControlByName("visayasExplorePage");
         }
+
+        private void bookKalibo_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookIloIlo_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookDumaguete_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookTagbilaran_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookCebu_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookBoracay_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookBacolod_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
     }
 }

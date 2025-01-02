@@ -36,7 +36,6 @@ namespace aero_quest.UserControls.Booking_Process
             string bookingReference = BookingReferenceGenerator.GenerateBookingReference();
             if (seatId != null)
             {
-                
                 SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
                 MessageBox.Show("Booked sucessfully.");
                 UserControlManager.RemoveControlByName("confirmSchedule");
@@ -50,6 +49,20 @@ namespace aero_quest.UserControls.Booking_Process
 
         }
 
-
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (guna2ComboBox1.SelectedIndex == 0)
+            {
+                lblPrice.Text = Convert.ToDouble(selectedFlight.price).ToString("0.00");
+            }
+            else if (guna2ComboBox1.SelectedIndex == 1)
+            {
+                lblPrice.Text = (Convert.ToDouble(selectedFlight.price) * 1.5).ToString("0.00");
+            }
+            else if (guna2ComboBox1.SelectedIndex == 2)
+            {
+                lblPrice.Text = (Convert.ToDouble(selectedFlight.price) * 2).ToString("0.00");
+            }
+        }
     }
 }

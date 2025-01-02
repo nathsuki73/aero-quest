@@ -202,7 +202,7 @@
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.Image")));
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(44, 44);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(1289, 661);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(1289, 666);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.PressedState.Image")));
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(44, 44);

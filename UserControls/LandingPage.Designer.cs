@@ -55,6 +55,7 @@
             this.btnAbout.Size = new System.Drawing.Size(90, 24);
             this.btnAbout.TabIndex = 0;
             this.btnAbout.UseTransparentBackground = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnFlights
             // 
@@ -75,6 +76,7 @@
             this.btnFlights.Size = new System.Drawing.Size(90, 24);
             this.btnFlights.TabIndex = 0;
             this.btnFlights.UseTransparentBackground = true;
+            this.btnFlights.Click += new System.EventHandler(this.btnFlights_Click);
             // 
             // btnHelp
             // 

@@ -58,6 +58,7 @@
             this.bookKalibo.PressedState.Parent = this.bookKalibo;
             this.bookKalibo.Size = new System.Drawing.Size(154, 51);
             this.bookKalibo.TabIndex = 0;
+            this.bookKalibo.Click += new System.EventHandler(this.bookKalibo_Click);
             // 
             // bookDumaguete
             // 
@@ -75,6 +76,7 @@
             this.bookDumaguete.PressedState.Parent = this.bookDumaguete;
             this.bookDumaguete.Size = new System.Drawing.Size(154, 51);
             this.bookDumaguete.TabIndex = 1;
+            this.bookDumaguete.Click += new System.EventHandler(this.bookDumaguete_Click);
             // 
             // bookCebu
             // 
@@ -92,6 +94,7 @@
             this.bookCebu.PressedState.Parent = this.bookCebu;
             this.bookCebu.Size = new System.Drawing.Size(154, 51);
             this.bookCebu.TabIndex = 2;
+            this.bookCebu.Click += new System.EventHandler(this.bookCebu_Click);
             // 
             // bookBacolod
             // 
@@ -109,6 +112,7 @@
             this.bookBacolod.PressedState.Parent = this.bookBacolod;
             this.bookBacolod.Size = new System.Drawing.Size(154, 51);
             this.bookBacolod.TabIndex = 3;
+            this.bookBacolod.Click += new System.EventHandler(this.bookBacolod_Click);
             // 
             // bookBoracay
             // 
@@ -126,6 +130,7 @@
             this.bookBoracay.PressedState.Parent = this.bookBoracay;
             this.bookBoracay.Size = new System.Drawing.Size(154, 51);
             this.bookBoracay.TabIndex = 4;
+            this.bookBoracay.Click += new System.EventHandler(this.bookBoracay_Click);
             // 
             // bookTagbilaran
             // 
@@ -143,6 +148,7 @@
             this.bookTagbilaran.PressedState.Parent = this.bookTagbilaran;
             this.bookTagbilaran.Size = new System.Drawing.Size(154, 51);
             this.bookTagbilaran.TabIndex = 5;
+            this.bookTagbilaran.Click += new System.EventHandler(this.bookTagbilaran_Click);
             // 
             // bookIloIlo
             // 
@@ -160,6 +166,7 @@
             this.bookIloIlo.PressedState.Parent = this.bookIloIlo;
             this.bookIloIlo.Size = new System.Drawing.Size(154, 51);
             this.bookIloIlo.TabIndex = 6;
+            this.bookIloIlo.Click += new System.EventHandler(this.bookIloIlo_Click);
             // 
             // exploreBtnLeft
             // 

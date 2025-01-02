@@ -88,5 +88,30 @@ namespace aero_quest.UserControls
             btnLeft.Visible = false;
             btnRight.Visible = true;
         }
+
+        private void bookCDO_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookGenSan_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookSiargao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookZamboanga_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookDavao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
     }
 }

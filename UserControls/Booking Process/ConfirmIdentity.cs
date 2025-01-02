@@ -28,6 +28,7 @@ namespace aero_quest.UserControls.Booking_Process
             txtName.Text = User.profile.Name;
             birthDate.Value = User.profile.Birth;
             txtAge.Text = User.profile.Age.ToString();
+            
             txtGender.Text = User.profile.Gender;
             txtEmail.Text = User.profile.Email;
             txtPhone.Text = User.profile.Phone;

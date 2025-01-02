@@ -8,23 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace aero_quest.UserControls
+namespace aero_quest.Notice_Forms
 {
-    public partial class AboutUsPagecs : UserControl
+    public partial class CustomMessageBox : Form
     {
-        public AboutUsPagecs()
+        public CustomMessageBox(string lbl)
         {
             InitializeComponent();
-        }
-
-        private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
-            UserControlManager.RemoveControlByName("aboutUsPagecs");
+            label1.Text = lbl;
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            UserControlManager.AddControl(new ContactPage(), "contactPage");
+            this.DialogResult = DialogResult.OK;
+
+            // Close the form after setting the DialogResult
+            this.Close();
         }
     }
 }
