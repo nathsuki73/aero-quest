@@ -69,6 +69,7 @@
             this.guna2ImageButton3.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.CheckedState.Image")));
             this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(106, 33);
             this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.HoverState.Image")));
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(106, 33);
             this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
@@ -88,6 +89,7 @@
             this.guna2ImageButton2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.CheckedState.Image")));
             this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(71, 33);
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(71, 33);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
@@ -107,6 +109,7 @@
             this.guna2ImageButton1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.CheckedState.Image")));
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(95, 33);
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(95, 33);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
@@ -127,6 +130,7 @@
             this.trvlinfoBtn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("trvlinfoBtn.CheckedState.Image")));
             this.trvlinfoBtn.CheckedState.ImageSize = new System.Drawing.Size(128, 33);
             this.trvlinfoBtn.CheckedState.Parent = this.trvlinfoBtn;
+            this.trvlinfoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.trvlinfoBtn.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("trvlinfoBtn.HoverState.Image")));
             this.trvlinfoBtn.HoverState.ImageSize = new System.Drawing.Size(128, 33);
             this.trvlinfoBtn.HoverState.Parent = this.trvlinfoBtn;
@@ -146,6 +150,7 @@
             this.mngeBtn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("mngeBtn.CheckedState.Image")));
             this.mngeBtn.CheckedState.ImageSize = new System.Drawing.Size(102, 33);
             this.mngeBtn.CheckedState.Parent = this.mngeBtn;
+            this.mngeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mngeBtn.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("mngeBtn.HoverState.Image")));
             this.mngeBtn.HoverState.ImageSize = new System.Drawing.Size(102, 33);
             this.mngeBtn.HoverState.Parent = this.mngeBtn;
@@ -197,6 +202,7 @@
             // 
             this.guna2ImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(188)))), ((int)(((byte)(229)))));
             this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.HoverState.Image")));
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(44, 44);
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;

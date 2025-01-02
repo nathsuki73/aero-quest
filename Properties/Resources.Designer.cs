@@ -343,6 +343,16 @@ namespace aero_quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap visayas2FINAL {
+            get {
+                object obj = ResourceManager.GetObject("visayas2FINAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Visayas3 {
             get {
                 object obj = ResourceManager.GetObject("Visayas3", resourceCulture);

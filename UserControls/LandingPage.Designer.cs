@@ -42,6 +42,7 @@
             this.btnAbout.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.CheckedState.Image")));
             this.btnAbout.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.CheckedState.Parent = this.btnAbout;
+            this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAbout.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.HoverState.Image")));
             this.btnAbout.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnAbout.HoverState.Parent = this.btnAbout;
@@ -63,6 +64,7 @@
             this.btnFlights.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnFlights.CheckedState.Image")));
             this.btnFlights.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.CheckedState.Parent = this.btnFlights;
+            this.btnFlights.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFlights.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnFlights.HoverState.Image")));
             this.btnFlights.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnFlights.HoverState.Parent = this.btnFlights;
@@ -84,6 +86,7 @@
             this.btnHelp.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.CheckedState.Image")));
             this.btnHelp.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.CheckedState.Parent = this.btnHelp;
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHelp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.HoverState.Image")));
             this.btnHelp.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHelp.HoverState.Parent = this.btnHelp;
@@ -105,6 +108,7 @@
             this.btnHome.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.CheckedState.Image")));
             this.btnHome.CheckedState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.CheckedState.Parent = this.btnHome;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.HoverState.Image")));
             this.btnHome.HoverState.ImageSize = new System.Drawing.Size(90, 24);
             this.btnHome.HoverState.Parent = this.btnHome;
@@ -124,6 +128,7 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;

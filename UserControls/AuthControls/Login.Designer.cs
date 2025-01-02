@@ -39,6 +39,7 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(135, 20);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
@@ -57,6 +58,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.CheckedState.Parent = this.btnLogin;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.HoverState.Image")));
             this.btnLogin.HoverState.ImageSize = new System.Drawing.Size(337, 48);
             this.btnLogin.HoverState.Parent = this.btnLogin;

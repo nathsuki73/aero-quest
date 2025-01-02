@@ -125,6 +125,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnRegister.CheckedState.Parent = this.btnRegister;
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnRegister.HoverState.Image")));
             this.btnRegister.HoverState.ImageSize = new System.Drawing.Size(337, 48);
             this.btnRegister.HoverState.Parent = this.btnRegister;
@@ -144,6 +145,7 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(188, 18);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;

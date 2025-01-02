@@ -54,6 +54,7 @@
             // 
             this.guna2ImageButton5.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton5.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.HoverState.Image")));
             this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(25, 23);
             this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
@@ -72,6 +73,7 @@
             // 
             this.guna2ImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.HoverState.Image")));
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
@@ -90,6 +92,7 @@
             // 
             this.bookDavao.BackColor = System.Drawing.Color.Transparent;
             this.bookDavao.CheckedState.Parent = this.bookDavao;
+            this.bookDavao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookDavao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookDavao.HoverState.Image")));
             this.bookDavao.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookDavao.HoverState.Parent = this.bookDavao;
@@ -108,6 +111,7 @@
             // 
             this.bookSiargao.BackColor = System.Drawing.Color.Transparent;
             this.bookSiargao.CheckedState.Parent = this.bookSiargao;
+            this.bookSiargao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookSiargao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookSiargao.HoverState.Image")));
             this.bookSiargao.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookSiargao.HoverState.Parent = this.bookSiargao;
@@ -126,6 +130,7 @@
             // 
             this.bookCDO.BackColor = System.Drawing.Color.Transparent;
             this.bookCDO.CheckedState.Parent = this.bookCDO;
+            this.bookCDO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookCDO.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookCDO.HoverState.Image")));
             this.bookCDO.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookCDO.HoverState.Parent = this.bookCDO;
@@ -144,6 +149,7 @@
             // 
             this.bookZamboanga.BackColor = System.Drawing.Color.Transparent;
             this.bookZamboanga.CheckedState.Parent = this.bookZamboanga;
+            this.bookZamboanga.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookZamboanga.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookZamboanga.HoverState.Image")));
             this.bookZamboanga.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookZamboanga.HoverState.Parent = this.bookZamboanga;
@@ -162,6 +168,7 @@
             // 
             this.bookGenSan.BackColor = System.Drawing.Color.Transparent;
             this.bookGenSan.CheckedState.Parent = this.bookGenSan;
+            this.bookGenSan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookGenSan.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookGenSan.HoverState.Image")));
             this.bookGenSan.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookGenSan.HoverState.Parent = this.bookGenSan;
@@ -240,6 +247,7 @@
             // 
             this.btnRight.BackColor = System.Drawing.Color.Transparent;
             this.btnRight.CheckedState.Parent = this.btnRight;
+            this.btnRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.HoverState.Image")));
             this.btnRight.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnRight.HoverState.Parent = this.btnRight;
@@ -258,6 +266,7 @@
             // 
             this.btnLeft.BackColor = System.Drawing.Color.Transparent;
             this.btnLeft.CheckedState.Parent = this.btnLeft;
+            this.btnLeft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.HoverState.Image")));
             this.btnLeft.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.btnLeft.HoverState.Parent = this.btnLeft;

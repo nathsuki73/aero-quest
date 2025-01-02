@@ -36,6 +36,7 @@
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 44);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
@@ -53,6 +54,7 @@
             // guna2ImageButton2
             // 
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(44, 44);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;

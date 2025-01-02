@@ -41,6 +41,7 @@
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(44, 44);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
@@ -77,6 +78,7 @@
             // 
             this.guna2ImageButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.BackgroundImage")));
             this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Location = new System.Drawing.Point(1190, 659);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
@@ -89,6 +91,7 @@
             // 
             this.guna2ImageButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.BackgroundImage")));
             this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
             this.guna2ImageButton4.Location = new System.Drawing.Point(1275, 659);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
@@ -101,6 +104,7 @@
             // 
             this.guna2ImageButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.BackgroundImage")));
             this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
             this.guna2ImageButton5.Location = new System.Drawing.Point(1230, 659);
             this.guna2ImageButton5.Name = "guna2ImageButton5";
@@ -113,6 +117,7 @@
             // 
             this.guna2ImageButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton6.BackgroundImage")));
             this.guna2ImageButton6.CheckedState.Parent = this.guna2ImageButton6;
+            this.guna2ImageButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton6.HoverState.Parent = this.guna2ImageButton6;
             this.guna2ImageButton6.Location = new System.Drawing.Point(615, 525);
             this.guna2ImageButton6.Name = "guna2ImageButton6";
@@ -125,6 +130,7 @@
             // 
             this.guna2ImageButton7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton7.BackgroundImage")));
             this.guna2ImageButton7.CheckedState.Parent = this.guna2ImageButton7;
+            this.guna2ImageButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton7.HoverState.Parent = this.guna2ImageButton7;
             this.guna2ImageButton7.Location = new System.Drawing.Point(627, 559);
             this.guna2ImageButton7.Name = "guna2ImageButton7";

@@ -39,11 +39,16 @@
             // 
             this.exploreBtnLuzon.BackColor = System.Drawing.Color.Transparent;
             this.exploreBtnLuzon.CheckedState.Parent = this.exploreBtnLuzon;
+            this.exploreBtnLuzon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exploreBtnLuzon.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnLuzon.HoverState.Image")));
+            this.exploreBtnLuzon.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnLuzon.HoverState.Parent = this.exploreBtnLuzon;
             this.exploreBtnLuzon.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnLuzon.Image")));
             this.exploreBtnLuzon.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnLuzon.Location = new System.Drawing.Point(167, 605);
             this.exploreBtnLuzon.Name = "exploreBtnLuzon";
+            this.exploreBtnLuzon.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnLuzon.PressedState.Image")));
+            this.exploreBtnLuzon.PressedState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnLuzon.PressedState.Parent = this.exploreBtnLuzon;
             this.exploreBtnLuzon.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnLuzon.TabIndex = 0;
@@ -53,11 +58,16 @@
             // 
             this.exploreBtnVisayas.BackColor = System.Drawing.Color.Transparent;
             this.exploreBtnVisayas.CheckedState.Parent = this.exploreBtnVisayas;
+            this.exploreBtnVisayas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exploreBtnVisayas.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnVisayas.HoverState.Image")));
+            this.exploreBtnVisayas.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnVisayas.HoverState.Parent = this.exploreBtnVisayas;
             this.exploreBtnVisayas.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnVisayas.Image")));
             this.exploreBtnVisayas.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnVisayas.Location = new System.Drawing.Point(603, 605);
             this.exploreBtnVisayas.Name = "exploreBtnVisayas";
+            this.exploreBtnVisayas.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnVisayas.PressedState.Image")));
+            this.exploreBtnVisayas.PressedState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnVisayas.PressedState.Parent = this.exploreBtnVisayas;
             this.exploreBtnVisayas.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnVisayas.TabIndex = 1;
@@ -67,11 +77,16 @@
             // 
             this.exploreBtnMindanao.BackColor = System.Drawing.Color.Transparent;
             this.exploreBtnMindanao.CheckedState.Parent = this.exploreBtnMindanao;
+            this.exploreBtnMindanao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exploreBtnMindanao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnMindanao.HoverState.Image")));
+            this.exploreBtnMindanao.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnMindanao.HoverState.Parent = this.exploreBtnMindanao;
             this.exploreBtnMindanao.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnMindanao.Image")));
             this.exploreBtnMindanao.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnMindanao.Location = new System.Drawing.Point(1041, 605);
             this.exploreBtnMindanao.Name = "exploreBtnMindanao";
+            this.exploreBtnMindanao.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnMindanao.PressedState.Image")));
+            this.exploreBtnMindanao.PressedState.ImageSize = new System.Drawing.Size(154, 51);
             this.exploreBtnMindanao.PressedState.Parent = this.exploreBtnMindanao;
             this.exploreBtnMindanao.Size = new System.Drawing.Size(154, 51);
             this.exploreBtnMindanao.TabIndex = 2;
@@ -81,11 +96,16 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.Location = new System.Drawing.Point(1272, 21);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.TabIndex = 3;

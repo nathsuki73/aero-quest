@@ -15,7 +15,7 @@ namespace aero_quest.UserControls
         private List<Image> bgImages = new List<Image>
         {
             Properties.Resources.Visayas1,
-            Properties.Resources.Visayas2,
+            Properties.Resources.visayas2FINAL,
             Properties.Resources.Visayas3
         };
 
@@ -30,6 +30,17 @@ namespace aero_quest.UserControls
             bookBoracay.Visible = false;
         }
 
+        private void invisiblePrices()
+        {
+            bacolodPrice.Visible = false;
+            cebuPrice.Visible = false;
+            dumaguetePrice.Visible = false;
+            iloiloPrice.Visible = false;
+            kaliboPrice.Visible = false;
+            tagbilaranPrice.Visible = false;
+            boracayPrice.Visible = false;
+        }
+
         private int count = 0;
 
         public VisayasExplorePage()
@@ -40,23 +51,30 @@ namespace aero_quest.UserControls
         private void VisayasExplorePage_Load(object sender, EventArgs e)
         {
             invisibleButtons();
+            invisiblePrices();
             exploreBtnLeft.Visible = false;
             this.BackgroundImage = bgImages[count];
             bookKalibo.Visible = true;
             bookDumaguete.Visible = true;
             bookCebu.Visible = true;
+            kaliboPrice.Visible = true;
+            dumaguetePrice.Visible = true;
+            cebuPrice.Visible = true;
         }
 
         private void exploreBtnRight_Click(object sender, EventArgs e)
         {
             count++;
             invisibleButtons();
+            invisiblePrices();
             if (count == 1)
             {
                 bookBacolod.Visible = true;
                 bookBoracay.Visible = true;
                 this.BackgroundImage = bgImages[count];
                 exploreBtnLeft.Visible = true;
+                bacolodPrice.Visible = true;
+                boracayPrice.Visible = true;
             }
             else if (count == 2)
             {
@@ -65,6 +83,8 @@ namespace aero_quest.UserControls
                 this.BackgroundImage = bgImages[count];
                 exploreBtnRight.Visible = false;
                 exploreBtnLeft.Visible = true;
+                iloiloPrice.Visible = true;
+                tagbilaranPrice.Visible = true;
             }
         }
 
@@ -72,6 +92,7 @@ namespace aero_quest.UserControls
         {
             count--;
             invisibleButtons();
+            invisiblePrices();
             if (count == 0)
             {
                 exploreBtnLeft.Visible = false;
@@ -80,6 +101,9 @@ namespace aero_quest.UserControls
                 bookDumaguete.Visible = true;
                 bookCebu.Visible = true;
                 this.BackgroundImage = bgImages[count];
+                kaliboPrice.Visible = true;
+                dumaguetePrice.Visible = true;
+                cebuPrice.Visible = true;
             }
             else if (count == 1)
             {
@@ -87,6 +111,8 @@ namespace aero_quest.UserControls
                 bookBoracay.Visible = true;
                 this.BackgroundImage = bgImages[count];
                 exploreBtnRight.Visible = true;
+                bacolodPrice.Visible = true;
+                boracayPrice.Visible = true;
             }
             else if (count == 2)
             {
@@ -94,6 +120,8 @@ namespace aero_quest.UserControls
                 bookTagbilaran.Visible = true;
                 this.BackgroundImage = bgImages[count];
                 exploreBtnRight.Visible = false;
+                iloiloPrice.Visible = true;
+                tagbilaranPrice.Visible = true;
             }
         }
 

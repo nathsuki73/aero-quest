@@ -38,6 +38,7 @@
             // 
             this.rightBtnSupp.BackColor = System.Drawing.Color.Transparent;
             this.rightBtnSupp.CheckedState.Parent = this.rightBtnSupp;
+            this.rightBtnSupp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rightBtnSupp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("rightBtnSupp.HoverState.Image")));
             this.rightBtnSupp.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.rightBtnSupp.HoverState.Parent = this.rightBtnSupp;
@@ -56,6 +57,7 @@
             // 
             this.leftBtnSupp.BackColor = System.Drawing.Color.Transparent;
             this.leftBtnSupp.CheckedState.Parent = this.leftBtnSupp;
+            this.leftBtnSupp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.leftBtnSupp.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("leftBtnSupp.HoverState.Image")));
             this.leftBtnSupp.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.leftBtnSupp.HoverState.Parent = this.leftBtnSupp;
@@ -74,6 +76,7 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;

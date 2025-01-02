@@ -34,12 +34,19 @@
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton5 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.manilaPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.laoagPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.puertoPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.manilaPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laoagPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puertoPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
@@ -58,6 +65,7 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
@@ -76,6 +84,7 @@
             // 
             this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton3.CheckedState.Parent = this.guna2ImageButton3;
+            this.guna2ImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.HoverState.Image")));
             this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
@@ -94,6 +103,7 @@
             // 
             this.guna2ImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
+            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.HoverState.Image")));
             this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
@@ -112,6 +122,7 @@
             // 
             this.guna2ImageButton5.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton5.CheckedState.Parent = this.guna2ImageButton5;
+            this.guna2ImageButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton5.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton5.HoverState.Image")));
             this.guna2ImageButton5.HoverState.ImageSize = new System.Drawing.Size(25, 23);
             this.guna2ImageButton5.HoverState.Parent = this.guna2ImageButton5;
@@ -124,11 +135,50 @@
             this.guna2ImageButton5.TabIndex = 4;
             this.guna2ImageButton5.Click += new System.EventHandler(this.guna2ImageButton5_Click);
             // 
+            // manilaPrice
+            // 
+            this.manilaPrice.BackColor = System.Drawing.Color.Transparent;
+            this.manilaPrice.Image = ((System.Drawing.Image)(resources.GetObject("manilaPrice.Image")));
+            this.manilaPrice.Location = new System.Drawing.Point(55, 528);
+            this.manilaPrice.Name = "manilaPrice";
+            this.manilaPrice.ShadowDecoration.Parent = this.manilaPrice;
+            this.manilaPrice.Size = new System.Drawing.Size(159, 115);
+            this.manilaPrice.TabIndex = 5;
+            this.manilaPrice.TabStop = false;
+            this.manilaPrice.UseTransparentBackground = true;
+            // 
+            // laoagPrice
+            // 
+            this.laoagPrice.BackColor = System.Drawing.Color.Transparent;
+            this.laoagPrice.Image = ((System.Drawing.Image)(resources.GetObject("laoagPrice.Image")));
+            this.laoagPrice.Location = new System.Drawing.Point(485, 528);
+            this.laoagPrice.Name = "laoagPrice";
+            this.laoagPrice.ShadowDecoration.Parent = this.laoagPrice;
+            this.laoagPrice.Size = new System.Drawing.Size(159, 115);
+            this.laoagPrice.TabIndex = 6;
+            this.laoagPrice.TabStop = false;
+            this.laoagPrice.UseTransparentBackground = true;
+            // 
+            // puertoPrice
+            // 
+            this.puertoPrice.BackColor = System.Drawing.Color.Transparent;
+            this.puertoPrice.Image = ((System.Drawing.Image)(resources.GetObject("puertoPrice.Image")));
+            this.puertoPrice.Location = new System.Drawing.Point(914, 527);
+            this.puertoPrice.Name = "puertoPrice";
+            this.puertoPrice.ShadowDecoration.Parent = this.puertoPrice;
+            this.puertoPrice.Size = new System.Drawing.Size(159, 115);
+            this.puertoPrice.TabIndex = 7;
+            this.puertoPrice.TabStop = false;
+            this.puertoPrice.UseTransparentBackground = true;
+            // 
             // LuzonExplorePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.puertoPrice);
+            this.Controls.Add(this.laoagPrice);
+            this.Controls.Add(this.manilaPrice);
             this.Controls.Add(this.guna2ImageButton5);
             this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton3);
@@ -136,6 +186,9 @@
             this.Controls.Add(this.guna2ImageButton1);
             this.Name = "LuzonExplorePage";
             this.Size = new System.Drawing.Size(1350, 729);
+            ((System.ComponentModel.ISupportInitialize)(this.manilaPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laoagPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puertoPrice)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,5 +200,8 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton5;
+        private Guna.UI2.WinForms.Guna2PictureBox manilaPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox laoagPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox puertoPrice;
     }
 }

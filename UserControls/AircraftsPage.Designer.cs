@@ -38,6 +38,7 @@
             // 
             this.ACBtnLeft.BackColor = System.Drawing.Color.Transparent;
             this.ACBtnLeft.CheckedState.Parent = this.ACBtnLeft;
+            this.ACBtnLeft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ACBtnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnLeft.HoverState.Image")));
             this.ACBtnLeft.HoverState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnLeft.HoverState.Parent = this.ACBtnLeft;
@@ -56,6 +57,7 @@
             // 
             this.ACBtnRight.BackColor = System.Drawing.Color.Transparent;
             this.ACBtnRight.CheckedState.Parent = this.ACBtnRight;
+            this.ACBtnRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ACBtnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("ACBtnRight.HoverState.Image")));
             this.ACBtnRight.HoverState.ImageSize = new System.Drawing.Size(79, 77);
             this.ACBtnRight.HoverState.Parent = this.ACBtnRight;
@@ -74,6 +76,7 @@
             // 
             this.ACHomeBtn.BackColor = System.Drawing.Color.Transparent;
             this.ACHomeBtn.CheckedState.Parent = this.ACHomeBtn;
+            this.ACHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ACHomeBtn.HoverState.Parent = this.ACHomeBtn;
             this.ACHomeBtn.Image = ((System.Drawing.Image)(resources.GetObject("ACHomeBtn.Image")));
             this.ACHomeBtn.ImageSize = new System.Drawing.Size(25, 25);

@@ -40,12 +40,27 @@
             this.exploreBtnRight = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.kaliboPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.dumaguetePrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cebuPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bacolodPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.boracayPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.iloiloPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tagbilaranPrice = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.kaliboPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dumaguetePrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cebuPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacolodPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boracayPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iloiloPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagbilaranPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // bookKalibo
             // 
             this.bookKalibo.BackColor = System.Drawing.Color.Transparent;
             this.bookKalibo.CheckedState.Parent = this.bookKalibo;
+            this.bookKalibo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookKalibo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookKalibo.HoverState.Image")));
             this.bookKalibo.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookKalibo.HoverState.Parent = this.bookKalibo;
@@ -64,6 +79,7 @@
             // 
             this.bookDumaguete.BackColor = System.Drawing.Color.Transparent;
             this.bookDumaguete.CheckedState.Parent = this.bookDumaguete;
+            this.bookDumaguete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookDumaguete.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookDumaguete.HoverState.Image")));
             this.bookDumaguete.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookDumaguete.HoverState.Parent = this.bookDumaguete;
@@ -82,6 +98,7 @@
             // 
             this.bookCebu.BackColor = System.Drawing.Color.Transparent;
             this.bookCebu.CheckedState.Parent = this.bookCebu;
+            this.bookCebu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookCebu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookCebu.HoverState.Image")));
             this.bookCebu.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookCebu.HoverState.Parent = this.bookCebu;
@@ -100,6 +117,7 @@
             // 
             this.bookBacolod.BackColor = System.Drawing.Color.Transparent;
             this.bookBacolod.CheckedState.Parent = this.bookBacolod;
+            this.bookBacolod.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookBacolod.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookBacolod.HoverState.Image")));
             this.bookBacolod.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookBacolod.HoverState.Parent = this.bookBacolod;
@@ -118,6 +136,7 @@
             // 
             this.bookBoracay.BackColor = System.Drawing.Color.Transparent;
             this.bookBoracay.CheckedState.Parent = this.bookBoracay;
+            this.bookBoracay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookBoracay.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookBoracay.HoverState.Image")));
             this.bookBoracay.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookBoracay.HoverState.Parent = this.bookBoracay;
@@ -136,12 +155,13 @@
             // 
             this.bookTagbilaran.BackColor = System.Drawing.Color.Transparent;
             this.bookTagbilaran.CheckedState.Parent = this.bookTagbilaran;
+            this.bookTagbilaran.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookTagbilaran.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookTagbilaran.HoverState.Image")));
             this.bookTagbilaran.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookTagbilaran.HoverState.Parent = this.bookTagbilaran;
             this.bookTagbilaran.Image = ((System.Drawing.Image)(resources.GetObject("bookTagbilaran.Image")));
             this.bookTagbilaran.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookTagbilaran.Location = new System.Drawing.Point(917, 556);
+            this.bookTagbilaran.Location = new System.Drawing.Point(917, 573);
             this.bookTagbilaran.Name = "bookTagbilaran";
             this.bookTagbilaran.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookTagbilaran.PressedState.Image")));
             this.bookTagbilaran.PressedState.ImageSize = new System.Drawing.Size(154, 51);
@@ -154,12 +174,13 @@
             // 
             this.bookIloIlo.BackColor = System.Drawing.Color.Transparent;
             this.bookIloIlo.CheckedState.Parent = this.bookIloIlo;
+            this.bookIloIlo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bookIloIlo.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookIloIlo.HoverState.Image")));
             this.bookIloIlo.HoverState.ImageSize = new System.Drawing.Size(154, 51);
             this.bookIloIlo.HoverState.Parent = this.bookIloIlo;
             this.bookIloIlo.Image = ((System.Drawing.Image)(resources.GetObject("bookIloIlo.Image")));
             this.bookIloIlo.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookIloIlo.Location = new System.Drawing.Point(491, 556);
+            this.bookIloIlo.Location = new System.Drawing.Point(491, 575);
             this.bookIloIlo.Name = "bookIloIlo";
             this.bookIloIlo.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookIloIlo.PressedState.Image")));
             this.bookIloIlo.PressedState.ImageSize = new System.Drawing.Size(154, 51);
@@ -172,6 +193,7 @@
             // 
             this.exploreBtnLeft.BackColor = System.Drawing.Color.Transparent;
             this.exploreBtnLeft.CheckedState.Parent = this.exploreBtnLeft;
+            this.exploreBtnLeft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exploreBtnLeft.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnLeft.HoverState.Image")));
             this.exploreBtnLeft.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.exploreBtnLeft.HoverState.Parent = this.exploreBtnLeft;
@@ -190,6 +212,7 @@
             // 
             this.exploreBtnRight.BackColor = System.Drawing.Color.Transparent;
             this.exploreBtnRight.CheckedState.Parent = this.exploreBtnRight;
+            this.exploreBtnRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exploreBtnRight.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("exploreBtnRight.HoverState.Image")));
             this.exploreBtnRight.HoverState.ImageSize = new System.Drawing.Size(46, 46);
             this.exploreBtnRight.HoverState.Parent = this.exploreBtnRight;
@@ -208,6 +231,7 @@
             // 
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(43, 42);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
@@ -226,6 +250,7 @@
             // 
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
             this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(26, 23);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
@@ -240,11 +265,102 @@
             this.guna2ImageButton2.TabIndex = 10;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
+            // kaliboPrice
+            // 
+            this.kaliboPrice.BackColor = System.Drawing.Color.Transparent;
+            this.kaliboPrice.Image = ((System.Drawing.Image)(resources.GetObject("kaliboPrice.Image")));
+            this.kaliboPrice.Location = new System.Drawing.Point(56, 511);
+            this.kaliboPrice.Name = "kaliboPrice";
+            this.kaliboPrice.ShadowDecoration.Parent = this.kaliboPrice;
+            this.kaliboPrice.Size = new System.Drawing.Size(158, 114);
+            this.kaliboPrice.TabIndex = 11;
+            this.kaliboPrice.TabStop = false;
+            this.kaliboPrice.UseTransparentBackground = true;
+            // 
+            // dumaguetePrice
+            // 
+            this.dumaguetePrice.BackColor = System.Drawing.Color.Transparent;
+            this.dumaguetePrice.Image = ((System.Drawing.Image)(resources.GetObject("dumaguetePrice.Image")));
+            this.dumaguetePrice.Location = new System.Drawing.Point(491, 511);
+            this.dumaguetePrice.Name = "dumaguetePrice";
+            this.dumaguetePrice.ShadowDecoration.Parent = this.dumaguetePrice;
+            this.dumaguetePrice.Size = new System.Drawing.Size(158, 114);
+            this.dumaguetePrice.TabIndex = 12;
+            this.dumaguetePrice.TabStop = false;
+            this.dumaguetePrice.UseTransparentBackground = true;
+            // 
+            // cebuPrice
+            // 
+            this.cebuPrice.BackColor = System.Drawing.Color.Transparent;
+            this.cebuPrice.Image = ((System.Drawing.Image)(resources.GetObject("cebuPrice.Image")));
+            this.cebuPrice.Location = new System.Drawing.Point(917, 511);
+            this.cebuPrice.Name = "cebuPrice";
+            this.cebuPrice.ShadowDecoration.Parent = this.cebuPrice;
+            this.cebuPrice.Size = new System.Drawing.Size(158, 114);
+            this.cebuPrice.TabIndex = 13;
+            this.cebuPrice.TabStop = false;
+            this.cebuPrice.UseTransparentBackground = true;
+            // 
+            // bacolodPrice
+            // 
+            this.bacolodPrice.BackColor = System.Drawing.Color.Transparent;
+            this.bacolodPrice.Image = ((System.Drawing.Image)(resources.GetObject("bacolodPrice.Image")));
+            this.bacolodPrice.Location = new System.Drawing.Point(286, 536);
+            this.bacolodPrice.Name = "bacolodPrice";
+            this.bacolodPrice.ShadowDecoration.Parent = this.bacolodPrice;
+            this.bacolodPrice.Size = new System.Drawing.Size(158, 114);
+            this.bacolodPrice.TabIndex = 14;
+            this.bacolodPrice.TabStop = false;
+            this.bacolodPrice.UseTransparentBackground = true;
+            // 
+            // boracayPrice
+            // 
+            this.boracayPrice.BackColor = System.Drawing.Color.Transparent;
+            this.boracayPrice.Image = ((System.Drawing.Image)(resources.GetObject("boracayPrice.Image")));
+            this.boracayPrice.Location = new System.Drawing.Point(705, 536);
+            this.boracayPrice.Name = "boracayPrice";
+            this.boracayPrice.ShadowDecoration.Parent = this.boracayPrice;
+            this.boracayPrice.Size = new System.Drawing.Size(158, 114);
+            this.boracayPrice.TabIndex = 15;
+            this.boracayPrice.TabStop = false;
+            this.boracayPrice.UseTransparentBackground = true;
+            // 
+            // iloiloPrice
+            // 
+            this.iloiloPrice.BackColor = System.Drawing.Color.Transparent;
+            this.iloiloPrice.Image = ((System.Drawing.Image)(resources.GetObject("iloiloPrice.Image")));
+            this.iloiloPrice.Location = new System.Drawing.Point(268, 536);
+            this.iloiloPrice.Name = "iloiloPrice";
+            this.iloiloPrice.ShadowDecoration.Parent = this.iloiloPrice;
+            this.iloiloPrice.Size = new System.Drawing.Size(158, 114);
+            this.iloiloPrice.TabIndex = 16;
+            this.iloiloPrice.TabStop = false;
+            this.iloiloPrice.UseTransparentBackground = true;
+            // 
+            // tagbilaranPrice
+            // 
+            this.tagbilaranPrice.BackColor = System.Drawing.Color.Transparent;
+            this.tagbilaranPrice.Image = ((System.Drawing.Image)(resources.GetObject("tagbilaranPrice.Image")));
+            this.tagbilaranPrice.Location = new System.Drawing.Point(699, 536);
+            this.tagbilaranPrice.Name = "tagbilaranPrice";
+            this.tagbilaranPrice.ShadowDecoration.Parent = this.tagbilaranPrice;
+            this.tagbilaranPrice.Size = new System.Drawing.Size(158, 114);
+            this.tagbilaranPrice.TabIndex = 17;
+            this.tagbilaranPrice.TabStop = false;
+            this.tagbilaranPrice.UseTransparentBackground = true;
+            // 
             // VisayasExplorePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::aero_quest.Properties.Resources.Visayas1;
+            this.BackgroundImage = global::aero_quest.Properties.Resources.visayas2FINAL;
+            this.Controls.Add(this.tagbilaranPrice);
+            this.Controls.Add(this.iloiloPrice);
+            this.Controls.Add(this.boracayPrice);
+            this.Controls.Add(this.bacolodPrice);
+            this.Controls.Add(this.cebuPrice);
+            this.Controls.Add(this.dumaguetePrice);
+            this.Controls.Add(this.kaliboPrice);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.exploreBtnRight);
@@ -259,6 +375,13 @@
             this.Name = "VisayasExplorePage";
             this.Size = new System.Drawing.Size(1350, 729);
             this.Load += new System.EventHandler(this.VisayasExplorePage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kaliboPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dumaguetePrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cebuPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacolodPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boracayPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iloiloPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagbilaranPrice)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,5 +399,12 @@
         private Guna.UI2.WinForms.Guna2ImageButton exploreBtnRight;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2PictureBox kaliboPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox dumaguetePrice;
+        private Guna.UI2.WinForms.Guna2PictureBox cebuPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox bacolodPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox boracayPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox iloiloPrice;
+        private Guna.UI2.WinForms.Guna2PictureBox tagbilaranPrice;
     }
 }
