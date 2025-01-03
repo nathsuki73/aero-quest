@@ -116,6 +116,7 @@
             this.boracay.PressedState.Parent = this.boracay;
             this.boracay.Size = new System.Drawing.Size(383, 290);
             this.boracay.TabIndex = 6;
+            this.boracay.Click += new System.EventHandler(this.boracay_Click);
             this.boracay.MouseEnter += new System.EventHandler(this.boracay_MouseEnter);
             this.boracay.MouseLeave += new System.EventHandler(this.boracay_MouseLeave);
             // 
@@ -135,6 +136,7 @@
             this.cebu.PressedState.Parent = this.cebu;
             this.cebu.Size = new System.Drawing.Size(383, 290);
             this.cebu.TabIndex = 7;
+            this.cebu.Click += new System.EventHandler(this.cebu_Click);
             this.cebu.MouseEnter += new System.EventHandler(this.cebu_MouseEnter);
             this.cebu.MouseLeave += new System.EventHandler(this.cebu_MouseLeave);
             // 
@@ -154,6 +156,7 @@
             this.davao.PressedState.Parent = this.davao;
             this.davao.Size = new System.Drawing.Size(383, 290);
             this.davao.TabIndex = 8;
+            this.davao.Click += new System.EventHandler(this.davao_Click);
             this.davao.MouseEnter += new System.EventHandler(this.davao_MouseEnter);
             this.davao.MouseLeave += new System.EventHandler(this.davao_MouseLeave);
             // 
@@ -173,6 +176,7 @@
             this.puerto.PressedState.Parent = this.puerto;
             this.puerto.Size = new System.Drawing.Size(383, 290);
             this.puerto.TabIndex = 9;
+            this.puerto.Click += new System.EventHandler(this.puerto_Click);
             this.puerto.MouseEnter += new System.EventHandler(this.puerto_MouseEnter);
             this.puerto.MouseLeave += new System.EventHandler(this.puerto_MouseLeave);
             // 
@@ -192,6 +196,7 @@
             this.siargao.PressedState.Parent = this.siargao;
             this.siargao.Size = new System.Drawing.Size(383, 290);
             this.siargao.TabIndex = 10;
+            this.siargao.Click += new System.EventHandler(this.siargao_Click);
             this.siargao.MouseEnter += new System.EventHandler(this.siargao_MouseEnter);
             this.siargao.MouseLeave += new System.EventHandler(this.siargao_MouseLeave);
             // 
@@ -213,6 +218,7 @@
             this.bookManila.Size = new System.Drawing.Size(154, 51);
             this.bookManila.TabIndex = 11;
             this.bookManila.UseTransparentBackground = true;
+            this.bookManila.Click += new System.EventHandler(this.bookManila_Click);
             // 
             // bookBoracay
             // 
@@ -231,6 +237,7 @@
             this.bookBoracay.Size = new System.Drawing.Size(154, 51);
             this.bookBoracay.TabIndex = 12;
             this.bookBoracay.UseTransparentBackground = true;
+            this.bookBoracay.Click += new System.EventHandler(this.bookBoracay_Click);
             // 
             // bookCebu
             // 
@@ -249,6 +256,7 @@
             this.bookCebu.Size = new System.Drawing.Size(154, 51);
             this.bookCebu.TabIndex = 13;
             this.bookCebu.UseTransparentBackground = true;
+            this.bookCebu.Click += new System.EventHandler(this.bookCebu_Click);
             // 
             // bookSiargao
             // 
@@ -267,6 +275,7 @@
             this.bookSiargao.Size = new System.Drawing.Size(154, 51);
             this.bookSiargao.TabIndex = 14;
             this.bookSiargao.UseTransparentBackground = true;
+            this.bookSiargao.Click += new System.EventHandler(this.bookSiargao_Click);
             // 
             // bookDavao
             // 
@@ -285,6 +294,7 @@
             this.bookDavao.Size = new System.Drawing.Size(154, 51);
             this.bookDavao.TabIndex = 15;
             this.bookDavao.UseTransparentBackground = true;
+            this.bookDavao.Click += new System.EventHandler(this.bookDavao_Click);
             // 
             // bookPuerto
             // 
@@ -303,6 +313,7 @@
             this.bookPuerto.Size = new System.Drawing.Size(154, 51);
             this.bookPuerto.TabIndex = 16;
             this.bookPuerto.UseTransparentBackground = true;
+            this.bookPuerto.Click += new System.EventHandler(this.bookPuerto_Click);
             // 
             // HomePage2
             // 

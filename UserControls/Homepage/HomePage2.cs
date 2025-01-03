@@ -102,5 +102,64 @@ namespace aero_quest.UserControls
             clearButtons();
         }
 
+        private void bookManila_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookBoracay_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookCebu_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookSiargao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookDavao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void bookPuerto_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void manila_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void boracay_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void cebu_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void siargao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void davao_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
+
+        private void puerto_Click(object sender, EventArgs e)
+        {
+            UserControlManager.AddControl(new BrowseFlightsPage(), "browseFlightsPage");
+        }
     }
 }
