@@ -37,6 +37,7 @@ namespace aero_quest.UserControls.Booking_Process
             if (seatId != null)
             {
                 SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
+                SendMail(bookingReference);
                 MessageBox.Show("Booked sucessfully.");
                 UserControlManager.RemoveControlByName("confirmSchedule");
                 UserControlManager.RemoveControlByName("confirmPayment");
@@ -63,6 +64,22 @@ namespace aero_quest.UserControls.Booking_Process
             {
                 lblPrice.Text = (Convert.ToDouble(selectedFlight.price) * 2).ToString("0.00");
             }
+        }
+
+        private void SendMail(string reference)
+        {
+            Guid id = Guid.NewGuid();
+            Mails mails = new Mails();
+            mails.Id = id;
+            mails.Type = "Booking Confirmation";
+            mails.From = selectedFlight.from;
+            mails.To = selectedFlight.to;
+            mails.Code = reference;
+            mails.DateTime = DateTime.Now;
+            mails.IsRead = false;
+            mails.IsDeleted = false;
+            mails.IsPermanentlyDeleted = false;
+            User._userMails.Add(mails); 
         }
     }
 }

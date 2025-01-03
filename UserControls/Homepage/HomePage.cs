@@ -25,18 +25,20 @@ namespace aero_quest.UserControls
         {
             InitializeComponent();
             InitializeImageChanger();
-            HideManageIfNotLoggedIn();
+            HideButtonIfNotLoggedIn();
         }
 
-        private void HideManageIfNotLoggedIn()
+        private void HideButtonIfNotLoggedIn()
         {
             if (!User.isLoggedIn)
             {
                 mngeBtn.Visible = false;
+                btnMail.Visible = false;
             }
             else
             {
                 mngeBtn.Visible = true;
+                btnMail.Visible = true;
             }
         }
 
@@ -180,6 +182,11 @@ namespace aero_quest.UserControls
         private void guna2ImageButton4_Click(object sender, EventArgs e)
         {
             UserControlManager.AddControl(new HomePage2(), "homePage2");
+        }
+
+        private void guna2ImageButton5_Click(object sender, EventArgs e)
+        {
+            UserControlManager.PushForm(new MailForm());
         }
     }
 }

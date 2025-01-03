@@ -51,5 +51,25 @@ namespace aero_quest
             control.BringToFront();
         }
 
+        public static void PushForm(Form form)
+        {
+            _userForms.Push(form);
+            ShowTopForm();
+            
+        }
+
+        private static void ShowTopForm()
+        {
+            _userForms.Peek().ShowDialog();
+        }
+        
+        public static void DisposeTopForm()
+        {
+            _userForms.Pop().Dispose();
+        }
+
+
+
+
     }
 }

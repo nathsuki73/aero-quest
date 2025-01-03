@@ -253,6 +253,16 @@ namespace aero_quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap material_symbols_mail_rounded {
+            get {
+                object obj = ResourceManager.GetObject("material-symbols_mail-rounded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mindanao1 {
             get {
                 object obj = ResourceManager.GetObject("Mindanao1", resourceCulture);
@@ -316,6 +326,26 @@ namespace aero_quest.Properties {
         internal static System.Drawing.Bitmap priceZamboanga {
             get {
                 object obj = ResourceManager.GetObject("priceZamboanga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap readMail {
+            get {
+                object obj = ResourceManager.GetObject("readMail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unreadMail {
+            get {
+                object obj = ResourceManager.GetObject("unreadMail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -106,6 +106,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailForm.Designer.cs">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Notice Forms\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,7 @@
     </Compile>
     <Compile Include="Objects\BookingRefernceGenerator.cs" />
     <Compile Include="Objects\Flight.cs" />
+    <Compile Include="Objects\Mails.cs" />
     <Compile Include="Objects\User.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -280,6 +287,12 @@
     <Compile Include="Notice Forms\LoginSuccessPage.Designer.cs">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Mail\MailRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mail\MailRecord.Designer.cs">
+      <DependentUpon>MailRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Manage\ManageBookings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -322,6 +335,9 @@
     <Compile Include="UserControls\Explore\VisayasExplorePage.Designer.cs">
       <DependentUpon>VisayasExplorePage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MailForm.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notice Forms\LoginSuccessPage.resx">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mail\MailRecord.resx">
+      <DependentUpon>MailRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Manage\ManageBookings.resx">
       <DependentUpon>ManageBookings.cs</DependentUpon>
@@ -532,6 +551,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visayas2FINAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material-symbols_mail-rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\readMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unreadMail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

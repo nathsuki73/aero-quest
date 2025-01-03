@@ -178,23 +178,29 @@
   <data name="Visayas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Visayas3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mindanao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mindanao2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="777" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="material-symbols_mail-rounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\material-symbols_mail-rounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visayas2FINAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visayas2FINAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="priceSiargao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\priceSiargao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mindanao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mindanao2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LandingPageMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LandingPageMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="A330" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A321 bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A321 bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +211,10 @@
   <data name="lostAndFoundBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lostAndFoundBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="visayas2FINAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\visayas2FINAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="readMail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\readMail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unreadMail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unreadMail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

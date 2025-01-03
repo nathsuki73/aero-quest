@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMail = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -49,6 +50,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(214)))), ((int)(((byte)(242)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.IndianRed;
+            this.guna2Panel1.Controls.Add(this.btnMail);
             this.guna2Panel1.Controls.Add(this.guna2ImageButton3);
             this.guna2Panel1.Controls.Add(this.guna2ImageButton2);
             this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
@@ -63,6 +65,19 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1350, 90);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.guna2Panel1_MouseClick);
+            // 
+            // btnMail
+            // 
+            this.btnMail.CheckedState.Parent = this.btnMail;
+            this.btnMail.HoverState.Parent = this.btnMail;
+            this.btnMail.Image = ((System.Drawing.Image)(resources.GetObject("btnMail.Image")));
+            this.btnMail.ImageSize = new System.Drawing.Size(24, 24);
+            this.btnMail.Location = new System.Drawing.Point(1307, 29);
+            this.btnMail.Name = "btnMail";
+            this.btnMail.PressedState.Parent = this.btnMail;
+            this.btnMail.Size = new System.Drawing.Size(24, 24);
+            this.btnMail.TabIndex = 8;
+            this.btnMail.Click += new System.EventHandler(this.guna2ImageButton5_Click);
             // 
             // guna2ImageButton3
             // 
@@ -249,5 +264,6 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
+        private Guna.UI2.WinForms.Guna2ImageButton btnMail;
     }
 }

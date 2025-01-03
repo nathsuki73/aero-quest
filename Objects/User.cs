@@ -25,6 +25,12 @@ namespace aero_quest.Objects
 
     internal class User
     {
+        public static HashSet<Mails> _userMails = new HashSet<Mails>();
+
+
+
+
+
         public static Profile profile;
         public static int? currentLoggedInId = null;
         public static bool isLoggedIn = false;
