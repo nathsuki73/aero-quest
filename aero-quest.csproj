@@ -112,6 +112,24 @@
     <Compile Include="MailForm.Designer.cs">
       <DependentUpon>MailForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notice Forms\AlreadyCheckedInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\AlreadyCheckedInPage.Designer.cs">
+      <DependentUpon>AlreadyCheckedInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\BookedSuccessfullyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\BookedSuccessfullyPage.Designer.cs">
+      <DependentUpon>BookedSuccessfullyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\CheckedInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\CheckedInPage.Designer.cs">
+      <DependentUpon>CheckedInPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Notice Forms\CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -340,6 +358,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\AlreadyCheckedInPage.resx">
+      <DependentUpon>AlreadyCheckedInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\BookedSuccessfullyPage.resx">
+      <DependentUpon>BookedSuccessfullyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\CheckedInPage.resx">
+      <DependentUpon>CheckedInPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notice Forms\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>

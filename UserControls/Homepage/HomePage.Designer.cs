@@ -69,11 +69,16 @@
             // btnMail
             // 
             this.btnMail.CheckedState.Parent = this.btnMail;
+            this.btnMail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMail.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("btnMail.HoverState.Image")));
+            this.btnMail.HoverState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnMail.HoverState.Parent = this.btnMail;
             this.btnMail.Image = ((System.Drawing.Image)(resources.GetObject("btnMail.Image")));
             this.btnMail.ImageSize = new System.Drawing.Size(24, 24);
-            this.btnMail.Location = new System.Drawing.Point(1307, 29);
+            this.btnMail.Location = new System.Drawing.Point(1282, 31);
             this.btnMail.Name = "btnMail";
+            this.btnMail.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("btnMail.PressedState.Image")));
+            this.btnMail.PressedState.ImageSize = new System.Drawing.Size(24, 24);
             this.btnMail.PressedState.Parent = this.btnMail;
             this.btnMail.Size = new System.Drawing.Size(24, 24);
             this.btnMail.TabIndex = 8;
@@ -90,7 +95,7 @@
             this.guna2ImageButton3.HoverState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(106, 33);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(1219, 37);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(1169, 37);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.PressedState.Image")));
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(106, 33);
@@ -110,7 +115,7 @@
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(71, 33);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(1140, 36);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1090, 36);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(71, 33);
@@ -130,7 +135,7 @@
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(95, 33);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1043, 37);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(993, 37);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(95, 33);
@@ -151,7 +156,7 @@
             this.trvlinfoBtn.HoverState.Parent = this.trvlinfoBtn;
             this.trvlinfoBtn.Image = ((System.Drawing.Image)(resources.GetObject("trvlinfoBtn.Image")));
             this.trvlinfoBtn.ImageSize = new System.Drawing.Size(128, 33);
-            this.trvlinfoBtn.Location = new System.Drawing.Point(911, 34);
+            this.trvlinfoBtn.Location = new System.Drawing.Point(861, 34);
             this.trvlinfoBtn.Name = "trvlinfoBtn";
             this.trvlinfoBtn.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("trvlinfoBtn.PressedState.Image")));
             this.trvlinfoBtn.PressedState.ImageSize = new System.Drawing.Size(128, 33);
@@ -171,7 +176,7 @@
             this.mngeBtn.HoverState.Parent = this.mngeBtn;
             this.mngeBtn.Image = ((System.Drawing.Image)(resources.GetObject("mngeBtn.Image")));
             this.mngeBtn.ImageSize = new System.Drawing.Size(102, 33);
-            this.mngeBtn.Location = new System.Drawing.Point(803, 36);
+            this.mngeBtn.Location = new System.Drawing.Point(753, 36);
             this.mngeBtn.Name = "mngeBtn";
             this.mngeBtn.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("mngeBtn.PressedState.Image")));
             this.mngeBtn.PressedState.ImageSize = new System.Drawing.Size(102, 33);

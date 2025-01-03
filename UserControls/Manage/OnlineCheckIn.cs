@@ -1,4 +1,5 @@
-﻿using aero_quest.Sql;
+﻿using aero_quest.Notice_Forms;
+using aero_quest.Sql;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -106,6 +107,11 @@ namespace aero_quest.UserControls.Manage
 
         }
 
+        public void ShowMessage(Form control)
+        {
+            control.ShowDialog();
+        }
+
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
             if (guna2DataGridView1.SelectedRows.Count == 1)
@@ -116,11 +122,13 @@ namespace aero_quest.UserControls.Manage
                 string status = selectedRow.Cells["status"].Value.ToString();
                 if (status == "Checked in")
                 {
-                    MessageBox.Show("Already Checked In");
+                    //MessageBox.Show("Already Checked In");
+                    ShowMessage(new AlreadyCheckedInPage());
                 }
                 else
                 {
                     SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
+                    ShowMessage(new CheckedInPage());
                     LoadBookings();
                 }
 
