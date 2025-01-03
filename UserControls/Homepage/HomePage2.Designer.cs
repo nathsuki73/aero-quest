@@ -213,6 +213,7 @@
             this.bookManila.Size = new System.Drawing.Size(154, 51);
             this.bookManila.TabIndex = 11;
             this.bookManila.UseTransparentBackground = true;
+            this.bookManila.Click += new System.EventHandler(this.bookManila_Click);
             // 
             // bookBoracay
             // 
@@ -231,6 +232,7 @@
             this.bookBoracay.Size = new System.Drawing.Size(154, 51);
             this.bookBoracay.TabIndex = 12;
             this.bookBoracay.UseTransparentBackground = true;
+            this.bookBoracay.Click += new System.EventHandler(this.bookBoracay_Click);
             // 
             // bookCebu
             // 
@@ -249,6 +251,7 @@
             this.bookCebu.Size = new System.Drawing.Size(154, 51);
             this.bookCebu.TabIndex = 13;
             this.bookCebu.UseTransparentBackground = true;
+            this.bookCebu.Click += new System.EventHandler(this.bookCebu_Click);
             // 
             // bookSiargao
             // 
@@ -267,6 +270,7 @@
             this.bookSiargao.Size = new System.Drawing.Size(154, 51);
             this.bookSiargao.TabIndex = 14;
             this.bookSiargao.UseTransparentBackground = true;
+            this.bookSiargao.Click += new System.EventHandler(this.bookSiargao_Click);
             // 
             // bookDavao
             // 
@@ -285,6 +289,7 @@
             this.bookDavao.Size = new System.Drawing.Size(154, 51);
             this.bookDavao.TabIndex = 15;
             this.bookDavao.UseTransparentBackground = true;
+            this.bookDavao.Click += new System.EventHandler(this.bookDavao_Click);
             // 
             // bookPuerto
             // 
@@ -303,6 +308,7 @@
             this.bookPuerto.Size = new System.Drawing.Size(154, 51);
             this.bookPuerto.TabIndex = 16;
             this.bookPuerto.UseTransparentBackground = true;
+            this.bookPuerto.Click += new System.EventHandler(this.bookPuerto_Click);
             // 
             // HomePage2
             // 
