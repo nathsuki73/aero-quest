@@ -44,15 +44,11 @@
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.Location = new System.Drawing.Point(129, 594);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
             this.guna2ImageButton1.Size = new System.Drawing.Size(204, 48);
             this.guna2ImageButton1.TabIndex = 0;
@@ -64,15 +60,11 @@
             this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton2.Location = new System.Drawing.Point(1019, 594);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(204, 48);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
             this.guna2ImageButton2.Size = new System.Drawing.Size(204, 48);
             this.guna2ImageButton2.TabIndex = 0;
@@ -83,11 +75,11 @@
             // 
             this.lblFrom.AutoSize = true;
             this.lblFrom.BackColor = System.Drawing.Color.Transparent;
-            this.lblFrom.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrom.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFrom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFrom.Location = new System.Drawing.Point(379, 264);
+            this.lblFrom.Location = new System.Drawing.Point(384, 270);
             this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(71, 24);
+            this.lblFrom.Size = new System.Drawing.Size(61, 16);
             this.lblFrom.TabIndex = 1;
             this.lblFrom.Text = "label1";
             // 
@@ -95,11 +87,11 @@
             // 
             this.lblTo.AutoSize = true;
             this.lblTo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTo.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTo.Location = new System.Drawing.Point(767, 274);
+            this.lblTo.Location = new System.Drawing.Point(797, 270);
             this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(71, 24);
+            this.lblTo.Size = new System.Drawing.Size(61, 16);
             this.lblTo.TabIndex = 1;
             this.lblTo.Text = "label1";
             // 
@@ -107,11 +99,11 @@
             // 
             this.lblArrival.AutoSize = true;
             this.lblArrival.BackColor = System.Drawing.Color.Transparent;
-            this.lblArrival.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArrival.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArrival.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblArrival.Location = new System.Drawing.Point(457, 325);
+            this.lblArrival.Location = new System.Drawing.Point(461, 329);
             this.lblArrival.Name = "lblArrival";
-            this.lblArrival.Size = new System.Drawing.Size(71, 24);
+            this.lblArrival.Size = new System.Drawing.Size(61, 16);
             this.lblArrival.TabIndex = 1;
             this.lblArrival.Text = "label1";
             // 
@@ -119,11 +111,11 @@
             // 
             this.lblDeparture.AutoSize = true;
             this.lblDeparture.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeparture.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeparture.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeparture.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDeparture.Location = new System.Drawing.Point(932, 332);
+            this.lblDeparture.Location = new System.Drawing.Point(935, 334);
             this.lblDeparture.Name = "lblDeparture";
-            this.lblDeparture.Size = new System.Drawing.Size(71, 24);
+            this.lblDeparture.Size = new System.Drawing.Size(61, 16);
             this.lblDeparture.TabIndex = 1;
             this.lblDeparture.Text = "label1";
             // 
@@ -131,11 +123,11 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDate.Location = new System.Drawing.Point(367, 386);
+            this.lblDate.Location = new System.Drawing.Point(384, 391);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(71, 24);
+            this.lblDate.Size = new System.Drawing.Size(61, 16);
             this.lblDate.TabIndex = 1;
             this.lblDate.Text = "label1";
             // 
@@ -143,11 +135,11 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPrice.Location = new System.Drawing.Point(370, 448);
+            this.lblPrice.Location = new System.Drawing.Point(384, 454);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(71, 24);
+            this.lblPrice.Size = new System.Drawing.Size(61, 16);
             this.lblPrice.TabIndex = 1;
             this.lblPrice.Text = "label1";
             // 

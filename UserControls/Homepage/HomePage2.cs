@@ -101,6 +101,5 @@ namespace aero_quest.UserControls
         {
             clearButtons();
         }
-
     }
 }
