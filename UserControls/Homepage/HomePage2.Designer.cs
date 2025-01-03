@@ -97,6 +97,7 @@
             this.manila.PressedState.Parent = this.manila;
             this.manila.Size = new System.Drawing.Size(383, 290);
             this.manila.TabIndex = 5;
+            this.manila.Click += new System.EventHandler(this.manila_Click);
             this.manila.MouseEnter += new System.EventHandler(this.manila_MouseEnter);
             this.manila.MouseLeave += new System.EventHandler(this.manila_MouseLeave);
             // 
