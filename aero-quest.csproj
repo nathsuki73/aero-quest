@@ -287,11 +287,23 @@
     <Compile Include="Notice Forms\LoginSuccessPage.Designer.cs">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Mail\BookingIDMail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mail\BookingIDMail.Designer.cs">
+      <DependentUpon>BookingIDMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Mail\MailRecord.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Mail\MailRecord.Designer.cs">
       <DependentUpon>MailRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Mail\SeatIDMail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Mail\SeatIDMail.Designer.cs">
+      <DependentUpon>SeatIDMail.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Manage\ManageBookings.cs">
       <SubType>UserControl</SubType>
@@ -411,6 +423,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Homepage\HomePage2.resx">
       <DependentUpon>HomePage2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Homepage\HomePage4.resx">
       <DependentUpon>HomePage4.cs</DependentUpon>
@@ -430,8 +443,14 @@
     <EmbeddedResource Include="Notice Forms\LoginSuccessPage.resx">
       <DependentUpon>LoginSuccessPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mail\BookingIDMail.resx">
+      <DependentUpon>BookingIDMail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Mail\MailRecord.resx">
       <DependentUpon>MailRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Mail\SeatIDMail.resx">
+      <DependentUpon>SeatIDMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Manage\ManageBookings.resx">
       <DependentUpon>ManageBookings.cs</DependentUpon>
