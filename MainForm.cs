@@ -39,6 +39,7 @@ namespace aero_quest
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             SqlQueries.UploadData();
+            SqlQueries.UploadMails();
         }
     }
 }

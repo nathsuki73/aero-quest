@@ -1,10 +1,13 @@
 ﻿using aero_quest.Objects;
 using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -553,5 +556,155 @@ namespace aero_quest.Sql
 
             return blob;
         }
+
+
+
+
+
+
+
+        public static HashSet<Mails> GetMails(int id)
+        {
+            HashSet<Mails> mails = new HashSet<Mails>();
+
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connStr))
+                {
+                    string checkQuery = "SELECT mails FROM mail WHERE userId = @userId";
+                    using (MySqlCommand checkCommand = new MySqlCommand(checkQuery, connection))
+                    {
+                        checkCommand.Parameters.AddWithValue("@userId", id);
+
+                        connection.Open();
+                        object result = checkCommand.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            // userId exists; retrieve the mail blob and deserialize
+                            byte[] mailBlob = (byte[])result;
+                            HashSet<Mails> deserializedMails = DeserializeMails(mailBlob);
+                            Console.WriteLine($"UserId already exists in the mail table with deserialized mails.");
+
+                            return deserializedMails;
+                        }
+                        else
+                        {
+                            // userId doesn't exist, return the mails
+                            return mails;
+                        }
+                    }
+                }
+            }
+            catch (MySqlException sqlEx)
+            {
+                Console.WriteLine($"Database error: {sqlEx.Message}");
+                // Handle MySQL-specific exceptions (e.g., connection issues, query errors)
+                return mails; // Return an empty HashSet in case of failure
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                // Handle any other general exceptions (e.g., deserialization issues)
+                return mails; // Return an empty HashSet in case of failure
+            }
+        }
+
+
+        public static void UploadMails()
+        {
+            HashSet<Mails> mails = User._userMails;
+            int? id = User.currentLoggedInId;
+
+            if (id == null)
+            {
+                Console.WriteLine("No user logged in.");
+                return;
+            }
+
+            // Serialize the mails to a byte array
+            byte[] mailBlob = SerializeMails(mails);
+
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connStr))
+                {
+                    // Check if the userId exists in the mail table
+                    string checkQuery = "SELECT COUNT(*) FROM mail WHERE userId = @userId";
+                    using (MySqlCommand checkCommand = new MySqlCommand(checkQuery, connection))
+                    {
+                        checkCommand.Parameters.AddWithValue("@userId", id);
+
+                        connection.Open();
+                        int count = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                        if (count > 0)
+                        {
+                            // userId exists; update the existing mail record
+                            string updateQuery = "UPDATE mail SET mails = @mailBlob WHERE userId = @userId";
+                            using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
+                            {
+                                updateCommand.Parameters.AddWithValue("@mailBlob", mailBlob);
+                                updateCommand.Parameters.AddWithValue("@userId", id);
+
+                                updateCommand.ExecuteNonQuery();
+                                Console.WriteLine("Mails updated successfully.");
+                            }
+                        }
+                        else
+                        {
+                            // userId doesn't exist; insert a new record
+                            string insertQuery = "INSERT INTO mail (userId, mails) VALUES (@userId, @mailBlob)";
+                            using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection))
+                            {
+                                insertCommand.Parameters.AddWithValue("@userId", id);
+                                insertCommand.Parameters.AddWithValue("@mailBlob", mailBlob);
+
+                                insertCommand.ExecuteNonQuery();
+                                Console.WriteLine("Mails uploaded successfully.");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException sqlEx)
+            {
+                Console.WriteLine($"Database error: {sqlEx.Message}");
+                // Handle MySQL-specific exceptions (e.g., connection issues, query errors)
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                // Handle any other general exceptions
+            }
+        }
+
+
+
+
+        private static byte[] SerializeMails(HashSet<Mails> mails)
+        {
+            // Serialize HashSet<Mails> to JSON string
+            string json = JsonConvert.SerializeObject(mails);
+
+            // Convert the JSON string to a byte array using UTF-8 encoding
+            return Encoding.UTF8.GetBytes(json);
+        }
+
+        // Deserialize mails from a UTF-8 byte array
+        private static HashSet<Mails> DeserializeMails(byte[] mailBlob)
+        {
+            if (mailBlob == null || mailBlob.Length == 0)
+            {
+                return new HashSet<Mails>(); // Return empty set if there's no data
+            }
+
+            // Convert the byte array back to a JSON string using UTF-8 encoding
+            string json = Encoding.UTF8.GetString(mailBlob);
+
+            // Deserialize the JSON string to HashSet<Mails>
+            return JsonConvert.DeserializeObject<HashSet<Mails>>(json);
+        }
+
     }
 }

@@ -26,6 +26,7 @@ namespace aero_quest.Objects
     internal class User
     {
         public static HashSet<Mails> _userMails = new HashSet<Mails>();
+     //   public static HashSet<Mails> _userMails = new HashSet<Mails>();
 
 
 

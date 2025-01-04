@@ -51,7 +51,9 @@ namespace aero_quest.UserControls.AuthControls
             }
             else
             {
+                SqlQueries.UploadMails();
                 User.currentLoggedInId = user.Id;
+                User._userMails = SqlQueries.GetMails(user.Id);
                 User.profile = SqlQueries.GetProfile(User.currentLoggedInId);
                 if (User.profile != null)
                 {
