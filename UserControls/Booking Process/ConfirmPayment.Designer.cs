@@ -33,8 +33,8 @@
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtGender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.txtAccountNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotalPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2ImageButton2
@@ -122,52 +122,52 @@
             this.guna2ComboBox1.TabIndex = 5;
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // txtEmail
+            // txtAccountNumber
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmail.BorderColor = System.Drawing.Color.Gray;
-            this.txtEmail.BorderRadius = 15;
-            this.txtEmail.BorderThickness = 2;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.Parent = this.txtEmail;
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.FocusedState.Parent = this.txtEmail;
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(557, 321);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.PlaceholderText = "XXXX-XXXX-XXXX-XXXX";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
-            this.txtEmail.Size = new System.Drawing.Size(216, 36);
-            this.txtEmail.TabIndex = 6;
+            this.txtAccountNumber.BackColor = System.Drawing.Color.Transparent;
+            this.txtAccountNumber.BorderColor = System.Drawing.Color.Gray;
+            this.txtAccountNumber.BorderRadius = 15;
+            this.txtAccountNumber.BorderThickness = 2;
+            this.txtAccountNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAccountNumber.DefaultText = "";
+            this.txtAccountNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAccountNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAccountNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAccountNumber.DisabledState.Parent = this.txtAccountNumber;
+            this.txtAccountNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAccountNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAccountNumber.FocusedState.Parent = this.txtAccountNumber;
+            this.txtAccountNumber.ForeColor = System.Drawing.Color.White;
+            this.txtAccountNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAccountNumber.HoverState.Parent = this.txtAccountNumber;
+            this.txtAccountNumber.Location = new System.Drawing.Point(557, 321);
+            this.txtAccountNumber.Name = "txtAccountNumber";
+            this.txtAccountNumber.PasswordChar = '\0';
+            this.txtAccountNumber.PlaceholderText = "XXXX-XXXX-XXXX-XXXX";
+            this.txtAccountNumber.SelectedText = "";
+            this.txtAccountNumber.ShadowDecoration.Parent = this.txtAccountNumber;
+            this.txtAccountNumber.Size = new System.Drawing.Size(216, 36);
+            this.txtAccountNumber.TabIndex = 6;
             // 
-            // lblPrice
+            // txtTotalPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPrice.Location = new System.Drawing.Point(564, 446);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(61, 16);
-            this.lblPrice.TabIndex = 7;
-            this.lblPrice.Text = "label1";
+            this.txtTotalPrice.AutoSize = true;
+            this.txtTotalPrice.BackColor = System.Drawing.Color.Transparent;
+            this.txtTotalPrice.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTotalPrice.Location = new System.Drawing.Point(564, 446);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.Size = new System.Drawing.Size(61, 16);
+            this.txtTotalPrice.TabIndex = 7;
+            this.txtTotalPrice.Text = "label1";
             // 
             // ConfirmPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtTotalPrice);
+            this.Controls.Add(this.txtAccountNumber);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.txtGender);
             this.Controls.Add(this.guna2ImageButton2);
@@ -185,7 +185,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ComboBox txtGender;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
-        private System.Windows.Forms.Label lblPrice;
+        private Guna.UI2.WinForms.Guna2TextBox txtAccountNumber;
+        private System.Windows.Forms.Label txtTotalPrice;
     }
 }

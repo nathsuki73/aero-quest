@@ -21,7 +21,7 @@ namespace aero_quest.UserControls.Booking_Process
             InitializeComponent();
             this.selectedFlight = selectedFlight;
             this.schedule = schedule;
-            lblPrice.Text = selectedFlight.price.ToString();
+            txtTotalPrice.Text = selectedFlight.price.ToString();
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -54,15 +54,15 @@ namespace aero_quest.UserControls.Booking_Process
         {
             if (guna2ComboBox1.SelectedIndex == 0)
             {
-                lblPrice.Text = Convert.ToDouble(selectedFlight.price).ToString("0.00");
+                txtTotalPrice.Text = Convert.ToDouble(selectedFlight.price).ToString("0.00");
             }
             else if (guna2ComboBox1.SelectedIndex == 1)
             {
-                lblPrice.Text = (Convert.ToDouble(selectedFlight.price) * 1.5).ToString("0.00");
+                txtTotalPrice.Text = (Convert.ToDouble(selectedFlight.price) * 1.5).ToString("0.00");
             }
             else if (guna2ComboBox1.SelectedIndex == 2)
             {
-                lblPrice.Text = (Convert.ToDouble(selectedFlight.price) * 2).ToString("0.00");
+                txtTotalPrice.Text = (Convert.ToDouble(selectedFlight.price) * 2).ToString("0.00");
             }
         }
 
@@ -79,6 +79,9 @@ namespace aero_quest.UserControls.Booking_Process
             mails.IsRead = false;
             mails.IsDeleted = false;
             mails.IsPermanentlyDeleted = false;
+            mails.AccountNumber = txtAccountNumber.Text;
+            mails.Price = txtTotalPrice.Text;
+            mails.Class = guna2ComboBox1.SelectedIndex.ToString();
             User._userMails.Add(mails); 
         }
     }
