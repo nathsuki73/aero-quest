@@ -42,19 +42,22 @@ namespace aero_quest
         {
             panel1.Controls.Clear();
             HashSet<Mails> mails = User._userMails;
+            Stack<MailRecord> mailRecords = new Stack<MailRecord>();
 
-            int y = 0;
-            foreach (Mails mail in mails) {
-
-                if (!mail.IsDeleted)
-                {
-                    continue;
-                }
-                if (mail.IsPermanentlyDeleted)
+            foreach (Mails mail in mails)
+            {
+                if (!mail.IsDeleted || mail.IsPermanentlyDeleted)
                 {
                     continue;
                 }
                 MailRecord record = new MailRecord(mail, true);
+                mailRecords.Push(record);
+            }
+
+            int y = 0;
+            while (mailRecords.Count > 0)
+            {
+                MailRecord record = mailRecords.Pop();
                 record.Location = new Point(0, y);
                 y += 30;
                 panel1.Controls.Add(record);
@@ -66,8 +69,29 @@ namespace aero_quest
         {
             panel1.Controls.Clear();
             HashSet<Mails> mails = User._userMails;
-            int y = 0;
+            Stack<MailRecord> mailRecords = new Stack<MailRecord>();
+
             foreach (Mails mail in mails)
+            {
+                if (mail.IsDeleted || mail.IsPermanentlyDeleted)
+                {
+                    continue;
+                }
+                MailRecord record = new MailRecord(mail);
+                mailRecords.Push(record);
+            }
+
+            int y = 0;
+
+            while (mailRecords.Count > 0)
+            {
+                MailRecord record = mailRecords.Pop();
+                record.Location = new Point(0, y);
+                y += 30;
+                panel1.Controls.Add(record);
+            }
+
+            /*foreach (Mails mail in mails)
             {
                 if (mail.IsDeleted)
                 {
@@ -81,8 +105,7 @@ namespace aero_quest
                 record.Location = new Point(0, y);
                 y += 30;
                 panel1.Controls.Add(record);
-            }
-
+            }*/
         }
     }
 }

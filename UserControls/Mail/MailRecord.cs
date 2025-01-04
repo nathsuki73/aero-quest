@@ -57,7 +57,7 @@ namespace aero_quest.UserControls.Mail
             if (mail.Type == "Booking Confirmation")
             {
                 txtName.Text = "Booking Confirmation";
-                string message = $"Hi {User.profile.Name.Split(' ')[0]}, Your booking from {mail.From} to {mail.To} has been confirmed. Thank you for using our service.";
+                string message = $"Dear {User.profile.Name.Split(' ')[0]}, Your booking from {mail.From} to {mail.To} has been confirmed. Thank you for using our service.";
 
                 // Truncate the message to 44 characters (leaving space for '...')
                 if (message.Length > 60)
