@@ -16,16 +16,6 @@ namespace aero_quest.UserControls
         {
             InitializeComponent();
         }
-
-        private void clearButtons()
-        {
-            bookBoracay.Visible = false;
-            bookCebu.Visible = false;
-            bookDavao.Visible = false;
-            bookManila.Visible = false;
-            bookPuerto.Visible = false;
-            bookSiargao.Visible = false;
-        }
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
             UserControlManager.RemoveControlByName("homePage2");
@@ -37,69 +27,34 @@ namespace aero_quest.UserControls
 
         }
 
-        private void HomePage2_Load(object sender, EventArgs e)
+        private void manila_Click(object sender, EventArgs e)
         {
-            clearButtons();
+            UserControlManager.AddControl(new BrowseFlightsPage("Manila"), "browseFlightsPage");
         }
 
-        private void manila_MouseEnter(object sender, EventArgs e)
+        private void boracay_Click(object sender, EventArgs e)
         {
-            bookManila.Visible = true;
+            UserControlManager.AddControl(new BrowseFlightsPage("Boracay"), "browseFlightsPage");
         }
 
-        private void manila_MouseLeave(object sender, EventArgs e)
+        private void cebu_Click(object sender, EventArgs e)
         {
-            clearButtons();
+            UserControlManager.AddControl(new BrowseFlightsPage("Cebu"), "browseFlightsPage");
         }
 
-        private void boracay_MouseEnter(object sender, EventArgs e)
+        private void siargao_Click(object sender, EventArgs e)
         {
-            bookBoracay.Visible = true;
+            UserControlManager.AddControl(new BrowseFlightsPage("Siargao"), "browseFlightsPage");
         }
 
-        private void boracay_MouseLeave(object sender, EventArgs e)
+        private void davao_Click(object sender, EventArgs e)
         {
-            clearButtons();
+            UserControlManager.AddControl(new BrowseFlightsPage("Davao"), "browseFlightsPage");
         }
 
-        private void cebu_MouseEnter(object sender, EventArgs e)
+        private void puerto_Click(object sender, EventArgs e)
         {
-            bookCebu.Visible = true;
-        }
-
-        private void cebu_MouseLeave(object sender, EventArgs e)
-        {
-            clearButtons();
-        }
-
-        private void siargao_MouseEnter(object sender, EventArgs e)
-        {
-            bookSiargao.Visible = true;
-        }
-
-        private void siargao_MouseLeave(object sender, EventArgs e)
-        {
-            clearButtons();
-        }
-
-        private void davao_MouseEnter(object sender, EventArgs e)
-        {
-            bookDavao.Visible = true;
-        }
-
-        private void davao_MouseLeave(object sender, EventArgs e)
-        {
-            clearButtons();
-        }
-
-        private void puerto_MouseEnter(object sender, EventArgs e)
-        {
-            bookPuerto.Visible = true;
-        }
-
-        private void puerto_MouseLeave(object sender, EventArgs e)
-        {
-            clearButtons();
+            UserControlManager.AddControl(new BrowseFlightsPage("Puerto Prinsesa"), "browseFlightsPage");
         }
     }
 }

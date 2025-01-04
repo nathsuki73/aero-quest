@@ -44,7 +44,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Location = new System.Drawing.Point(567, 123);
+            this.lblDate.Location = new System.Drawing.Point(516, 124);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(35, 13);
             this.lblDate.TabIndex = 0;
@@ -139,7 +139,7 @@
             this.lblgoodbye.AutoSize = true;
             this.lblgoodbye.BackColor = System.Drawing.Color.Transparent;
             this.lblgoodbye.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgoodbye.Location = new System.Drawing.Point(79, 613);
+            this.lblgoodbye.Location = new System.Drawing.Point(63, 605);
             this.lblgoodbye.Name = "lblgoodbye";
             this.lblgoodbye.Size = new System.Drawing.Size(70, 25);
             this.lblgoodbye.TabIndex = 16;
@@ -150,7 +150,7 @@
             this.lblbody.AutoSize = true;
             this.lblbody.BackColor = System.Drawing.Color.Transparent;
             this.lblbody.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbody.Location = new System.Drawing.Point(69, 306);
+            this.lblbody.Location = new System.Drawing.Point(57, 286);
             this.lblbody.Name = "lblbody";
             this.lblbody.Size = new System.Drawing.Size(70, 25);
             this.lblbody.TabIndex = 15;
@@ -161,7 +161,7 @@
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(69, 261);
+            this.lblName.Location = new System.Drawing.Point(57, 249);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(70, 25);
             this.lblName.TabIndex = 14;

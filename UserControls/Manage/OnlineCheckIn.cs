@@ -1,4 +1,5 @@
-﻿using aero_quest.Objects;
+﻿using aero_quest.Notice_Forms;
+using aero_quest.Objects;
 using aero_quest.Sql;
 using Guna.UI2.WinForms;
 using System;
@@ -105,6 +106,10 @@ namespace aero_quest.UserControls.Manage
             UserControlManager.RemoveControlByName("onlineCheckIn");
 
         }
+        public static void ShowNotice(Form control)
+        {
+            control.ShowDialog();
+        }
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
@@ -121,13 +126,15 @@ namespace aero_quest.UserControls.Manage
                 Console.WriteLine($"AAAAA:{seatId}:{from}:{to}");
                 if (status == "Checked in")
                 {
-                    MessageBox.Show("Already Checked In");
+                    //MessageBox.Show("Already Checked In");
+                    ShowNotice(new AlreadyCheckedInPage());
                 }
                 else
                 {
                     SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
                     SendMail(seatId, from, to);
-                    MessageBox.Show("Success, Check you mail for details.");
+                    //MessageBox.Show("Success, Check you mail for details.");
+                    ShowNotice(new CheckedInPage());
 
                     LoadBookings();
                 }

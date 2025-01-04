@@ -1,4 +1,5 @@
-﻿using aero_quest.Objects;
+﻿using aero_quest.Notice_Forms;
+using aero_quest.Objects;
 using aero_quest.Sql;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,10 @@ namespace aero_quest.UserControls.Booking_Process
             UserControlManager.RemoveControlByName("confirmPayment");
 
         }
+        public static void ShowNotice(Form control)
+        {
+            control.ShowDialog();
+        }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
@@ -38,7 +43,8 @@ namespace aero_quest.UserControls.Booking_Process
             {
                 SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
                 SendMail(bookingReference);
-                MessageBox.Show("Booked sucessfully.");
+                //MessageBox.Show("Booked sucessfully.");
+                ShowNotice(new BookedSuccessfullyPage());
                 UserControlManager.RemoveControlByName("confirmSchedule");
                 UserControlManager.RemoveControlByName("confirmPayment");
                 UserControlManager.RemoveControlByName("confirmIdentity");

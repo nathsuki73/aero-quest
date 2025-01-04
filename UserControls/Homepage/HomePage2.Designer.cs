@@ -37,12 +37,6 @@
             this.davao = new Guna.UI2.WinForms.Guna2ImageButton();
             this.puerto = new Guna.UI2.WinForms.Guna2ImageButton();
             this.siargao = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookManila = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookBoracay = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookCebu = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookSiargao = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookDavao = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookPuerto = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
             // guna2ImageButton2
@@ -97,8 +91,7 @@
             this.manila.PressedState.Parent = this.manila;
             this.manila.Size = new System.Drawing.Size(383, 290);
             this.manila.TabIndex = 5;
-            this.manila.MouseEnter += new System.EventHandler(this.manila_MouseEnter);
-            this.manila.MouseLeave += new System.EventHandler(this.manila_MouseLeave);
+            this.manila.Click += new System.EventHandler(this.manila_Click);
             // 
             // boracay
             // 
@@ -116,8 +109,7 @@
             this.boracay.PressedState.Parent = this.boracay;
             this.boracay.Size = new System.Drawing.Size(383, 290);
             this.boracay.TabIndex = 6;
-            this.boracay.MouseEnter += new System.EventHandler(this.boracay_MouseEnter);
-            this.boracay.MouseLeave += new System.EventHandler(this.boracay_MouseLeave);
+            this.boracay.Click += new System.EventHandler(this.boracay_Click);
             // 
             // cebu
             // 
@@ -135,8 +127,7 @@
             this.cebu.PressedState.Parent = this.cebu;
             this.cebu.Size = new System.Drawing.Size(383, 290);
             this.cebu.TabIndex = 7;
-            this.cebu.MouseEnter += new System.EventHandler(this.cebu_MouseEnter);
-            this.cebu.MouseLeave += new System.EventHandler(this.cebu_MouseLeave);
+            this.cebu.Click += new System.EventHandler(this.cebu_Click);
             // 
             // davao
             // 
@@ -154,8 +145,7 @@
             this.davao.PressedState.Parent = this.davao;
             this.davao.Size = new System.Drawing.Size(383, 290);
             this.davao.TabIndex = 8;
-            this.davao.MouseEnter += new System.EventHandler(this.davao_MouseEnter);
-            this.davao.MouseLeave += new System.EventHandler(this.davao_MouseLeave);
+            this.davao.Click += new System.EventHandler(this.davao_Click);
             // 
             // puerto
             // 
@@ -173,8 +163,7 @@
             this.puerto.PressedState.Parent = this.puerto;
             this.puerto.Size = new System.Drawing.Size(383, 290);
             this.puerto.TabIndex = 9;
-            this.puerto.MouseEnter += new System.EventHandler(this.puerto_MouseEnter);
-            this.puerto.MouseLeave += new System.EventHandler(this.puerto_MouseLeave);
+            this.puerto.Click += new System.EventHandler(this.puerto_Click);
             // 
             // siargao
             // 
@@ -192,117 +181,7 @@
             this.siargao.PressedState.Parent = this.siargao;
             this.siargao.Size = new System.Drawing.Size(383, 290);
             this.siargao.TabIndex = 10;
-            this.siargao.MouseEnter += new System.EventHandler(this.siargao_MouseEnter);
-            this.siargao.MouseLeave += new System.EventHandler(this.siargao_MouseLeave);
-            // 
-            // bookManila
-            // 
-            this.bookManila.BackColor = System.Drawing.Color.Transparent;
-            this.bookManila.CheckedState.Parent = this.bookManila;
-            this.bookManila.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookManila.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookManila.HoverState.Image")));
-            this.bookManila.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookManila.HoverState.Parent = this.bookManila;
-            this.bookManila.Image = ((System.Drawing.Image)(resources.GetObject("bookManila.Image")));
-            this.bookManila.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookManila.Location = new System.Drawing.Point(191, 339);
-            this.bookManila.Name = "bookManila";
-            this.bookManila.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookManila.PressedState.Image")));
-            this.bookManila.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookManila.PressedState.Parent = this.bookManila;
-            this.bookManila.Size = new System.Drawing.Size(154, 51);
-            this.bookManila.TabIndex = 11;
-            this.bookManila.UseTransparentBackground = true;
-            // 
-            // bookBoracay
-            // 
-            this.bookBoracay.CheckedState.Parent = this.bookBoracay;
-            this.bookBoracay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookBoracay.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookBoracay.HoverState.Image")));
-            this.bookBoracay.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookBoracay.HoverState.Parent = this.bookBoracay;
-            this.bookBoracay.Image = ((System.Drawing.Image)(resources.GetObject("bookBoracay.Image")));
-            this.bookBoracay.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookBoracay.Location = new System.Drawing.Point(592, 339);
-            this.bookBoracay.Name = "bookBoracay";
-            this.bookBoracay.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookBoracay.PressedState.Image")));
-            this.bookBoracay.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookBoracay.PressedState.Parent = this.bookBoracay;
-            this.bookBoracay.Size = new System.Drawing.Size(154, 51);
-            this.bookBoracay.TabIndex = 12;
-            this.bookBoracay.UseTransparentBackground = true;
-            // 
-            // bookCebu
-            // 
-            this.bookCebu.CheckedState.Parent = this.bookCebu;
-            this.bookCebu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookCebu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookCebu.HoverState.Image")));
-            this.bookCebu.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookCebu.HoverState.Parent = this.bookCebu;
-            this.bookCebu.Image = ((System.Drawing.Image)(resources.GetObject("bookCebu.Image")));
-            this.bookCebu.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookCebu.Location = new System.Drawing.Point(989, 339);
-            this.bookCebu.Name = "bookCebu";
-            this.bookCebu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookCebu.PressedState.Image")));
-            this.bookCebu.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookCebu.PressedState.Parent = this.bookCebu;
-            this.bookCebu.Size = new System.Drawing.Size(154, 51);
-            this.bookCebu.TabIndex = 13;
-            this.bookCebu.UseTransparentBackground = true;
-            // 
-            // bookSiargao
-            // 
-            this.bookSiargao.CheckedState.Parent = this.bookSiargao;
-            this.bookSiargao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookSiargao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookSiargao.HoverState.Image")));
-            this.bookSiargao.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookSiargao.HoverState.Parent = this.bookSiargao;
-            this.bookSiargao.Image = ((System.Drawing.Image)(resources.GetObject("bookSiargao.Image")));
-            this.bookSiargao.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookSiargao.Location = new System.Drawing.Point(191, 650);
-            this.bookSiargao.Name = "bookSiargao";
-            this.bookSiargao.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookSiargao.PressedState.Image")));
-            this.bookSiargao.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookSiargao.PressedState.Parent = this.bookSiargao;
-            this.bookSiargao.Size = new System.Drawing.Size(154, 51);
-            this.bookSiargao.TabIndex = 14;
-            this.bookSiargao.UseTransparentBackground = true;
-            // 
-            // bookDavao
-            // 
-            this.bookDavao.CheckedState.Parent = this.bookDavao;
-            this.bookDavao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookDavao.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookDavao.HoverState.Image")));
-            this.bookDavao.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookDavao.HoverState.Parent = this.bookDavao;
-            this.bookDavao.Image = ((System.Drawing.Image)(resources.GetObject("bookDavao.Image")));
-            this.bookDavao.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookDavao.Location = new System.Drawing.Point(592, 650);
-            this.bookDavao.Name = "bookDavao";
-            this.bookDavao.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookDavao.PressedState.Image")));
-            this.bookDavao.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookDavao.PressedState.Parent = this.bookDavao;
-            this.bookDavao.Size = new System.Drawing.Size(154, 51);
-            this.bookDavao.TabIndex = 15;
-            this.bookDavao.UseTransparentBackground = true;
-            // 
-            // bookPuerto
-            // 
-            this.bookPuerto.CheckedState.Parent = this.bookPuerto;
-            this.bookPuerto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookPuerto.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("bookPuerto.HoverState.Image")));
-            this.bookPuerto.HoverState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookPuerto.HoverState.Parent = this.bookPuerto;
-            this.bookPuerto.Image = ((System.Drawing.Image)(resources.GetObject("bookPuerto.Image")));
-            this.bookPuerto.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookPuerto.Location = new System.Drawing.Point(989, 649);
-            this.bookPuerto.Name = "bookPuerto";
-            this.bookPuerto.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("bookPuerto.PressedState.Image")));
-            this.bookPuerto.PressedState.ImageSize = new System.Drawing.Size(154, 51);
-            this.bookPuerto.PressedState.Parent = this.bookPuerto;
-            this.bookPuerto.Size = new System.Drawing.Size(154, 51);
-            this.bookPuerto.TabIndex = 16;
-            this.bookPuerto.UseTransparentBackground = true;
+            this.siargao.Click += new System.EventHandler(this.siargao_Click);
             // 
             // HomePage2
             // 
@@ -310,23 +189,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.bookPuerto);
-            this.Controls.Add(this.bookDavao);
-            this.Controls.Add(this.bookSiargao);
-            this.Controls.Add(this.bookCebu);
-            this.Controls.Add(this.bookBoracay);
-            this.Controls.Add(this.bookManila);
             this.Controls.Add(this.siargao);
             this.Controls.Add(this.puerto);
             this.Controls.Add(this.davao);
             this.Controls.Add(this.cebu);
             this.Controls.Add(this.boracay);
-            this.Controls.Add(this.manila);
             this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton2);
+            this.Controls.Add(this.manila);
             this.Name = "HomePage2";
             this.Size = new System.Drawing.Size(1350, 729);
-            this.Load += new System.EventHandler(this.HomePage2_Load);
             this.ResumeLayout(false);
 
         }
@@ -340,11 +212,5 @@
         private Guna.UI2.WinForms.Guna2ImageButton davao;
         private Guna.UI2.WinForms.Guna2ImageButton puerto;
         private Guna.UI2.WinForms.Guna2ImageButton siargao;
-        private Guna.UI2.WinForms.Guna2ImageButton bookManila;
-        private Guna.UI2.WinForms.Guna2ImageButton bookBoracay;
-        private Guna.UI2.WinForms.Guna2ImageButton bookCebu;
-        private Guna.UI2.WinForms.Guna2ImageButton bookSiargao;
-        private Guna.UI2.WinForms.Guna2ImageButton bookDavao;
-        private Guna.UI2.WinForms.Guna2ImageButton bookPuerto;
     }
 }

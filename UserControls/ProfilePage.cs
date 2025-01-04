@@ -1,4 +1,5 @@
-﻿using aero_quest.Objects;
+﻿using aero_quest.Notice_Forms;
+using aero_quest.Objects;
 using aero_quest.Sql;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,10 @@ namespace aero_quest.UserControls
             txtPhone.Text = User.profile.Phone;
             profileImage.Image = ConvertBytesToImage(User.profile.ProfileImage);
         }
+        public static void ShowNotice(Form control)
+        {
+            control.ShowDialog();
+        }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
@@ -56,7 +61,8 @@ namespace aero_quest.UserControls
 
             if (SqlQueries.UpdateProfile(User.profile))
             {
-                MessageBox.Show("ProfileUpdated");
+                //MessageBox.Show("ProfileUpdated");
+                ShowNotice(new ProfileUpdatedPage());
             }
         }
 

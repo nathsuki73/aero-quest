@@ -12,6 +12,11 @@ namespace aero_quest.UserControls
 {
     public partial class BrowseFlightsPage : UserControl
     {
+        public BrowseFlightsPage(String to)
+        {
+            InitializeComponent();
+            txtTo.Text = to;
+        }
         public BrowseFlightsPage()
         {
             InitializeComponent();
