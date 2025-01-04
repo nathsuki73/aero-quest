@@ -127,6 +127,8 @@ namespace aero_quest.UserControls.Manage
                 {
                     SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
                     SendMail(seatId, from, to);
+                    MessageBox.Show("Success, Check you mail for details.");
+
                     LoadBookings();
                 }
 
