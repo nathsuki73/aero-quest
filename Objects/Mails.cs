@@ -19,6 +19,10 @@ namespace aero_quest.Objects
         public bool IsDeleted { get; set; }
         public bool IsPermanentlyDeleted { get; set; }
 
+
+        public string AccountNumber { get; set; }
+        public string Price { get; set; }
+        public string Class { get; set; }
         public Mails()
         {
 
