@@ -68,6 +68,20 @@ namespace aero_quest.UserControls.Mail
 
         private void MailRecord_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            Form form = new OpenedMailForm();
+            Control control = null;
+            if (mail.Type == "Booking Confirmation")
+            {
+                control = new BookingIDMail(mail);
+            }
+            else
+            {
+                control = new SeatIDMail(mail);
+            }
+            control.Dock = DockStyle.Fill;
+            form.Controls.Add(control);
+            control.BringToFront();
+            UserControlManager.PushForm(form);
 
         }
 

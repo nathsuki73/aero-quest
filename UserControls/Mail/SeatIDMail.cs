@@ -1,4 +1,5 @@
-﻿using System;
+﻿using aero_quest.Objects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace aero_quest.UserControls.Mail
 {
     public partial class SeatIDMail : UserControl
     {
-        public SeatIDMail()
+        public SeatIDMail(Mails mail)
         {
             InitializeComponent();
         }

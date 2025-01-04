@@ -1,5 +1,4 @@
-﻿using aero_quest.Objects;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace aero_quest.UserControls.Mail
+namespace aero_quest
 {
-    public partial class BookingIDMail : UserControl
+    public partial class OpenedMailForm : Form
     {
-        public BookingIDMail(Mails mail)
+        public OpenedMailForm()
         {
             InitializeComponent();
         }
