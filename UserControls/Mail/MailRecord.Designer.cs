@@ -47,6 +47,7 @@
             this.txtName.Size = new System.Drawing.Size(148, 19);
             this.txtName.TabIndex = 1;
             this.txtName.Text = "Booking Confirmation";
+            this.txtName.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtName_MouseDoubleClick);
             this.txtName.MouseEnter += new System.EventHandler(this.txtName_MouseEnter);
             this.txtName.MouseLeave += new System.EventHandler(this.txtName_MouseLeave);
             // 
@@ -56,10 +57,11 @@
             this.txtDescription.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(205, 6);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(321, 19);
+            this.txtDescription.Size = new System.Drawing.Size(449, 38);
             this.txtDescription.TabIndex = 1;
-            this.txtDescription.Text = "Hi userblabla, your booking has been confirmed.";
+            this.txtDescription.Text = "1234567890123456789012345678901234567890123456789012345\r\n\r\n";
             this.txtDescription.Click += new System.EventHandler(this.txtDescription_Click);
+            this.txtDescription.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDescription_MouseClick);
             this.txtDescription.MouseEnter += new System.EventHandler(this.txtDescription_MouseEnter);
             this.txtDescription.MouseLeave += new System.EventHandler(this.txtDescription_MouseLeave);
             // 
@@ -72,6 +74,7 @@
             this.txtDate.Size = new System.Drawing.Size(49, 19);
             this.txtDate.TabIndex = 1;
             this.txtDate.Text = "label1";
+            this.txtDate.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtDate_MouseDoubleClick);
             // 
             // guna2ImageButton2
             // 

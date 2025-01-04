@@ -57,17 +57,30 @@ namespace aero_quest.UserControls.Mail
             if (mail.Type == "Booking Confirmation")
             {
                 txtName.Text = "Booking Confirmation";
-                txtDescription.Text = $"Hi {User.profile.Name.Split(' ')[0]}, Your booking:{mail.From} to {mail.To} has been conf...";
+                string message = $"Hi {User.profile.Name.Split(' ')[0]}, Your booking from {mail.From} to {mail.To} has been confirmed. Thank you for using our service.";
+
+                // Truncate the message to 44 characters (leaving space for '...')
+                if (message.Length > 60)
+                {
+                    message = message.Substring(0, 59) + "...";
+                }
+                txtDescription.Text = message;
             }
             else
             {
                 txtName.Text = "Flight Checked In";
-                txtDescription.Text = $"Hi {User.profile.Name.Split(' ')[0]}, Your flight:{mail.From} to {mail.To} was checked in...";
+                string message = $"Dear {User.profile.Name.Split(' ')[0]}, This email confirms your seat assigment and check-in for your AeroQuest flight.";
+                if (message.Length > 60)
+                {
+                    message = message.Substring(0, 59) + "...";
+                }
+                txtDescription.Text = message;
             }
         }
 
         private void MailRecord_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            IsRead();
             Form form = new OpenedMailForm();
             Control control = null;
             if (mail.Type == "Booking Confirmation")
@@ -127,11 +140,7 @@ namespace aero_quest.UserControls.Mail
 
         private void txtDescription_Click(object sender, EventArgs e)
         {
-            mail.IsRead = true;
-            txtName.ForeColor = System.Drawing.Color.Gray;
-            txtDescription.ForeColor = System.Drawing.Color.Gray;
-            txtDate.ForeColor = System.Drawing.Color.Gray;
-            pictureBox1.Image = Properties.Resources.readMail;
+           
 
         }
 
@@ -157,6 +166,30 @@ namespace aero_quest.UserControls.Mail
 
             }
 
+        }
+
+        private void IsRead()
+        {
+            mail.IsRead = true;
+            txtName.ForeColor = System.Drawing.Color.Gray;
+            txtDescription.ForeColor = System.Drawing.Color.Gray;
+            txtDate.ForeColor = System.Drawing.Color.Gray;
+            pictureBox1.Image = Properties.Resources.readMail;
+        }
+
+        private void txtDescription_MouseClick(object sender, MouseEventArgs e)
+        {
+            IsRead();
+        }
+
+        private void txtDate_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            IsRead() ;
+        }
+
+        private void txtName_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            IsRead();
         }
     }
 }

@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeatIDMail));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.seatId = new System.Windows.Forms.Label();
+            this.lblgoodbye = new System.Windows.Forms.Label();
+            this.lblbody = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDate
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(567, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Location = new System.Drawing.Point(567, 123);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(35, 13);
+            this.lblDate.TabIndex = 0;
+            this.lblDate.Text = "label1";
             // 
             // guna2ImageButton1
             // 
@@ -103,6 +103,7 @@
             this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
             this.guna2ImageButton3.Size = new System.Drawing.Size(25, 23);
             this.guna2ImageButton3.TabIndex = 3;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // guna2ImageButton4
             // 
@@ -122,64 +123,64 @@
             this.guna2ImageButton4.Size = new System.Drawing.Size(115, 33);
             this.guna2ImageButton4.TabIndex = 4;
             // 
-            // label5
+            // seatId
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(268, 433);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 55);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "label5";
+            this.seatId.AutoSize = true;
+            this.seatId.BackColor = System.Drawing.Color.Transparent;
+            this.seatId.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatId.Location = new System.Drawing.Point(268, 433);
+            this.seatId.Name = "seatId";
+            this.seatId.Size = new System.Drawing.Size(152, 55);
+            this.seatId.TabIndex = 17;
+            this.seatId.Text = "label5";
             // 
-            // label4
+            // lblgoodbye
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 613);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 25);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "label4";
+            this.lblgoodbye.AutoSize = true;
+            this.lblgoodbye.BackColor = System.Drawing.Color.Transparent;
+            this.lblgoodbye.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgoodbye.Location = new System.Drawing.Point(79, 613);
+            this.lblgoodbye.Name = "lblgoodbye";
+            this.lblgoodbye.Size = new System.Drawing.Size(70, 25);
+            this.lblgoodbye.TabIndex = 16;
+            this.lblgoodbye.Text = "label4";
             // 
-            // label3
+            // lblbody
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(69, 313);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "label3";
+            this.lblbody.AutoSize = true;
+            this.lblbody.BackColor = System.Drawing.Color.Transparent;
+            this.lblbody.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbody.Location = new System.Drawing.Point(69, 306);
+            this.lblbody.Name = "lblbody";
+            this.lblbody.Size = new System.Drawing.Size(70, 25);
+            this.lblbody.TabIndex = 15;
+            this.lblbody.Text = "label3";
             // 
-            // label2
+            // lblName
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(69, 261);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "label2";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(69, 261);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(70, 25);
+            this.lblName.TabIndex = 14;
+            this.lblName.Text = "label2";
             // 
             // SeatIDMail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.seatId);
+            this.Controls.Add(this.lblgoodbye);
+            this.Controls.Add(this.lblbody);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton3);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDate);
             this.Name = "SeatIDMail";
             this.Size = new System.Drawing.Size(715, 990);
             this.ResumeLayout(false);
@@ -189,14 +190,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDate;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label seatId;
+        private System.Windows.Forms.Label lblgoodbye;
+        private System.Windows.Forms.Label lblbody;
+        private System.Windows.Forms.Label lblName;
     }
 }
