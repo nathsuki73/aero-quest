@@ -1,4 +1,5 @@
-﻿using aero_quest.Sql;
+﻿using aero_quest.Objects;
+using aero_quest.Sql;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,6 @@ namespace aero_quest.UserControls.Manage
                 {
                     // Bind the data to the DataGridView
                     guna2DataGridView1.DataSource = allSchedBooked;
-                    guna2DataGridView1.Columns[0].Visible = false;
                     guna2DataGridView1.Columns[8].Visible = false;
                     guna2DataGridView1.Columns[7].Visible = false;
                     guna2DataGridView1.Columns[6].Visible = false;
@@ -114,6 +114,11 @@ namespace aero_quest.UserControls.Manage
 
                 string id = selectedRow.Cells["id"].Value.ToString();
                 string status = selectedRow.Cells["status"].Value.ToString();
+
+                string seatId = selectedRow.Cells["seatId"].Value.ToString();
+                string from = selectedRow.Cells["from"].Value.ToString();
+                string to = selectedRow.Cells["to"].Value.ToString();
+                Console.WriteLine($"AAAAA:{seatId}:{from}:{to}");
                 if (status == "Checked in")
                 {
                     MessageBox.Show("Already Checked In");
@@ -121,6 +126,7 @@ namespace aero_quest.UserControls.Manage
                 else
                 {
                     SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
+                    SendMail(seatId, from, to);
                     LoadBookings();
                 }
 
@@ -128,6 +134,22 @@ namespace aero_quest.UserControls.Manage
             {
 
             }
+        }
+
+        private void SendMail(string seatId, string from, string to)
+        {
+            Guid id = Guid.NewGuid();
+            Mails mails = new Mails();
+            mails.Id = id;
+            mails.Type = "Check in";
+            mails.From = from;
+            mails.To = to;
+            mails.Code = seatId;
+            mails.DateTime = DateTime.Now;
+            mails.IsRead = false;
+            mails.IsDeleted = false;
+            mails.IsPermanentlyDeleted = false;
+            User._userMails.Add(mails);
         }
     }
 }
