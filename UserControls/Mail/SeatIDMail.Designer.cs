@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeatIDMail));
             this.lblDate = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton4 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.seatId = new System.Windows.Forms.Label();
             this.lblgoodbye = new System.Windows.Forms.Label();
             this.lblbody = new System.Windows.Forms.Label();
@@ -49,42 +46,6 @@
             this.lblDate.Size = new System.Drawing.Size(35, 13);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "label1";
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.HoverState.Image")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(12, 13);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(12, 13);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(654, 123);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.PressedState.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(12, 13);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(12, 13);
-            this.guna2ImageButton1.TabIndex = 1;
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.HoverState.Image")));
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(17, 18);
-            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(17, 18);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(653, 34);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.PressedState.Image")));
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(17, 18);
-            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(17, 18);
-            this.guna2ImageButton2.TabIndex = 2;
             // 
             // guna2ImageButton3
             // 
@@ -104,24 +65,6 @@
             this.guna2ImageButton3.Size = new System.Drawing.Size(25, 23);
             this.guna2ImageButton3.TabIndex = 3;
             this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
-            // 
-            // guna2ImageButton4
-            // 
-            this.guna2ImageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton4.CheckedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.HoverState.Image")));
-            this.guna2ImageButton4.HoverState.ImageSize = new System.Drawing.Size(115, 33);
-            this.guna2ImageButton4.HoverState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.Image")));
-            this.guna2ImageButton4.ImageSize = new System.Drawing.Size(115, 33);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(49, 921);
-            this.guna2ImageButton4.Name = "guna2ImageButton4";
-            this.guna2ImageButton4.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton4.PressedState.Image")));
-            this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(115, 33);
-            this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Size = new System.Drawing.Size(115, 33);
-            this.guna2ImageButton4.TabIndex = 4;
             // 
             // seatId
             // 
@@ -176,10 +119,7 @@
             this.Controls.Add(this.lblgoodbye);
             this.Controls.Add(this.lblbody);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton3);
-            this.Controls.Add(this.guna2ImageButton2);
-            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.lblDate);
             this.Name = "SeatIDMail";
             this.Size = new System.Drawing.Size(715, 990);
@@ -191,10 +131,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblDate;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton4;
         private System.Windows.Forms.Label seatId;
         private System.Windows.Forms.Label lblgoodbye;
         private System.Windows.Forms.Label lblbody;
