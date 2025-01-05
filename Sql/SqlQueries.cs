@@ -24,6 +24,8 @@ namespace aero_quest.Sql
             connStr = "server=localhost;user id=root;password=;database=aero_quest;";
         }
 
+
+        // Adding New User
         public static bool AddNewUser(User user)
         {
             string query = "INSERT INTO users (username, email, password) VALUES (@username, @email, @password);  SELECT LAST_INSERT_ID();";
@@ -60,6 +62,8 @@ namespace aero_quest.Sql
             return true;
         }
 
+
+        // Creating new profile
         private static void CreateProfile(int userId)
         {
             string query = "INSERT INTO profiles (userId, name, birth, age, gender, email, phone, profile) VALUES (@userId, @name, @birth, @age, @gender, @email, @phone, @profile)";
@@ -94,6 +98,8 @@ namespace aero_quest.Sql
 
         }
 
+
+        // Getting Profile of logged in user
         public static Profile GetProfile(int? userId)
         {
             string query = "SELECT id, name, birth, age, gender, email, phone, profile FROM profiles WHERE userId = @userId";
@@ -134,6 +140,7 @@ namespace aero_quest.Sql
             return profile;
         }
 
+        // Updating Profile
         public static bool UpdateProfile(Profile profile)
         {
             string query = @"
@@ -178,7 +185,7 @@ namespace aero_quest.Sql
         }
 
 
-
+        // Verifying User
         public static int? VerifyUser(User user)
         {
             string query = "SELECT id FROM users WHERE email = @email AND password = @password";
@@ -215,6 +222,8 @@ namespace aero_quest.Sql
         }
 
 
+
+        // Adding Booking Schedule
         public static bool AddBookingSchedule(List<string> schedule, string bookingReference, string seatId)
         {
 
@@ -252,6 +261,7 @@ namespace aero_quest.Sql
             }
         }
 
+        // Converting Schedule
         private static byte[] ConvertScheduleToBytes(List<string> schedule)
         {
             // Convert List<string> to a single string and then to bytes (for BLOB storage)
@@ -259,6 +269,7 @@ namespace aero_quest.Sql
             return Encoding.UTF8.GetBytes(scheduleString);
         }
 
+        // Getting all Booking Schedules
         public static List<List<string>> GetAllBookingSchedules()
         {
             try
@@ -312,6 +323,7 @@ namespace aero_quest.Sql
             }
         }
 
+        // Updating Schedule status
         public static bool UpdateScheduleStatus(int id, string newStatus)
         {
             try
@@ -345,7 +357,7 @@ namespace aero_quest.Sql
             }
         }
 
-
+        // Deleting Schedule
         public static bool DeleteSchedule(int id)
         {
             try
@@ -379,6 +391,7 @@ namespace aero_quest.Sql
         }
 
 
+        //Converting Bytes to Schedule
         private static List<string> ConvertBytesToSchedule(byte[] scheduleBytes)
         {
             // Convert bytes back to string
@@ -388,7 +401,7 @@ namespace aero_quest.Sql
             return scheduleString.Split(';').ToList();
         }
 
-
+        // Initializing flight datas
         public static void InitializeData()
         {
             LinkedList<Aircraft> aircrafts = Flight.aircrafts;
@@ -475,6 +488,7 @@ namespace aero_quest.Sql
 
         }
 
+        // Converting Blob 
         public static HashSet<string> ConvertAvailableSeat(byte[] blob)
         {
             if (blob != null)
@@ -493,6 +507,7 @@ namespace aero_quest.Sql
             
         }
 
+        // Uploading new data
         public static void UploadData()
         {
             LinkedList<Aircraft> aircrafts = Flight.aircrafts;
@@ -546,6 +561,7 @@ namespace aero_quest.Sql
         }
 
 
+        // Converting Seat to blob
         public static byte[] ConvertAvailableSeatToBlob(HashSet<string> availableSeats)
         {
             // Join the HashSet into a comma-separated string
@@ -562,7 +578,7 @@ namespace aero_quest.Sql
 
 
 
-
+        // Getting user's Mails
         public static HashSet<Mails> GetMails(int id)
         {
             HashSet<Mails> mails = new HashSet<Mails>();
@@ -610,9 +626,10 @@ namespace aero_quest.Sql
             }
         }
 
-
+        // Uploading user's Mails
         public static void UploadMails()
         {
+            // To prevent Duplicate Emails
             HashSet<Mails> mails = User._userMails;
             int? id = User.currentLoggedInId;
 
@@ -681,7 +698,7 @@ namespace aero_quest.Sql
 
 
 
-
+        // Serialize mails from a UTF-8 byte array
         private static byte[] SerializeMails(HashSet<Mails> mails)
         {
             // Serialize HashSet<Mails> to JSON string
