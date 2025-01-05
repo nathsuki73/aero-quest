@@ -12,6 +12,7 @@ namespace aero_quest.Objects
 {
     public class BookingReferenceGenerator
     {
+        // Generates a cryptographically secure random booking reference of a specified length (default is 10).
         public static string GenerateBookingReference(int length = 10)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
