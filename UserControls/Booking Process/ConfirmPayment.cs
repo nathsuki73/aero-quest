@@ -108,7 +108,7 @@ namespace aero_quest.UserControls.Booking_Process
             mails.IsPermanentlyDeleted = false;
             mails.AccountNumber = txtAccountNumber.Text;
             mails.Price = txtTotalPrice.Text;
-            mails.Class = txtFlightClass.SelectedIndex.ToString();
+            mails.Class = txtFlightClass.Text;
             User._userMails.Add(mails); 
         }
     }

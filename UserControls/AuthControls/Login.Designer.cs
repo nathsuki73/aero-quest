@@ -94,7 +94,7 @@
             this.txtPasswordd.HoverState.Parent = this.txtPasswordd;
             this.txtPasswordd.Location = new System.Drawing.Point(588, 273);
             this.txtPasswordd.Name = "txtPasswordd";
-            this.txtPasswordd.PasswordChar = '*';
+            this.txtPasswordd.PasswordChar = '•';
             this.txtPasswordd.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtPasswordd.PlaceholderText = "Password";
             this.txtPasswordd.SelectedText = "";
