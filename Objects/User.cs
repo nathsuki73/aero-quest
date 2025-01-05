@@ -25,15 +25,13 @@ namespace aero_quest.Objects
 
     internal class User
     {
+        // Create new Collection of Mails
         public static HashSet<Mails> _userMails = new HashSet<Mails>();
-     //   public static HashSet<Mails> _userMails = new HashSet<Mails>();
-
-
-
-
 
         public static Profile profile;
+
         public static int? currentLoggedInId = null;
+
         public static bool isLoggedIn = false;
         public int Id { get; set; }
         public string Name { get; set; }
