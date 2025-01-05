@@ -12,6 +12,7 @@ namespace aero_quest
     {
         public static Queue<Mails> DeletedMailsQueue = new Queue<Mails>();
 
+        // Process for deleting mail
         public static void ProcessDeletedMailsQueue()
         {
             

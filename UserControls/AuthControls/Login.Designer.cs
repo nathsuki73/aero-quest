@@ -82,7 +82,7 @@
             this.txtPasswordd.BorderRadius = 15;
             this.txtPasswordd.BorderThickness = 2;
             this.txtPasswordd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPasswordd.DefaultText = "Nathan123";
+            this.txtPasswordd.DefaultText = "";
             this.txtPasswordd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPasswordd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPasswordd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -94,11 +94,10 @@
             this.txtPasswordd.HoverState.Parent = this.txtPasswordd;
             this.txtPasswordd.Location = new System.Drawing.Point(588, 273);
             this.txtPasswordd.Name = "txtPasswordd";
-            this.txtPasswordd.PasswordChar = '\0';
+            this.txtPasswordd.PasswordChar = '*';
             this.txtPasswordd.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtPasswordd.PlaceholderText = "Password";
             this.txtPasswordd.SelectedText = "";
-            this.txtPasswordd.SelectionStart = 9;
             this.txtPasswordd.ShadowDecoration.Parent = this.txtPasswordd;
             this.txtPasswordd.Size = new System.Drawing.Size(435, 36);
             this.txtPasswordd.TabIndex = 2;
@@ -111,7 +110,7 @@
             this.txtEmail.BorderRadius = 15;
             this.txtEmail.BorderThickness = 2;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "123@gmail.com";
+            this.txtEmail.DefaultText = "";
             this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -127,7 +126,6 @@
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.SelectedText = "";
-            this.txtEmail.SelectionStart = 13;
             this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
             this.txtEmail.Size = new System.Drawing.Size(435, 36);
             this.txtEmail.TabIndex = 3;
@@ -143,6 +141,7 @@
             this.Controls.Add(this.txtEmail);
             this.Name = "Login";
             this.Size = new System.Drawing.Size(1107, 600);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
 
         }

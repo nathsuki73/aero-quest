@@ -20,6 +20,7 @@ namespace aero_quest.UserControls
             ShowControl(new Login());
         }
 
+        // load top control
         private void LoadTopControl()
         {
             UserControl topControl = userControls.Peek();
@@ -28,6 +29,7 @@ namespace aero_quest.UserControls
             topControl.BringToFront();
         }
 
+        // Switch between login or sign up
         public void ShowControl(UserControl newControl)
         {
             if (userControls.Count > 0)

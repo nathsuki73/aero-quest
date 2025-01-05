@@ -23,6 +23,7 @@ namespace aero_quest.UserControls.Booking_Process
             this.selectedFlight = selectedFlight;
         }
 
+        // Showing Profile Info for Confirmation
         private void PopulateProfile()
         {
             txtName.Text = User.profile.Name;

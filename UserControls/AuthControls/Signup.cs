@@ -40,6 +40,7 @@ namespace aero_quest.UserControls.AuthControls
 
         }
 
+        // Registering Process
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string validationErrors = ValidateFields();
@@ -77,11 +78,14 @@ namespace aero_quest.UserControls.AuthControls
             }
         }
 
+        // Show notice
         public static void ShowNotice(Form control)
         {
             control.ShowDialog();
         }
 
+
+        // Validate user inputs
         private string ValidateFields()
         {
             StringBuilder errors = new StringBuilder();
@@ -124,7 +128,6 @@ namespace aero_quest.UserControls.AuthControls
             }
 
             string password = txtPassword.Text;
-            string specialChars = @"!@#$%^&*()-_+=<>?";
 
             if (string.IsNullOrWhiteSpace(password))
             {
@@ -147,15 +150,7 @@ namespace aero_quest.UserControls.AuthControls
             else if(!password.Any(char.IsLower))
             {
                 ShowNotice(new PasswordLowercase());
-            }/*
-            else if(!password.Any(char.IsDigit))
-            {
-                errors.AppendLine("• Password must contain at least one number.");
             }
-            else if (!password.Any(c => specialChars.Contains(c)))
-            {
-                errors.AppendLine("• Password must contain at least one special character (e.g., @, #, $, etc.).");
-            }*/
 
             return errors.ToString();
         }

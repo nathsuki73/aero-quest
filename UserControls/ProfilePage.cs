@@ -24,7 +24,7 @@ namespace aero_quest.UserControls
 
         private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            //TODO: code to update txtAge based on birthdate
+
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)

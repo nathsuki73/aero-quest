@@ -36,6 +36,7 @@ namespace aero_quest.UserControls.Booking_Process
             control.ShowDialog();
         }
 
+        // Booking Process
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
             string seatId = selectedFlight.aircraft.GetAndUpdateAvailableSeat();
@@ -90,6 +91,8 @@ namespace aero_quest.UserControls.Booking_Process
             }
         }
 
+
+        // Creating a new Mail
         private void SendMail(string reference)
         {
             Guid id = Guid.NewGuid();

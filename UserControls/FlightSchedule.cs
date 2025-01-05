@@ -29,6 +29,8 @@ namespace aero_quest.UserControls
             LoadFLightSchedules(from, to, startDate, endDate);
         }
 
+
+        // Loading  flight schedules to Tables
         private void LoadFLightSchedules()
         {
             guna2DataGridView1.DataSource = Flight.flightSchedule;

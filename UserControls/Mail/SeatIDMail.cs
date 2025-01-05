@@ -21,6 +21,7 @@ namespace aero_quest.UserControls.Mail
             Populate();
         }
 
+        //Showing Email details
         private void Populate()
         {
             lblDate.Text = mails.DateTime.ToString("ddd, MMM dd, yyyy, h:mm tt");

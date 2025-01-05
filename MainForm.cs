@@ -26,18 +26,9 @@ namespace aero_quest
 
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void ClearAllControls()
-        {
-            this.Controls.Clear();
-        }
-
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // Uploading Data and Mails when form is Closed
             SqlQueries.UploadData();
             SqlQueries.UploadMails();
         }

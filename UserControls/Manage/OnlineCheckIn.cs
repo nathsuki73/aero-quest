@@ -57,22 +57,14 @@ namespace aero_quest.UserControls.Manage
         {
             DataTable dataTable = new DataTable();
 
-            // Define columns
-            // Define columns
+           
             dataTable.Columns.Add("From", typeof(string));
             dataTable.Columns.Add("To", typeof(string));
             dataTable.Columns.Add("Departure", typeof(string));
             dataTable.Columns.Add("Arrival", typeof(string));
             dataTable.Columns.Add("Date", typeof(string));
 
-            /*guna2DataGridView1.Columns["from"].HeaderText = "From";
-            guna2DataGridView1.Columns["to"].HeaderText = "To";
-            guna2DataGridView1.Columns["departureTime"].HeaderText = "Departure Time";
-            guna2DataGridView1.Columns["arrivalTime"].HeaderText = "Arrival Time";
-            guna2DataGridView1.Columns["aircraft"].HeaderText = "Aircraft";
-            guna2DataGridView1.Columns["passengerCount"].HeaderText = "Passenger Count";
-            guna2DataGridView1.Columns["date"].HeaderText = "Date";
-            guna2DataGridView1.Columns["price"].HeaderText = "Price";*/
+            
             dataTable.Columns.Add("Status", typeof(string));
             dataTable.Columns.Add("Reference", typeof(string));
             dataTable.Columns.Add("SeatId", typeof(string));
@@ -80,7 +72,6 @@ namespace aero_quest.UserControls.Manage
 
             foreach (var schedule in schedules)
             {
-                // Assume the schedule contains: [original_schedule, status, reference, seatId]
 
                 DataRow row = dataTable.NewRow();
 
@@ -126,14 +117,12 @@ namespace aero_quest.UserControls.Manage
                 Console.WriteLine($"AAAAA:{seatId}:{from}:{to}");
                 if (status == "Checked in")
                 {
-                    //MessageBox.Show("Already Checked In");
                     ShowNotice(new AlreadyCheckedInPage());
                 }
                 else
                 {
                     SqlQueries.UpdateScheduleStatus(Convert.ToInt32(id), "Checked in");
                     SendMail(seatId, from, to);
-                    //MessageBox.Show("Success, Check you mail for details.");
                     ShowNotice(new CheckedInPage());
 
                     LoadBookings();

@@ -77,6 +77,7 @@ namespace aero_quest
 
         }
 
+        // Loading the email inbox
         public void ShowInbox()
         {
             panel1.Controls.Clear();

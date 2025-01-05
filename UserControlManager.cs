@@ -11,7 +11,10 @@ namespace aero_quest
 {
     public class UserControlManager
     {
+        // To compile instances of UserControls
         public static List<Control> _userControls = new List<Control>();
+
+        // To compile instances of Form
         public static Stack<Form> _userForms = new Stack<Form>();
 
         public static bool isInHome = false;

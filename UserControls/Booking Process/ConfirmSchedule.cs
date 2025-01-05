@@ -30,9 +30,7 @@ namespace aero_quest.UserControls.Booking_Process
             lblFrom.Text = selectedFlight.from;
             lblTo.Text = selectedFlight.to;
             lblDeparture.Text = selectedFlight.departureTime;
-            lblArrival.Text = selectedFlight.arrivalTime;/*
-            aircraft.Text = schedule[0].ToString();
-            pasenger.Text = schedule[0].ToString();*/
+            lblArrival.Text = selectedFlight.arrivalTime;
             lblDate.Text = selectedFlight.date.ToString("yyyy-MM-dd");
             lblPrice.Text = selectedFlight.price.ToString();
         }

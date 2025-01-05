@@ -38,51 +38,32 @@ namespace aero_quest.UserControls.AuthControls
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            // Getting email and password inputted
             string email = txtEmail.Text;
             string password = txtPasswordd.Text;
+
+            //Creating a new user instance and putting the email and password
             User user = new User();
             user.Email = email;
             user.Password = password;
+
             user.Id = Sql.SqlQueries.VerifyUser(user) ?? -1;
+
             if (user.Id == -1)
             {
-                //TODO: message box of failed log in
+                // Invalid Id Message
                 ShowNotice(new LoginFailedPage());
             }
             else
             {
                 SqlQueries.UploadMails();
+
                 User.currentLoggedInId = user.Id;
                 User._userMails = SqlQueries.GetMails(user.Id);
+
                 User.profile = SqlQueries.GetProfile(User.currentLoggedInId);
-                if (User.profile != null)
-                {
-                    Console.WriteLine("Profile Information:");
-                    Console.WriteLine($"User ID: {User.profile.Id}");
-                    Console.WriteLine($"Name: {User.profile.Name ?? "N/A"}");
-                    Console.WriteLine($"Birthdate: {User.profile.Birth.ToString("yyyy-MM-dd") ?? "N/A"}");
-                    Console.WriteLine($"Age: {User.profile.Age.ToString() ?? "N/A"}");
-                    Console.WriteLine($"Gender: {User.profile.Gender ?? "N/A"}");
-                    Console.WriteLine($"Email: {User.profile.Email ?? "N/A"}");
-                    Console.WriteLine($"Phone: {User.profile.Phone ?? "N/A"}");
 
-                    if (User.profile.ProfileImage != null && User.profile.ProfileImage.Length > 0)
-                    {
-                        Console.WriteLine("Profile Picture: [BLOB data exists]");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Profile Picture: Not available");
-                    }
-
-                    
-                }
-                else
-                {
-                    Console.WriteLine("No profile data found.");
-                }
-
-                //TODO: message box successful log in
+                // Show Successful login Message
                 ShowNotice(new LoginSuccessPage());
                 User.isLoggedIn = true;
                 MainForm mainForm = UserControlManager._userForms.Peek() as MainForm;
@@ -97,6 +78,11 @@ namespace aero_quest.UserControls.AuthControls
         public static void ShowNotice(Form control)
         {
             control.ShowDialog();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
