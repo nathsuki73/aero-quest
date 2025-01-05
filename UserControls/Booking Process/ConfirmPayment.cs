@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace aero_quest.UserControls.Booking_Process
 {
@@ -39,34 +40,51 @@ namespace aero_quest.UserControls.Booking_Process
         {
             string seatId = selectedFlight.aircraft.GetAndUpdateAvailableSeat();
             string bookingReference = BookingReferenceGenerator.GenerateBookingReference();
-            if (seatId != null)
+            string accountNumberFormat = @"^\d{4}-\d{4}-\d{4}-\d{4}$";
+
+            if (txtPaymentMethod.Text != null && txtFlightClass.Text != null && txtAccountNumber.Text != null)
             {
-                SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
-                SendMail(bookingReference);
-                //MessageBox.Show("Booked sucessfully.");
-                ShowNotice(new BookedSuccessfullyPage());
-                UserControlManager.RemoveControlByName("confirmSchedule");
-                UserControlManager.RemoveControlByName("confirmPayment");
-                UserControlManager.RemoveControlByName("confirmIdentity");
+                if (Regex.IsMatch(txtAccountNumber.Text, accountNumberFormat))
+                {
+                    if (seatId != null)
+                    {
+                        SqlQueries.AddBookingSchedule(schedule, bookingReference, seatId);
+                        SendMail(bookingReference);
+                        ShowNotice(new BookedSuccessfullyPage());
+                        UserControlManager.RemoveControlByName("confirmSchedule");
+                        UserControlManager.RemoveControlByName("confirmPayment");
+                        UserControlManager.RemoveControlByName("confirmIdentity");
+                    }
+                    else
+                    {
+                        MessageBox.Show("This flight is already fully booked.");
+                    }
+                }
+                else
+                {
+                    ShowNotice(new InvalidAccountNumber());
+                }
+                
             }
             else
             {
-                MessageBox.Show("This flight is already fully booked.");
+                ShowNotice(new SignUpErrorPage());
             }
+            
 
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (guna2ComboBox1.SelectedIndex == 0)
+            if (txtFlightClass.SelectedIndex == 0)
             {
                 txtTotalPrice.Text = Convert.ToDouble(selectedFlight.price).ToString("0.00");
             }
-            else if (guna2ComboBox1.SelectedIndex == 1)
+            else if (txtFlightClass.SelectedIndex == 1)
             {
                 txtTotalPrice.Text = (Convert.ToDouble(selectedFlight.price) * 1.5).ToString("0.00");
             }
-            else if (guna2ComboBox1.SelectedIndex == 2)
+            else if (txtFlightClass.SelectedIndex == 2)
             {
                 txtTotalPrice.Text = (Convert.ToDouble(selectedFlight.price) * 2).ToString("0.00");
             }
@@ -87,7 +105,7 @@ namespace aero_quest.UserControls.Booking_Process
             mails.IsPermanentlyDeleted = false;
             mails.AccountNumber = txtAccountNumber.Text;
             mails.Price = txtTotalPrice.Text;
-            mails.Class = guna2ComboBox1.SelectedIndex.ToString();
+            mails.Class = txtFlightClass.SelectedIndex.ToString();
             User._userMails.Add(mails); 
         }
     }

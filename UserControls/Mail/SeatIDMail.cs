@@ -38,5 +38,10 @@ namespace aero_quest.UserControls.Mail
             UserControlManager.DisposeTopForm();
 
         }
+
+        private void seatId_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

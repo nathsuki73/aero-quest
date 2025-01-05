@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmPayment));
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtGender = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtPaymentMethod = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtFlightClass = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtAccountNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTotalPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -77,58 +77,62 @@
             this.guna2ImageButton1.UseTransparentBackground = true;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // txtGender
+            // txtPaymentMethod
             // 
-            this.txtGender.BackColor = System.Drawing.Color.Transparent;
-            this.txtGender.BorderColor = System.Drawing.Color.Gray;
-            this.txtGender.BorderRadius = 15;
-            this.txtGender.BorderThickness = 2;
-            this.txtGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtGender.FocusedColor = System.Drawing.Color.Empty;
-            this.txtGender.FocusedState.Parent = this.txtGender;
-            this.txtGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtGender.FormattingEnabled = true;
-            this.txtGender.HoverState.Parent = this.txtGender;
-            this.txtGender.ItemHeight = 30;
-            this.txtGender.Items.AddRange(new object[] {
+            this.txtPaymentMethod.BackColor = System.Drawing.Color.Transparent;
+            this.txtPaymentMethod.BorderColor = System.Drawing.Color.Gray;
+            this.txtPaymentMethod.BorderRadius = 15;
+            this.txtPaymentMethod.BorderThickness = 2;
+            this.txtPaymentMethod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtPaymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtPaymentMethod.FocusedColor = System.Drawing.Color.Empty;
+            this.txtPaymentMethod.FocusedState.Parent = this.txtPaymentMethod;
+            this.txtPaymentMethod.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtPaymentMethod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtPaymentMethod.FormattingEnabled = true;
+            this.txtPaymentMethod.HoverState.Parent = this.txtPaymentMethod;
+            this.txtPaymentMethod.ItemHeight = 30;
+            this.txtPaymentMethod.Items.AddRange(new object[] {
             "Paypal",
-            "Gcash",
-            "LandBank"});
-            this.txtGender.ItemsAppearance.Parent = this.txtGender;
-            this.txtGender.Location = new System.Drawing.Point(557, 263);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.ShadowDecoration.Parent = this.txtGender;
-            this.txtGender.Size = new System.Drawing.Size(216, 36);
-            this.txtGender.TabIndex = 5;
+            "Land Bank",
+            "BDO",
+            "China Bank",
+            "Security Bank"});
+            this.txtPaymentMethod.ItemsAppearance.Parent = this.txtPaymentMethod;
+            this.txtPaymentMethod.Location = new System.Drawing.Point(557, 263);
+            this.txtPaymentMethod.Name = "txtPaymentMethod";
+            this.txtPaymentMethod.ShadowDecoration.Parent = this.txtPaymentMethod;
+            this.txtPaymentMethod.Size = new System.Drawing.Size(216, 36);
+            this.txtPaymentMethod.StartIndex = 1;
+            this.txtPaymentMethod.TabIndex = 5;
             // 
-            // guna2ComboBox1
+            // txtFlightClass
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2ComboBox1.BorderRadius = 15;
-            this.guna2ComboBox1.BorderThickness = 2;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.txtFlightClass.BackColor = System.Drawing.Color.Transparent;
+            this.txtFlightClass.BorderColor = System.Drawing.Color.Gray;
+            this.txtFlightClass.BorderRadius = 15;
+            this.txtFlightClass.BorderThickness = 2;
+            this.txtFlightClass.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtFlightClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtFlightClass.FocusedColor = System.Drawing.Color.Empty;
+            this.txtFlightClass.FocusedState.Parent = this.txtFlightClass;
+            this.txtFlightClass.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtFlightClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtFlightClass.FormattingEnabled = true;
+            this.txtFlightClass.HoverState.Parent = this.txtFlightClass;
+            this.txtFlightClass.ItemHeight = 30;
+            this.txtFlightClass.Items.AddRange(new object[] {
             "Economy",
             "Business",
             "First Class"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(557, 380);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(216, 36);
-            this.guna2ComboBox1.TabIndex = 5;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.txtFlightClass.ItemsAppearance.Parent = this.txtFlightClass;
+            this.txtFlightClass.Location = new System.Drawing.Point(557, 378);
+            this.txtFlightClass.Name = "txtFlightClass";
+            this.txtFlightClass.ShadowDecoration.Parent = this.txtFlightClass;
+            this.txtFlightClass.Size = new System.Drawing.Size(216, 36);
+            this.txtFlightClass.StartIndex = 1;
+            this.txtFlightClass.TabIndex = 5;
+            this.txtFlightClass.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // txtAccountNumber
             // 
@@ -145,7 +149,7 @@
             this.txtAccountNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAccountNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAccountNumber.FocusedState.Parent = this.txtAccountNumber;
-            this.txtAccountNumber.ForeColor = System.Drawing.Color.White;
+            this.txtAccountNumber.ForeColor = System.Drawing.Color.Gray;
             this.txtAccountNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAccountNumber.HoverState.Parent = this.txtAccountNumber;
             this.txtAccountNumber.Location = new System.Drawing.Point(557, 321);
@@ -176,8 +180,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.txtTotalPrice);
             this.Controls.Add(this.txtAccountNumber);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.txtFlightClass);
+            this.Controls.Add(this.txtPaymentMethod);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
             this.Name = "ConfirmPayment";
@@ -191,8 +195,8 @@
 
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ComboBox txtGender;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtPaymentMethod;
+        private Guna.UI2.WinForms.Guna2ComboBox txtFlightClass;
         private Guna.UI2.WinForms.Guna2TextBox txtAccountNumber;
         private System.Windows.Forms.Label txtTotalPrice;
     }

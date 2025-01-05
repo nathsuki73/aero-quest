@@ -140,11 +140,53 @@
     <Compile Include="Notice Forms\CustomMessageBox.Designer.cs">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notice Forms\InvalidAccountNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\InvalidAccountNumber.Designer.cs">
+      <DependentUpon>InvalidAccountNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\InvalidEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\InvalidEmail.Designer.cs">
+      <DependentUpon>InvalidEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordLong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordLong.Designer.cs">
+      <DependentUpon>PasswordLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordLowercase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordLowercase.Designer.cs">
+      <DependentUpon>PasswordLowercase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordShort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordShort.Designer.cs">
+      <DependentUpon>PasswordShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordUppercase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\PasswordUppercase.Designer.cs">
+      <DependentUpon>PasswordUppercase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Notice Forms\ProfileUpdatedPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Notice Forms\ProfileUpdatedPage.Designer.cs">
       <DependentUpon>ProfileUpdatedPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice Forms\SignUpErrorPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice Forms\SignUpErrorPage.Designer.cs">
+      <DependentUpon>SignUpErrorPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Objects\BookingRefernceGenerator.cs" />
     <Compile Include="Objects\Flight.cs" />
@@ -399,8 +441,29 @@
     <EmbeddedResource Include="Notice Forms\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\InvalidAccountNumber.resx">
+      <DependentUpon>InvalidAccountNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\InvalidEmail.resx">
+      <DependentUpon>InvalidEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\PasswordLong.resx">
+      <DependentUpon>PasswordLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\PasswordLowercase.resx">
+      <DependentUpon>PasswordLowercase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\PasswordShort.resx">
+      <DependentUpon>PasswordShort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\PasswordUppercase.resx">
+      <DependentUpon>PasswordUppercase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notice Forms\ProfileUpdatedPage.resx">
       <DependentUpon>ProfileUpdatedPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice Forms\SignUpErrorPage.resx">
+      <DependentUpon>SignUpErrorPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OpenedMailForm.resx">
       <DependentUpon>OpenedMailForm.cs</DependentUpon>

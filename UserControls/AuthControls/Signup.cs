@@ -59,8 +59,6 @@ namespace aero_quest.UserControls.AuthControls
 
             if (userIsAdded)
             {
-
-                Login.ShowNotice(new CustomMessageBox("JJJJJJJJJ"));
                 if (UserControlManager.isInHome)
                 {
                     if (!User.isLoggedIn)
@@ -79,6 +77,11 @@ namespace aero_quest.UserControls.AuthControls
             }
         }
 
+        public static void ShowNotice(Form control)
+        {
+            control.ShowDialog();
+        }
+
         private string ValidateFields()
         {
             StringBuilder errors = new StringBuilder();
@@ -86,13 +89,13 @@ namespace aero_quest.UserControls.AuthControls
             string username = txtUsername.Text;
             if (string.IsNullOrWhiteSpace(username))
             {
-                errors.AppendLine("• Username cannot be empty.");
+                ShowNotice(new SignUpErrorPage());
             }
 
             string email = txtEmail.Text;
             if (string.IsNullOrWhiteSpace(email))
             {
-                errors.AppendLine("• Email cannot be empty.");
+                ShowNotice(new SignUpErrorPage());
             }
             else
             {
@@ -100,7 +103,7 @@ namespace aero_quest.UserControls.AuthControls
 
                 if (!Regex.IsMatch(email, emailPattern))
                 {
-                    errors.AppendLine("• Please enter a valid email address.");
+                    ShowNotice(new InvalidEmail());
                 }
                 else 
                 { try 
@@ -110,12 +113,12 @@ namespace aero_quest.UserControls.AuthControls
                         IPHostEntry hostEntry = Dns.GetHostEntry(host); 
                         if (hostEntry.AddressList.Length == 0) 
                         { 
-                            errors.AppendLine("• The email domain is not valid."); 
+                            ShowNotice(new InvalidEmail());
                         } 
                     } 
                     catch 
                     { 
-                        errors.AppendLine("• The email domain is not valid."); 
+                        ShowNotice(new InvalidEmail());
                     } 
                 }
             }
@@ -125,23 +128,25 @@ namespace aero_quest.UserControls.AuthControls
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                errors.AppendLine("• Password cannot be empty.");
+                ShowNotice(new InvalidEmail());
+
             }
             else if (password.Length < 8)
             {
-                errors.AppendLine("• Password must be at least 8 characters long.");
+                ShowNotice(new PasswordShort());
+
             }
             else if (password.Length > 64)
             {
-                errors.AppendLine("• Password must not exceed 64 characters.");
+                ShowNotice(new PasswordLong());
             }
             else if(!password.Any(char.IsUpper))
             {
-                errors.AppendLine("• Password must contain at least one uppercase letter.");
+                ShowNotice(new PasswordUppercase());
             }
             else if(!password.Any(char.IsLower))
             {
-                errors.AppendLine("• Password must contain at least one lowercase letter.");
+                ShowNotice(new PasswordLowercase());
             }/*
             else if(!password.Any(char.IsDigit))
             {
