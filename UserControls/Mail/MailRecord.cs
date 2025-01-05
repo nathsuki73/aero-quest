@@ -161,6 +161,7 @@ namespace aero_quest.UserControls.Mail
             } else
             {
                 mail.IsDeleted = true;
+                mail.DateDeleted = DateTime.Now;
                 MailForm form = UserControlManager._userForms.Peek() as MailForm;
                 form.ShowInbox();
 

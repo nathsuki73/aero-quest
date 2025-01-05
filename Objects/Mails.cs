@@ -17,6 +17,7 @@ namespace aero_quest.Objects
         public string Code { get; set; }
         public bool IsRead { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime DateDeleted { get; set; }
         public bool IsPermanentlyDeleted { get; set; }
 
 

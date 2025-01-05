@@ -18,6 +18,7 @@ namespace aero_quest
         {
             InitializeComponent();
             ShowInbox();
+            MailControl.ProcessDeletedMailsQueue();
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -48,6 +49,17 @@ namespace aero_quest
             {
                 if (!mail.IsDeleted || mail.IsPermanentlyDeleted)
                 {
+                    if (mail.IsPermanentlyDeleted)
+                    {
+                        lock (MailControl.DeletedMailsQueue)
+                        {
+                            if (!MailControl.DeletedMailsQueue.Contains(mail))
+                            {
+                                mail.DateDeleted = DateTime.Now.AddYears(-1);
+                                MailControl.DeletedMailsQueue.Enqueue(mail);
+                            }
+                        }
+                    }
                     continue;
                 }
                 MailRecord record = new MailRecord(mail, true);
@@ -73,8 +85,29 @@ namespace aero_quest
 
             foreach (Mails mail in mails)
             {
-                if (mail.IsDeleted || mail.IsPermanentlyDeleted)
+                if (mail.IsDeleted)
                 {
+                    lock (MailControl.DeletedMailsQueue)
+                    {
+                        if (!MailControl.DeletedMailsQueue.Contains(mail))
+                        {
+                            mail.DateDeleted = (mail.DateDeleted == default) ? DateTime.Now : mail.DateDeleted;
+                            MailControl.DeletedMailsQueue.Enqueue(mail);
+                        }
+                    }
+                    continue;
+                }
+
+                if (mail.IsPermanentlyDeleted)
+                {
+                    lock (MailControl.DeletedMailsQueue)
+                    {
+                        if (!MailControl.DeletedMailsQueue.Contains(mail))
+                        {
+                            mail.DateDeleted = DateTime.Now.AddYears(-1);
+                            MailControl.DeletedMailsQueue.Enqueue(mail);
+                        }
+                    }
                     continue;
                 }
                 MailRecord record = new MailRecord(mail);
