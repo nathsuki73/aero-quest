@@ -91,13 +91,15 @@ namespace aero_quest.UserControls.AuthControls
             StringBuilder errors = new StringBuilder();
 
             string username = txtUsername.Text;
+            string email = txtEmail.Text;
+            string password = txtPassword.Text;
+
             if (string.IsNullOrWhiteSpace(username))
             {
                 ShowNotice(new SignUpErrorPage());
             }
 
-            string email = txtEmail.Text;
-            if (string.IsNullOrWhiteSpace(email))
+            else  if (string.IsNullOrWhiteSpace(email))
             {
                 ShowNotice(new SignUpErrorPage());
             }
@@ -126,8 +128,6 @@ namespace aero_quest.UserControls.AuthControls
                     } 
                 }
             }
-
-            string password = txtPassword.Text;
 
             if (string.IsNullOrWhiteSpace(password))
             {
